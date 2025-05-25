@@ -1,0 +1,34 @@
+/* Main color and theme */
+.text-main {
+    color: #F95133 !important;
+  }
+  
+  .btn-main {
+    background-color: #F95133;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .btn-main:hover {
+    background-color: #e1421f;
+    color: #fff;
+  }
+  
+  .section-title {
+    color: #F95133;
+    font-weight: bold;
+  }
+  
+  .hero-section {
+    background: #f8f9fa;
+    padding: 100px 0;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
