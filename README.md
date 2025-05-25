@@ -33,7 +33,6 @@ Follow these steps to install and run the Laravel project on your local machine.
 ### ✅ Prerequisites
 
 Make sure your local machine has the following installed:
-Make sure your local machine has the following installed:
 - [XAMPP (>= 8.2.12 / PHP 8.2.12)](https://www.apachefriends.org/download.html) (for Apache & MySQL server)
 - [PHP (>= 8.4)](https://www.php.net/)
 - [Composer](https://getcomposer.org/)
@@ -54,8 +53,7 @@ composer global require laravel/installer
 
 # ✅ Step 3: Create a new Laravel project named 'fouraxiz'
 laravel new fouraxiz
-
-# Wait around 7 to 10 minutes for the installation to complete
+# Wait around 5 to 10 minutes for the installation to complete
 
 # ✅ Step 4: Move into the project directory
 cd fouraxiz
@@ -66,7 +64,6 @@ code .
 # ✅ Step 6: Configure database connection (MySQL)
 # Open the .env file and set the following values:
 # (You can use Notepad or VS Code)
-
 # In .env file, set the DB values:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -78,7 +75,6 @@ DB_PASSWORD=
 # ✅ Step 7: Enable MySQL driver in php.ini
 # Open your php.ini file (usually in xampp/php/php.ini)
 # Make sure the following line is uncommented (remove semicolon if exists):
-
 extension=pdo_mysql
 
 # ✅ Step 8: Restart Apache from XAMPP control panel
@@ -91,21 +87,19 @@ http://127.0.0.1:8000/
 
 
 # 👨‍💻 Developer Information
-
-My name is Nafizul Islam. I have completed my BSc in Software Engineering from Daffodil International University in 2023. This Laravel project was developed as part of the internship interview for fouraxiz software company.
+My name is Nafizul Islam. I have completed my BSc in Software Engineering from Daffodil International University in 2023.
 
 This Laravel project is developed as part of my **internship interview task** for **Fouraxiz Software Company** (USA office site front page design).
 
 ---
 
 # 📢 Interview Task Details
-
-**Position:** Intern WordPress/Laravel Developer  
-**Platform:** BD Jobs Fair – 2025  
+**Position:** Intern – WordPress/Laravel Developer  
+**Platform:** BD Jobs Fair – 21 May 2025  
+**Location:** KBI, Farmgate, Dhaka
 
 > You have been shortlisted for the position of Intern WordPress/Laravel Developer through the BD Jobs Fair – 2025. As part of the interview process, please design the front page of our site (https://fouraxiz.com) targeted for our USA office. Submit your work link via email by **31/05/2025**. Top performers will be selected for the final appointment.  
->
-> **Md. Alim Razi**  
+> Md. Alim Razi
 > Manager Admin  
 > 4axiz IT Ltd.  
 > 📧 admin@4axiz.com
