@@ -2,8 +2,6 @@
 
 @section('content')
 
-@include('layouts.header')
-
 <!-- Hero Section -->
 <section class="hero-section text-center">
     <div class="container">
@@ -64,7 +62,5 @@
         </div>
     </div>
 </section>
-
-@include('layouts.footer') 
     
 @endsection
