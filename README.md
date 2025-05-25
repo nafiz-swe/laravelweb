@@ -79,10 +79,16 @@ extension=pdo_mysql
 
 # ✅ Step 8: Restart Apache from XAMPP control panel
 
-# ✅ Step 9: Run Laravel development server
+# ✅ Step 9: Create the Database in MySQL
+fouraxiz
+
+# ✅ Step 10: Run Laravel Migrations
+php artisan migrate
+
+# ✅ Step 11: Run Laravel development server
 php artisan serve
 
-# ✅ Step 10: Open your browser and go to:
+# ✅ Step 12: Open your browser and go to:
 http://127.0.0.1:8000/
 
 
