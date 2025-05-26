@@ -22,30 +22,52 @@
 
 <!-- 🔶 Styles -->
 <style>
-  .video-blur-layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(2px); /* হালকা blur */
-    z-index: 1;
-  }
+section.position-relative {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 
-  .overlay-clear {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;   /* উপরে নিয়ে আসার জন্য */
-    padding: 5vh 10vw 0 10vw;  /* উপরের দিকে 5vh padding, ডান-বামে 10vw */
-    box-sizing: border-box;
-    text-align: center;
-  }
+/* ভিডিও fullscreen করার জন্য */
+.banner-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* ব্লার লেয়ার */
+.video-blur-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(.5px);
+  z-index: 1;
+}
+
+/* Overlay text container */
+.overlay-clear {
+  position: absolute;  /* এখানে absolute রাখা জরুরি */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5vh 10vw 0 10vw;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+}
+
 
   .typing-text {
     font-size: 3.5rem;
