@@ -1,17 +1,12 @@
 @extends('layouts.app')
-
 @section('content')
 
 <!-- 🔶 Banner Section Start -->
 <section class="position-relative overflow-hidden">
-  <!-- Video Background -->
-  <video autoplay muted loop playsinline class="w-100 banner-video">
-    <source src="{{ asset('videos/fouraxiz-banner-video.mp4') }}" type="video/mp4">
-    Your browser does not support HTML5 video.
-  </video>
-
+  <video id="video1" autoplay muted playsinline class="banner-video active-video"></video>
+  <video id="video2" autoplay muted playsinline class="banner-video"></video>
   <!-- Overlay -->
-  <div class="video-blur-layer"></div> <!-- নতুন blur layer -->
+  <div class="video-blur-layer"></div>
   <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center overlay-clear">
     <div class="text-center text-white">
       <h1 class="typing-text mb-2" data-texts='["Cutting-Edge Web & App Development Solutions", "Robust Cybersecurity Services for Your Business", "Transforming Ideas with AI-Powered Innovation"]'></h1>
@@ -20,151 +15,89 @@
   </div>
 </section>
 
-<!-- 🔶 Styles -->
-<style>
-section.position-relative {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-/* ভিডিও fullscreen করার জন্য */
-.banner-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: 0;
-}
-
-/* ব্লার লেয়ার */
-.video-blur-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  backdrop-filter: blur(.5px);
-  z-index: 1;
-}
-
-/* Overlay text container */
-.overlay-clear {
-  position: absolute;  /* এখানে absolute রাখা জরুরি */
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 5vh 10vw 0 10vw;
-  box-sizing: border-box;
-  text-align: center;
-  color: white;
-}
-
-
-  .typing-text {
-    font-size: 3.5rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    white-space: pre-wrap;
-    overflow-wrap: break-word;
-    max-width: 100%;
-    display: inline;
-    position: relative;
-    padding: 0 1rem;
-    box-sizing: border-box;
-  }
-
-  .typing-text::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 1em;
-    background-color: #fff;
-    animation: blink 1s step-start infinite;
-    left: auto;
-    bottom: 0;
-    transform: translateX(2px);
-  }
-
-  @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-  }
-
-  #typing-subtext {
-    font-size: 1.25rem;
-    color: #eee;
-    margin-top: 10px;
-    max-width: 100%;
-    padding: 0 1rem;
-    box-sizing: border-box;
-  }
-
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .overlay-clear {
-      padding: 0 5vw;
-    }
-    .typing-text {
-      font-size: 2rem;
-      padding: 0 0.5rem;
-    }
-    #typing-subtext {
-      font-size: 1rem;
-      padding: 0 0.5rem;
-    }
-  }
-</style>
-
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const el = document.querySelector('.typing-text');
-    const subtextEl = document.getElementById('typing-subtext');
+  const el = document.querySelector('.typing-text');
+  const subtextEl = document.getElementById('typing-subtext');
+  const video1 = document.getElementById('video1');
+  const video2 = document.getElementById('video2');
+  const slides = [
+    {
+      video: "{{ asset('videos/fouraxiz-ai.mp4') }}",
+      text: "Transforming Ideas with AI-Powered Innovation",
+      subtext: "We harness the potential of artificial intelligence to deliver smarter, future-ready solutions."
+    },
+    {
+      video: "{{ asset('videos/fouraxiz-web.mp4') }}",
+      text: "Cutting-Edge Web & App Development Solutions",
+      subtext: "We build scalable web and mobile platforms using the most advanced and reliable technologies."
+    },
+    {
+      video: "{{ asset('videos/fouraxiz-cs.mp4') }}",
+      text: "Robust Cybersecurity Services for Your Business",
+      subtext: "Protecting digital assets with industry-leading security strategies and 24/7 protection."
+    }
+  ];
 
-    const texts = JSON.parse(el.getAttribute('data-texts'));
-    const subtexts = {
-      "Cutting-Edge Web & App Development Solutions": "We build scalable web and mobile platforms using the most advanced and reliable technologies.",
-      "Robust Cybersecurity Services for Your Business": "Protecting digital assets with industry-leading security strategies and 24/7 protection.",
-      "Transforming Ideas with AI-Powered Innovation": "We harness the potential of artificial intelligence to deliver smarter, future-ready solutions."
+  let index = 0;
+  let activeVideo = video1;
+  let inactiveVideo = video2;
+  const swapVideos = () => {
+    const temp = activeVideo;
+    activeVideo = inactiveVideo;
+    inactiveVideo = temp;
+  };
+
+  const loadVideo = (src, onReady) => {
+    inactiveVideo.innerHTML = '';
+    const source = document.createElement('source');
+    source.src = src;
+    source.type = 'video/mp4';
+    inactiveVideo.appendChild(source);
+    inactiveVideo.load();
+    inactiveVideo.oncanplay = () => {
+      onReady();
     };
+  };
 
-    let index = 0;
+  const typeWriter = (text, subtext, i = 0) => {
+    if (i === 0) subtextEl.textContent = subtext;
+    if (i <= text.length) {
+      el.textContent = text.substring(0, i);
+      setTimeout(() => typeWriter(text, subtext, i + 1), 115);
+    } else {
+      setTimeout(() => {
+        eraseText(text.length);
+      }, 3650);
+    }
+  };
 
-    const typeWriter = (text, i = 0) => {
-      if (i === 0) {
-        subtextEl.textContent = subtexts[text];
-      }
+  const eraseText = (i) => {
+    if (i >= 0) {
+      el.textContent = el.textContent.substring(0, i);
+      setTimeout(() => eraseText(i - 1), 50);
+    }
+  };
 
-      if (i <= text.length) {
-        el.textContent = text.substring(0, i);
-        setTimeout(() => typeWriter(text, i + 1), 100);
-      } else {
-        setTimeout(() => eraseText(text), 3333);
-      }
-    };
+  const playSlide = (idx) => {
+    const { video, text, subtext } = slides[idx];
+    loadVideo(video, () => {
+      inactiveVideo.play();
+      typeWriter(text, subtext);
+      activeVideo.classList.remove('active-video');
+      inactiveVideo.classList.add('active-video');
+      inactiveVideo.onended = () => {
+        index = (index + 1) % slides.length; // Loop
+        swapVideos();
+        playSlide(index);
+      };
+    });
+  };
 
-    const eraseText = (text, i = text.length) => {
-      if (i >= 0) {
-        el.textContent = text.substring(0, i);
-        setTimeout(() => eraseText(text, i - 1), 50);
-      } else {
-        el.innerHTML = '&nbsp;';
-        index = (index + 1) % texts.length;
-        setTimeout(() => typeWriter(texts[index]), 100);
-      }
-    };
-
-    typeWriter(texts[index]);
+  playSlide(index);
   });
 </script>
+
 
 <!-- 🔶 Hero Section -->
 <section class="hero-section text-center py-5">
