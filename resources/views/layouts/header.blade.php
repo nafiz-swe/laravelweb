@@ -42,18 +42,19 @@
             Services
           </a>
           <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="#">Augmented Reality App Development</a></li>
             <li><a class="dropdown-item" href="#">Artificial Intelligence Services</a></li>
-            <li><a class="dropdown-item" href="#">Mobile Application Development</a></li>
-            <li><a class="dropdown-item" href="#">Web Development Services</a></li>
-            <li><a class="dropdown-item" href="#">Cyber Security Services</a></li>
-            <li><a class="dropdown-item" href="#">Machine Learning Services</a></li>
             <li><a class="dropdown-item" href="#">Blockchain Development Services</a></li>
             <li><a class="dropdown-item" href="#">Cloud Application Development Services</a></li>
-            <li><a class="dropdown-item" href="#">Augmented Reality App Development</a></li>
-            <li><a class="dropdown-item" href="#">Virtual Reality App Development</a></li>
-            <li><a class="dropdown-item" href="#">SaaS Development Services</a></li>
+            <li><a class="dropdown-item" href="#">Cyber Security Services</a></li>
+            <li><a class="dropdown-item" href="#">Domain & Hosting Services</a></li>
+            <li><a class="dropdown-item" href="#">Machine Learning Services</a></li>
+            <li><a class="dropdown-item" href="#">Mobile Application Development</a></li>
             <li><a class="dropdown-item" href="#">Product Design Services</a></li>
             <li><a class="dropdown-item" href="#">Quality Assurance Services</a></li>
+            <li><a class="dropdown-item" href="#">SaaS Development Services</a></li>
+            <li><a class="dropdown-item" href="#">Virtual Reality App Development</a></li>
+            <li><a class="dropdown-item" href="#">Web Development Services</a></li>
           </ul>
         </li>
 
@@ -64,17 +65,17 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
             <li><a class="dropdown-item" href="#">AI Photo and Video App Development</a></li>
-            <li><a class="dropdown-item" href="#">Smart Contract Development Solutions</a></li>
-            <li><a class="dropdown-item" href="#">Marketplace Development Services</a></li>
-            <li><a class="dropdown-item" href="#">Social Media Solutions</a></li>
             <li><a class="dropdown-item" href="#">E-learning Software Development Services</a></li>
-            <li><a class="dropdown-item" href="#">Custom Fitness Software Solutions</a></li>
-            <li><a class="dropdown-item" href="#">Custom Healthcare Software Solutions</a></li>
-            <li><a class="dropdown-item" href="#">Recruiting Solutions Development</a></li>
             <li><a class="dropdown-item" href="#">Financial Software Solutions</a></li>
-            <li><a class="dropdown-item" href="#">Travel Software Solutions</a></li>
-            <li><a class="dropdown-item" href="#">Real Estate Solutions</a></li>
+            <li><a class="dropdown-item" href="#">Fitness Software Solutions</a></li>
+            <li><a class="dropdown-item" href="#">Healthcare Software Solutions</a></li>   
+            <li><a class="dropdown-item" href="#">Marketplace Development Services</a></li>
             <li><a class="dropdown-item" href="#">Product Design Solution</a></li>
+            <li><a class="dropdown-item" href="#">Real Estate Solutions</a></li>
+            <li><a class="dropdown-item" href="#">Recruiting Solutions Development</a></li>
+            <li><a class="dropdown-item" href="#">Smart Contract Development Solutions</a></li>
+            <li><a class="dropdown-item" href="#">Social Media Solutions</a></li>
+            <li><a class="dropdown-item" href="#">Travel Software Solutions</a></li>
           </ul>
         </li>
 
@@ -85,32 +86,48 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="techDropdown">
             <li>
-              <a class="dropdown-item" href="#">Python Development Services</a>
+              <a class="dropdown-item" href="#">CMS Development</a>
               <ul class="submenu">
-                <li><a class="dropdown-item" href="#">Django Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Flask Development Services</a></li>
-                <li><a class="dropdown-item" href="#">FastAPI Development Services</a></li>
+                <li><a class="dropdown-item" href="#">Joomla Development</a></li>
+                <li><a class="dropdown-item" href="#">Wix Development</a></li>
+                <li><a class="dropdown-item" href="#">WordPress Development</a></li>
+                <li><a class="dropdown-item" href="#">Shopify Development</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">C++ Development Services</a>
+              <ul class="submenu">
+                <li><a class="dropdown-item" href="#">Boost Development Services</a></li>
+                <li><a class="dropdown-item" href="#">Qt Development Services</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">.NET Development Services</a>
+              <ul class="submenu">
+                <li><a class="dropdown-item" href="#">ASP.NET Core Development Services</a></li>
+                <li><a class="dropdown-item" href="#">Blazor Development Services</a></li>
+                <li><a class="dropdown-item" href="#">Entity Framework Development Services</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Java Development Services</a>
+              <ul class="submenu">
+                <li><a class="dropdown-item" href="#">Hibernate Development Services</a></li>
+                <li><a class="dropdown-item" href="#">Spring Development Services</a></li>
               </ul>
             </li>
             <li>
               <a class="dropdown-item" href="#">JavaScript Development Services</a>
               <ul class="submenu">
-                <li><a class="dropdown-item" href="#">Node.js Development Services</a></li>
                 <li><a class="dropdown-item" href="#">Express.js Development Services</a></li>
+                <li><a class="dropdown-item" href="#">Node.js Development Services</a></li>
               </ul>
             </li>
             <li>
-              <a class="dropdown-item" href="#">React Development Services</a>
+              <a class="dropdown-item" href="#">Kotlin Development Services</a>
               <ul class="submenu">
-                <li><a class="dropdown-item" href="#">Next.js Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Gatsby Development Services</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Vue.js Development Services</a>
-              <ul class="submenu">
-                <li><a class="dropdown-item" href="#">Nuxt.js Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Quasar Development Services</a></li>
+                <li><a class="dropdown-item" href="#">Ktor Development Services</a></li>
+                <li><a class="dropdown-item" href="#">Spring Development Services</a></li>
               </ul>
             </li>
             <li>
@@ -121,25 +138,18 @@
               </ul>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Java Development Services</a>
+              <a class="dropdown-item" href="#">Python Development Services</a>
               <ul class="submenu">
-                <li><a class="dropdown-item" href="#">Spring Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Hibernate Development Services</a></li>
+                <li><a class="dropdown-item" href="#">Django Development Services</a></li>
+                <li><a class="dropdown-item" href="#">FastAPI Development Services</a></li>
+                <li><a class="dropdown-item" href="#">Flask Development Services</a></li>
               </ul>
             </li>
             <li>
-              <a class="dropdown-item" href="#">.NET Development Services</a>
+              <a class="dropdown-item" href="#">React Development Services</a>
               <ul class="submenu">
-                <li><a class="dropdown-item" href="#">ASP.NET Core Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Entity Framework Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Blazor Development Services</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">C++ Development Services</a>
-              <ul class="submenu">
-                <li><a class="dropdown-item" href="#">Qt Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Boost Development Services</a></li>
+                <li><a class="dropdown-item" href="#">Gatsby Development Services</a></li>
+                <li><a class="dropdown-item" href="#">Next.js Development Services</a></li>
               </ul>
             </li>
             <li>
@@ -150,10 +160,10 @@
               </ul>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Kotlin Development Services</a>
+              <a class="dropdown-item" href="#">Vue.js Development Services</a>
               <ul class="submenu">
-                <li><a class="dropdown-item" href="#">Ktor Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Spring Development Services</a></li>
+                <li><a class="dropdown-item" href="#">Nuxt.js Development Services</a></li>
+                <li><a class="dropdown-item" href="#">Quasar Development Services</a></li>
               </ul>
             </li>
             <li><a class="dropdown-item" href="#">Unity Game Development Services</a></li>
