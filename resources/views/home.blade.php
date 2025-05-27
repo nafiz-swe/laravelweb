@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<!-- 🔶 Banner Section Start -->
+<!-- Banner Section Start -->
 <section class="position-relative overflow-hidden">
   <video id="video1" autoplay muted playsinline class="banner-video active-video"></video>
   <video id="video2" autoplay muted playsinline class="banner-video"></video>
@@ -99,7 +99,7 @@
 </script>
 
 
-<!-- 🔶 Hero Section -->
+<!-- Hero Section -->
 <section class="hero-section text-center py-5">
   <div class="container">
     <h1 class="hero-title">Empowering Digital Future with Excellence</h1>
@@ -108,7 +108,7 @@
   </div>
 </section>
 
-<!-- 🔶 Services Section -->
+<!-- Services Section -->
 <section id="services" class="py-5">
   <div class="container">
     <h2 class="text-center section-title mb-4">Our Services</h2>
@@ -129,7 +129,7 @@
   </div>
 </section>
 
-<!-- 🔶 About Section -->
+<!-- About Section -->
 <section id="about" class="py-5 bg-light">
   <div class="container">
     <h2 class="text-center section-title mb-4">About Us</h2>
@@ -137,7 +137,7 @@
   </div>
 </section>
 
-<!-- 🔶 Contact Section -->
+<!-- Contact Section -->
 <section id="contact" class="py-5">
   <div class="container">
     <h2 class="text-center section-title mb-4">Contact Us</h2>

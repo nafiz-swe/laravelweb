@@ -1,6 +1,9 @@
 /* =============
 = Banner Start =
 ===============*/
+body {
+  overflow-x: hidden;
+}
 section.position-relative {
   position: relative;
   width: 100vw;
