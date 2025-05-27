@@ -386,4 +386,51 @@ nav.navbar {
   font-size: 2.5rem;
   font-weight: 700;
 }
-  
+.py-5 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+
+/* =======================
+= Services Section Start =
+========================*/
+.btn-learn {
+  color: #F95133;
+  border: 1px solid #F95133;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+.btn-learn:hover {
+  background-color: #F95133;
+  color: #fff;
+  border-color: #F95133;
+  box-shadow: 0 6px 18px rgba(249, 81, 51, 0.4);
+}
+.hover-shadow {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.hover-shadow:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+.deep-shadow {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+.service-img {
+  max-width: 80px;
+  height: auto;
+}
+.card-body {
+  padding-bottom: 2rem;
+}
+/* =====================
+= Services Section End =
+=======================*/
+

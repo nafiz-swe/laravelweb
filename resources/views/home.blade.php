@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<!-- ===== Banner Section Start===== -->
 <section class="position-relative overflow-hidden">
   <img id="initialImage" src="{{ asset('images/fouraxiz-impression.webp') }}" alt="Initial Banner" class="initial-banner-image">
   <video id="video1" autoplay muted playsinline class="banner-video active-video"></video>
@@ -113,9 +114,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 </script>
+<!-- ===== Banner Section End===== -->
 
-<!-- ===== Company Stats Section ===== -->
-<section class="py-5 my-5" style="background: #F0EFF5; box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); border-radius: 16px;">
+<!-- ===== Company Stats Section Start===== -->
+<section class="py-5 my-0" style="background: #F0EFF5; box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);">
     <div class="container">
         <div class="row row-cols-1 row-cols-md-5 g-4">
             <!-- Item 1 -->
@@ -128,7 +130,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
             </div>
-
             <!-- Item 2 -->
             <div class="col">
                 <div class="d-flex align-items-center bg-white p-3 rounded-3 shadow-sm h-100">
@@ -139,7 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
             </div>
-
             <!-- Item 3 -->
             <div class="col">
                 <div class="d-flex align-items-center bg-white p-3 rounded-3 shadow-sm h-100">
@@ -150,7 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
             </div>
-
             <!-- Item 4 -->
             <div class="col">
                 <div class="d-flex align-items-center bg-white p-3 rounded-3 shadow-sm h-100">
@@ -161,7 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
             </div>
-
             <!-- Item 5 -->
             <div class="col">
                 <div class="d-flex align-items-center bg-white p-3 rounded-3 shadow-sm h-100">
@@ -175,13 +173,10 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     </div>
 </section>
-
-
 <script>
     const counters = document.querySelectorAll('.counter');
     const duration = 3000;
     const interval = 30; 
-
     counters.forEach(counter => {
         const target = +counter.getAttribute('data-target');
         let count = 0;
@@ -197,13 +192,151 @@ document.addEventListener('DOMContentLoaded', () => {
                 counter.innerText = target + "+";
             }
         };
-
         updateCount();
     });
 </script>
+<!-- ===== Company Stats Section End===== -->
 
+<!-- ===== Experience Section Start===== -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Side: Text Content -->
+      <div class="col-lg-6 mb-4 mb-lg-0 mt-lg-n3">
+        <h2 class="fw-bold display-5 mb-3">
+          <span class="text-dark">13+</span> <span style="color: #F95133;">Years in Business</span>
+        </h2>
+        <p class="text-secondary small mb-4">
+          Since our founding, we have been committed to delivering high-quality software solutions tailored to meet the diverse needs of our clients across the globe. With a presence in the USA, our expert team has helped hundreds of businesses grow with confidence.
+        </p>
+        <ul class="list-unstyled text-muted small">
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Enterprise Software Development</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Custom Web & Mobile Applications</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Digital Transformation Services</li>
+        </ul>
+      </div>
+      <!-- Right Side: Video -->
+      <div class="col-lg-6 text-center">
+        <video class="img-fluid rounded-4 shadow-lg" style="max-height: 400px;" autoplay muted loop playsinline>
+          <source src="{{ asset('videos/fourAxiz-experience.mp4') }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== Experience Section End===== -->
 
-<!-- ===== Our Clients Section ===== -->
+<!-- ===== Our Services Section Start===== -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-3">Our <span style="color: #F95133;">Services</span></h2>
+    <p class="text-center text-muted mb-5 small">
+      Empowering businesses with a complete suite of web services – from design to deployment and beyond.
+    </p>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 deep-shadow hover-shadow">
+          <div class="image-wrapper">
+            <img src="{{ asset('images/fa-web-dev.webp') }}" alt="Web Development" class="service-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text small">Expert web development services for your website – professional, reliable, and tailored to you.</p>
+            <a href="#" class="btn btn-learn btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 deep-shadow hover-shadow">
+          <div class="image-wrapper">
+            <img src="{{ asset('images/fa-app-dev.webp') }}" alt="App Development" class="service-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">App Development</h5>
+            <p class="card-text small">Custom app development – innovative, seamless, and user-friendly solutions for your needs.</p>
+            <a href="#" class="btn btn-learn btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 deep-shadow hover-shadow">
+          <div class="image-wrapper">
+            <img src="{{ asset('images/fa-ai-ml.webp') }}" alt="AI & Machine Learning" class="service-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">AI & Machine Learning</h5>
+            <p class="card-text small">Cutting-edge AI and machine learning solutions – unlocking the power of your data.</p>
+            <a href="#" class="btn btn-learn btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 deep-shadow hover-shadow">
+          <div class="image-wrapper">
+            <img src="{{ asset('images/fa-software-testing.webp') }}" alt="Software Testing" class="service-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Software Testing</h5>
+            <p class="card-text small">Quality-driven testing services for flawless performance and reliable functionality.</p>
+            <a href="#" class="btn btn-learn btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 deep-shadow hover-shadow">
+          <div class="image-wrapper">
+            <img src="{{ asset('images/fa-security.webp') }}" alt="Security Solutions" class="service-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Security Solutions</h5>
+            <p class="card-text small">Robust digital security solutions – safeguard your data with confidence.</p>
+            <a href="#" class="btn btn-learn btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 deep-shadow hover-shadow">
+          <div class="image-wrapper">
+            <img src="{{ asset('images/fa-hosting.webp') }}" alt="Domain & Hosting" class="service-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Domain & Hosting</h5>
+            <p class="card-text small">Reliable web hosting and domain solutions – empower your online presence effortlessly.</p>
+            <a href="#" class="btn btn-learn btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 deep-shadow hover-shadow">
+          <div class="image-wrapper">
+            <img src="{{ asset('images/fa-seo.webp') }}" alt="Digital Marketing" class="service-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Digital Marketing (SEO)</h5>
+            <p class="card-text small">Optimize your website with powerful SEO and digital marketing strategies.</p>
+            <a href="#" class="btn btn-learn btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 deep-shadow hover-shadow">
+          <div class="image-wrapper">
+            <img src="{{ asset('images/fa-graphics.webp') }}" alt="Graphics Design" class="service-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Graphics Design</h5>
+            <p class="card-text small">Creative graphic design services – captivate your audience visually.</p>
+            <a href="#" class="btn btn-learn btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== Our Services Section End===== -->
+
+<!-- ===== Our Clients Section Startt===== -->
 <section class="py-5 bg-white text-center">
     <div class="container">
         <h2 class="mb-4 fw-bold split-title">
