@@ -24,8 +24,10 @@
           <a href="https://twitter.com" target="_blank" class="nav-link text-dark" style="padding: 0.5px;"><i class="bi bi-twitter" style="color: #1DA1F2;"></i></a>
         </li>
         <li class="nav-item text-muted small">
-          <a href="tel:+1 737 226 404" class="text-muted text-decoration-none">
-            <i class="bi bi-telephone-fill me-1" style="color: #009688; font-size: 1.2rem;"></i> +1 1737 226 404
+          <a href="tel:+1 737 226 404" class="text-muted text-decoration-none d-flex align-items-center position-relative">
+            <span class="wave-ring"></span>
+            <i class="bi bi-telephone-fill custom-phone-icon me-2"></i>
+            +1 1737 226 404
           </a>
         </li>
       </ul>
@@ -190,8 +192,10 @@
           <a href="https://twitter.com" target="_blank" class="nav-link text-dark" style="padding: 0.5px;"><i class="bi bi-twitter" style="color: #1DA1F2;"></i></a>
         </li>
         <li class="nav-item text-muted small">
-          <a href="tel:+1 737 226 404" class="text-muted text-decoration-none">
-            <i class="bi bi-telephone-fill me-1" style="color: #009688; font-size: 1.2rem;"></i> +1 1737 226 404
+          <a href="tel:+1 737 226 404" class="text-muted text-decoration-none d-flex align-items-center position-relative">
+            <span class="wave-ring"></span>
+            <i class="bi bi-telephone-fill custom-phone-icon me-2"></i>
+            +1 1737 226 404
           </a>
         </li>
       </ul>
