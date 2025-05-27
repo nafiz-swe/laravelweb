@@ -10,6 +10,18 @@ section.position-relative {
   height: 100vh;
   overflow: hidden;
 }
+.initial-banner-image {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+  transition: opacity 1s ease-in-out;
+}
+.initial-banner-image.fade-out {
+  opacity: 0;
+  z-index: 0;
+}
 .banner-video {
   position: absolute;
   top: 0;
@@ -24,6 +36,11 @@ section.position-relative {
 .active-video {
   opacity: 1;
   z-index: 1;
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  pointer-events: none;
 }
 .video-blur-layer {
   position: absolute;
@@ -79,6 +96,7 @@ section.position-relative {
   max-width: 100%;
   padding: 0 1rem;
   box-sizing: border-box;
+  background:rgba(49, 47, 47, 0.25);
 }
 @keyframes blink {
   0%, 100% { opacity: 1; }
@@ -95,6 +113,33 @@ section.position-relative {
   #typing-subtext {
     font-size: 1rem;
     padding: 0 0.5rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .initial-banner-image {
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+  }
+  .banner-video {
+    width: 100vw;
+    height: 60vh;
+  }
+  section.position-relative {
+    height: 60vh;
+  }
+  .overlay-clear {
+    padding: 10vh 5vw 0 5vw; /* Text Updown */
+    align-items: center;
+  }
+  .typing-text {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+  }
+  #typing-subtext {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+    background: rgba(49, 47, 47, 0.4);
   }
 }
 /* =============
@@ -288,14 +333,14 @@ nav.navbar {
   color: white;
   border: none;
   padding: 8px 18px;
-  border-radius: 5px;
+  border-radius: 2px;
   font-weight: 500;
   transition: background 0.3s ease;
 }
 .contact-btn:hover {
   background-image: linear-gradient(180deg, #e13b20 0%, #a91700 100%);
   color: white;
-}
+} 
 /* =============
 =   Nav End    =
 ===============*/
@@ -306,6 +351,16 @@ nav.navbar {
 ===============*/
 .text-main {
   color: #F95133 !important;
+}
+.main-color {
+  color: #F95133;
+}
+.split-title span:first-child {
+  color: #000;
+}
+
+.split-title span:last-child {
+  color: #F95133;
 }
 .btn-main {
   background-color: #F95133;
