@@ -24,6 +24,12 @@ class ContactController extends Controller
 
         Contact::create($request->all());
 
-        return back()->with('success', 'Thank you for contacting us!');
+        // return back()->with('success', "<strong>Thank you!</strong><br>Your message was sent successfully. We'll get back to you soon.");
+
+        return back()->with('success', "<div class='toast-custom'>
+        <div class='icon'><i class='fas fa-check-circle'></i></div>
+        <div class='title'>Thank you!</div>
+        <div class='message'>Your message was sent successfully. We'll get back to you soon.</div>
+        </div>");
     }
 }

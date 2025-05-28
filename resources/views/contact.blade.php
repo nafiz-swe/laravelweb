@@ -39,8 +39,28 @@
         </div>
     </div>
 </section>
-
-
+@push('scripts')
+<script>
+    @if(session('success'))
+        let successData = @json(session('success'));
+        toastr.options = {
+            "closeButton": false,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "timeOut": 10000,             // Hide after 10 Seconds
+            "extendedTimeOut": 5000,      // extended after hover
+            "showDuration": 300,          // show animation duration
+            "hideDuration": 1000,         // hide animation duration
+            "escapeHtml": false,
+            "iconClasses": {
+                success: ''               // custom design
+            }
+        };
+        toastr.clear();                  // previous toast clear
+        toastr.success(successData);     // show new custom toast
+    @endif
+</script>
+@endpush
 
 <!-- ===== Contact Form Section ===== -->
 <section class="py-5 bg-light">
@@ -48,9 +68,9 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
 
-                @if(session('success'))
+                <!-- @if(session('success'))
                     <div class="alert alert-success">{{ session('success') }}</div>
-                @endif
+                @endif -->
 
                 <div class="card shadow-sm border-0">
                     <h3 class="card-header text-white text-center" style="background-color: #FF0D0D;">Contact Us</h3>
