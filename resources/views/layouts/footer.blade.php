@@ -44,7 +44,7 @@
         <div class="text-center py-4">
             <small class="text-dark" style="font-size: 13px;">
                 &copy; 2025. All Rights Reserved By 
-                <a href="https://github.com/nafiz-swe" target="_blank" class="fw-bold text-decoration-none" style="font-size: 13px; color: #F95133;">Nafizul Islam</a>
+                <a href="https://github.com/nafiz-swe" target="_blank" class="fw-bold text-decoration-none" style="font-size: 13px; color: #FF0D0D;">Nafizul Islam</a>
             </small>
         </div>
     </div>

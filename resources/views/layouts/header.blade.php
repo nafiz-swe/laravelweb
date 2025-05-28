@@ -35,7 +35,7 @@
       <!-- Main Menu -->
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+        <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
         </li>
 
         <!-- Services -->
@@ -180,7 +180,7 @@
           <a class="nav-link" href="#">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="btn contact-btn ms-3" href="#">Contact Us</a>
+            <a class="btn contact-btn ms-3" href="{{ route('contact.form') }}">Contact Us</a>
         </li>
       </ul>
 

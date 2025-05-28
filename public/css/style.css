@@ -171,7 +171,7 @@ ul.submenu {
   margin-top: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   list-style-type: none;
-  border-bottom: 1px solid #F95133;
+  border-bottom: 1px solid #FF0D0D;
 }
 ul.submenu.show-submenu {
   display: block;
@@ -196,7 +196,7 @@ ul.submenu li:hover {
   -4px 6px 12px rgb(249 81 51 / 21%), 4px 6px 12px rgb(249 81 51 / 11%), 0px 8px 16px rgb(249 81 51 / 20%)
 }
 ul.submenu li:hover a.dropdown-item {
-  color: #F95133;
+  color: #FF0D0D;
 }
 .nav-link.dropdown-toggle::after {
   display: none;
@@ -206,7 +206,7 @@ ul.submenu li:hover a.dropdown-item {
   position: relative;
   top: 24px;
   margin-left: -20px;
-  color: #F95133;
+  color: #FF0D0D;
   border-width: 0.35em 0.35em 0 0.35em;
   font-size: 2rem;
   transform: rotate(180deg);
@@ -236,8 +236,8 @@ display: none;
   display: block;
   margin-top: 0;
   padding: 10px 0;
-  border-top: 4px solid #F95133;
-  border-bottom: 4px solid #F95133;
+  border-top: 4px solid #FF0D0D;
+  border-bottom: 4px solid #FF0D0D;
   border-radius: 0.5rem;
   box-shadow:
   -4px 6px 12px rgba(249, 81, 51, 0.2),
@@ -283,17 +283,17 @@ text-align: right;
 }
 }
 .dropdown-item:hover {
-  color: #F95133;
+  color: #FF0D0D;
   background-color: #fff;
 }
 .nav-item:not(.dropdown) .nav-link:hover {
-  color: #F95133;
+  color: #FF0D0D;
   text-decoration: underline;
-  text-decoration-color: #F95133;
+  text-decoration-color: #FF0D0D;
   text-underline-offset: 4px;
 }
 .nav-item.dropdown .nav-link:hover {
-  color: #F95133;
+  color: #FF0D0D;
   text-decoration: none !important;
 }
 .px-1 {
@@ -329,7 +329,7 @@ nav.navbar {
 }
 .contact-btn {
   background-color: transparent;
-  background-image: linear-gradient(180deg, #F95133 0%, #C61E00 100%);
+  background-image: linear-gradient(180deg, #FF0D0D 0%, #C61E00 100%);
   color: white;
   border: none;
   padding: 8px 18px;
@@ -344,10 +344,10 @@ nav.navbar {
 /* number wave start*/
 .custom-phone-icon {
   color: #fff;
-  font-size: 1rem;
+  font-size: .9rem;
   background: #F95133;
   border-radius: 50%;
-  padding: 5px 8px;
+  padding: 4px 8px;
   z-index: 2;
   position: relative;
 }
@@ -357,7 +357,7 @@ nav.navbar {
   left: 14px;
   width: 36px;
   height: 36px;
-  background-color: #F95133;
+  background-color: #FF0D0D;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   animation: ripple 1.5s infinite ease-out;
@@ -413,13 +413,13 @@ nav.navbar {
 =  Body Start  =
 ===============*/
 .main-color {
-  color: #F95133;
+  color: #FF0D0D;
 }
 .split-title span:first-child {
   color: #000;
 }
 .split-title span:last-child {
-  color: #F95133;
+  color: #FF0D0D;
 }
 .py-5 {
   padding-top: 6rem !important;
@@ -433,15 +433,15 @@ nav.navbar {
 = Services Section Start =
 ========================*/
 .btn-learn {
-  color: #F95133;
-  border: 1px solid #F95133;
+  color: #FF0D0D;
+  border: 1px solid #FF0D0D;
   background-color: transparent;
   transition: all 0.3s ease;
 }
 .btn-learn:hover {
-  background-color: #F95133;
+  background-color: #FF0D0D;
   color: #fff;
-  border-color: #F95133;
+  border-color: #FF0D0D;
   box-shadow: 0 6px 18px rgba(249, 81, 51, 0.4);
 }
 .hover-shadow {
@@ -538,7 +538,7 @@ nav.navbar {
   transition: background 0.3s ease;
 }
 .owl-theme .owl-dots .owl-dot.active span {
-  background: #F95133;
+  background: #FF0D0D;
 }
 .card-img-top {
   height: 200px;
@@ -571,7 +571,7 @@ nav.navbar {
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #F95133 !important;
+  background: #FF0D0D !important;
   transform: scale(1.2);
 }
 /* ==============================
@@ -599,7 +599,7 @@ nav.navbar {
   margin-top: 30px;
 }
 .custom-indicators li.active {
-  background-color: #F95133;
+  background-color: #FF0D0D;
   transform: scale(1.2);
 }
 .profile-card {
@@ -621,7 +621,7 @@ nav.navbar {
   height: 80px;
   margin-bottom: 1rem;
   object-fit: cover;
-  border: 3px solid #F95133;
+  border: 3px solid #FF0D0D;
   transition: border-color 0.3s ease;
 }
 .profile-card h5 {

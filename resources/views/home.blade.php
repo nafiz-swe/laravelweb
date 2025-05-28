@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-3 h-100">
                     <img src="{{ asset('images/fouraxiz-deal.webp') }}" alt="Years">
                     <div class="ms-2 text-start">
-                        <h4 class="counter fw-bold mb-0" data-target="18" style="color: #F95133;">0</h4>
+                        <h4 class="counter fw-bold mb-0" data-target="18" style="color: #FF0D0D;">0</h4>
                         <small>Years in Business</small>
                     </div>
                 </div>
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-3 h-100">
                     <img src="{{ asset('images/fouraxiz-world.webp') }}" alt="Countries">
                     <div class="ms-2 text-start">
-                        <h4 class="counter fw-bold mb-0" data-target="27" style="color: #F95133;">0</h4>
+                        <h4 class="counter fw-bold mb-0" data-target="27" style="color: #FF0D0D;">0</h4>
                         <small>Countries Served</small>
                     </div>
                 </div>
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-3 h-100">
                     <img src="{{ asset('images/fouraxiz-deadline.webp') }}" alt="Clients">
                     <div class="ms-2 text-start">
-                        <h4 class="counter fw-bold mb-0" data-target="997" style="color: #F95133;">0</h4>
+                        <h4 class="counter fw-bold mb-0" data-target="997" style="color: #FF0D0D;">0</h4>
                         <small>Clients Worldwide</small>
                     </div>
                 </div>
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-3 h-100">
                     <img src="{{ asset('images/fouraxiz-certificate.webp') }}" alt="Projects">
                     <div class="ms-2 text-start">
-                        <h4 class="counter fw-bold mb-0" data-target="2847" style="color: #F95133;">0</h4>
+                        <h4 class="counter fw-bold mb-0" data-target="2847" style="color: #FF0D0D;">0</h4>
                         <small>Projects Delivered</small>
                     </div>
                 </div>
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-3 h-100">
                     <img src="{{ asset('images/fouraxiz-24hr-support.webp') }}" alt="Support">
                     <div class="ms-2 text-start">
-                        <h4 class="fw-bold mb-0" style="color: #F95133;">24/7</h4>
+                        <h4 class="fw-bold mb-0" style="color: #FF0D0D;">24/7</h4>
                         <small>Support Available</small>
                     </div>
                 </div>
@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <!-- Left Side: Text Content -->
       <div class="col-lg-6 mb-4 mb-lg-0 mt-lg-n3">
         <h1 class="fw-bold display-5 mb-3">
-          <span class="text-dark">13+</span> <span style="color: #F95133;">Years in Business</span>
+          <span class="text-dark">13+</span> <span style="color: #FF0D0D;">Years in Business</span>
         </h1>
         <p class="text-secondary small mb-4">
           Since our founding, we have been committed to delivering high-quality software solutions tailored to meet the diverse needs of our clients across the globe. With a presence in the USA, our expert team has helped hundreds of businesses grow with confidence.
@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- ===== Our Services Section Start===== -->
 <section class="py-5 bg-white">
   <div class="container">
-    <h1 class="text-center fw-bold mb-3">Our <span style="color: #F95133;">Services</span></h1>
+    <h1 class="text-center fw-bold mb-3">Our <span style="color: #FF0D0D;">Services</span></h1>
     <p class="text-center text-muted mb-5 small">
       Empowering businesses with a complete suite of web services – from design to deployment and beyond.
     </p>
@@ -489,11 +489,11 @@ document.addEventListener('DOMContentLoaded', () => {
     </p>
     @php
       $testimonials = [
-          ['name' => 'Alim R.', 'title' => 'CO, Amazon', 'image' => 'fouraxiz-client-1.webp', 'text' => 'Amazing team! Delivered exactly what we needed.', 'stars' => 4],
-          ['name' => 'Evan L.', 'title' => 'Marketing Head, BrightIdeas', 'image' => 'fouraxiz-client-2.webp', 'text' => 'The support and response time is top-notch!', 'stars' => 5],
+          ['name' => 'Evan L.', 'title' => 'Marketing Head, BrightIdeas', 'image' => 'fouraxiz-client-2.webp', 'text' => 'The support and response time is top-notch!', 'stars' => 4],
+          ['name' => 'Alim R.', 'title' => 'CO, Amazon', 'image' => 'fouraxiz-client-1.webp', 'text' => 'Amazing team! Delivered exactly what we needed.', 'stars' => 5],
           ['name' => 'Nafizul I.', 'title' => 'CTO, GenZ', 'image' => 'fouraxiz-client-3.webp', 'text' => 'Great experience working with this Laravel team.', 'stars' => 4],
           ['name' => 'Luis W.', 'title' => 'Product Manager, Appify', 'image' => 'fouraxiz-client-4.webp', 'text' => 'Professional, fast and reliable — highly recommended!', 'stars' => 5],
-          ['name' => 'Ravi S.', 'title' => 'Founder, EduNext', 'image' => 'fouraxiz-client-5.webp', 'text' => 'They really care about our product success.', 'stars' => 4],
+          ['name' => 'Ravi S.', 'title' => 'Founder, EduNext', 'image' => 'fouraxiz-client-5.webp', 'text' => 'They really care about our product success.', 'stars' => 3],
           ['name' => 'Smith G.', 'title' => 'Lead Developer, SmartLabs', 'image' => 'fouraxiz-client-6.webp', 'text' => 'Excellent collaboration and great communication.', 'stars' => 5],
       ];
     @endphp
