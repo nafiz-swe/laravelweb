@@ -24,7 +24,7 @@
                         <h4 class="fw-bold mb-3"><i class="fas fa-map-marker-alt me-2 text-danger"></i>Bangladesh Office</h4>
                         <p><i class="fas fa-location-arrow me-2 text-muted"></i>Level-4, House#34, Lane# 6/2, Road#20/B, DUIP Plot, Block D, Mirpur-12, Dhaka-1216</p>
                         <p><i class="fas fa-phone-alt me-2 text-muted"></i>+880 1718 837 689</p>
-                        <p><i class="fas fa-envelope me-2 text-muted"></i>info@4axiz.com</p>
+                        <p><i class="fas fa-envelope me-2 text-muted"></i>nafizul35-480@diu.edu.bd</p>
                     </div>
                 </div>
                 <div class="col-md-6 p-5">
@@ -32,7 +32,7 @@
                         <h4 class="fw-bold mb-3"><i class="fas fa-map-marker-alt me-2 text-danger"></i>USA Office</h4>
                         <p><i class="fas fa-location-arrow me-2 text-muted"></i>8120 Jennings Drive, Suite 128 C, Business and Community Service Bldg, Cedar Falls, IA 50613-0130</p>
                         <p><i class="fas fa-phone-alt me-2 text-muted"></i>+031 9961 27 82</p>
-                        <p><i class="fas fa-envelope me-2 text-muted"></i>4axizusa@4axiz.com</p>
+                        <p><i class="fas fa-envelope me-2 text-muted"></i>nafizulislam.swe@gmail.com</p>
                     </div>
                 </div>
             </div>

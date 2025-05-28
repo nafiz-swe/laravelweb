@@ -31,11 +31,11 @@
             <div class="col-md-3 mb-5 px-3">
                 <h5 class="text-dark" style="font-size: 1.15rem;">OUR SERVICES</h5>
                 <ul class="list-unstyled text-dark" style="font-size: 13px;">
-                    <li class="mb-2"><i class="fas fa-code me-2 text-secondary"></i><a href="#" class="text-dark text-decoration-none">Web Application Development</a></li>
-                    <li class="mb-2"><i class="fas fa-mobile-alt me-2 text-secondary"></i><a href="#" class="text-dark text-decoration-none">Mobile App Development</a></li>
-                    <li class="mb-2"><i class="fas fa-cogs me-2 text-secondary"></i><a href="#" class="text-dark text-decoration-none">ERP Software Development</a></li>
-                    <li class="mb-2"><i class="fas fa-robot me-2 text-secondary"></i><a href="#" class="text-dark text-decoration-none">AI &amp; Machine Learning</a></li>
-                    <li class="mb-2"><i class="fas fa-globe me-2 text-secondary"></i><a href="#" class="text-dark text-decoration-none">Domain &amp; Hosting Services</a></li>
+                    <li class="mb-2"><i class="fas fa-code me-2 text-secondary"></i><a href="#" class="text-dark">Web Application Development</a></li>
+                    <li class="mb-2"><i class="fas fa-mobile-alt me-2 text-secondary"></i><a href="#" class="text-dark">Mobile App Development</a></li>
+                    <li class="mb-2"><i class="fas fa-cogs me-2 text-secondary"></i><a href="#" class="text-dark">ERP Software Development</a></li>
+                    <li class="mb-2"><i class="fas fa-robot me-2 text-secondary"></i><a href="#" class="text-dark">AI &amp; Machine Learning</a></li>
+                    <li class="mb-2"><i class="fas fa-globe me-2 text-secondary"></i><a href="#" class="text-dark">Domain &amp; Hosting Services</a></li>
                 </ul>
             </div>
         </div>
