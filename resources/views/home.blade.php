@@ -117,55 +117,55 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- ===== Banner Section End===== -->
 
 <!-- ===== Company Stats Section Start===== -->
-<section class="py-5 my-0" style="background: #F0EFF5; box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);">
+<section class="py-5 my-0 company-stats-section">
     <div class="container">
-        <div class="row row-cols-1 row-cols-md-5 g-4">
+        <div class="row row-cols-1 row-cols-md-5 g-3 g-md-4">
             <!-- Item 1 -->
             <div class="col">
-                <div class="d-flex align-items-center bg-white p-3 rounded-3 shadow-sm h-100">
-                    <img src="{{ asset('images/fouraxiz-deal.webp') }}" alt="Years" style="max-width: 40px;">
+                <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-3 h-100">
+                    <img src="{{ asset('images/fouraxiz-deal.webp') }}" alt="Years">
                     <div class="ms-2 text-start">
-                        <h5 class="counter fw-bold mb-0" data-target="18" style="color: #F95133;">0</h5>
+                        <h4 class="counter fw-bold mb-0" data-target="18" style="color: #F95133;">0</h4>
                         <small>Years in Business</small>
                     </div>
                 </div>
             </div>
             <!-- Item 2 -->
             <div class="col">
-                <div class="d-flex align-items-center bg-white p-3 rounded-3 shadow-sm h-100">
-                    <img src="{{ asset('images/fouraxiz-world.webp') }}" alt="Countries" style="max-width: 40px;">
+                <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-3 h-100">
+                    <img src="{{ asset('images/fouraxiz-world.webp') }}" alt="Countries">
                     <div class="ms-2 text-start">
-                        <h5 class="counter fw-bold mb-0" data-target="27" style="color: #F95133;">0</h5>
+                        <h4 class="counter fw-bold mb-0" data-target="27" style="color: #F95133;">0</h4>
                         <small>Countries Served</small>
                     </div>
                 </div>
             </div>
             <!-- Item 3 -->
             <div class="col">
-                <div class="d-flex align-items-center bg-white p-3 rounded-3 shadow-sm h-100">
-                    <img src="{{ asset('images/fouraxiz-deadline.webp') }}" alt="Clients" style="max-width: 40px;">
+                <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-3 h-100">
+                    <img src="{{ asset('images/fouraxiz-deadline.webp') }}" alt="Clients">
                     <div class="ms-2 text-start">
-                        <h5 class="counter fw-bold mb-0" data-target="997" style="color: #F95133;">0</h5>
+                        <h4 class="counter fw-bold mb-0" data-target="997" style="color: #F95133;">0</h4>
                         <small>Clients Worldwide</small>
                     </div>
                 </div>
             </div>
             <!-- Item 4 -->
             <div class="col">
-                <div class="d-flex align-items-center bg-white p-3 rounded-3 shadow-sm h-100">
-                    <img src="{{ asset('images/fouraxiz-certificate.webp') }}" alt="Projects" style="max-width: 40px;">
+                <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-3 h-100">
+                    <img src="{{ asset('images/fouraxiz-certificate.webp') }}" alt="Projects">
                     <div class="ms-2 text-start">
-                        <h5 class="counter fw-bold mb-0" data-target="2847" style="color: #F95133;">0</h5>
+                        <h4 class="counter fw-bold mb-0" data-target="2847" style="color: #F95133;">0</h4>
                         <small>Projects Delivered</small>
                     </div>
                 </div>
             </div>
             <!-- Item 5 -->
             <div class="col">
-                <div class="d-flex align-items-center bg-white p-3 rounded-3 shadow-sm h-100">
-                    <img src="{{ asset('images/fouraxiz-24hr-support.webp') }}" alt="Support" style="max-width: 40px;">
+                <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-3 h-100">
+                    <img src="{{ asset('images/fouraxiz-24hr-support.webp') }}" alt="Support">
                     <div class="ms-2 text-start">
-                        <h5 class="fw-bold mb-0" style="color: #F95133;">24/7</h5>
+                        <h4 class="fw-bold mb-0" style="color: #F95133;">24/7</h4>
                         <small>Support Available</small>
                     </div>
                 </div>
@@ -173,11 +173,13 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     </div>
 </section>
+
 <script>
     const counters = document.querySelectorAll('.counter');
-    const duration = 3000;
-    const interval = 30; 
-    counters.forEach(counter => {
+    const duration = 4000;
+    const interval = 30;
+
+    const runCounter = (counter) => {
         const target = +counter.getAttribute('data-target');
         let count = 0;
         const steps = Math.ceil(duration / interval);
@@ -193,8 +195,27 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
         updateCount();
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                if (!counter.classList.contains('counted')) {
+                    counter.classList.add('counted');
+                    runCounter(counter);
+                }
+            }
+        });
+    }, {
+        threshold: 0.6
+    });
+
+    counters.forEach(counter => {
+        observer.observe(counter);
     });
 </script>
+
 <!-- ===== Company Stats Section End===== -->
 
 <!-- ===== Experience Section Start===== -->
@@ -408,7 +429,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="swiper-slide d-flex justify-content-center">
                         <div class="card project-card shadow-lg h-100">
                             <img src="{{ asset('images/' . $project['image']) }}" class="card-img-top" alt="{{ $project['title'] }}">
-                            <div class="card-body">
+                            <div class="card-body bg-light">
                                 <h5 class="card-title">{{ $project['title'] }}</h5>
                                 <p class="card-text">{{ $project['desc'] }}</p>
                             </div>
@@ -434,28 +455,28 @@ document.addEventListener('DOMContentLoaded', () => {
           disableOnInteraction: false,
         },
         pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+          el: ".swiper-pagination",
+          clickable: true,
         },
         breakpoints: {
-            768: {
-                slidesPerView: 2,
-            },
-            992: {
-                slidesPerView: 3,
-            },
-            1200: {
-                slidesPerView: 4,
-            }
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 4,
+          }
         }
     });
 </script>
-<!-- ===== Featured Projects Section End ===== -->
 <style>
 .swiper-pagination {
   position: relative;
 }
 </style>
+<!-- ===== Featured Projects Section End ===== -->
 
 <!-- ===== Client Testimonials Section Start ===== -->
 <section class="py-5 bg-light text-center">
@@ -529,7 +550,7 @@ document.addEventListener('DOMContentLoaded', () => {
         div.innerHTML = slideInnerHTML;
 
         carouselInner.appendChild(div);
-        // Add pagination dot
+        // Pagination dot
         let li = document.createElement('li');
         li.setAttribute('data-bs-target', '#testimonialCarousel');
         li.setAttribute('data-bs-slide-to', i);
@@ -540,7 +561,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial build
     buildSlides();
 
-    // Initialize bootstrap carousel with custom options
     const carouselElement = document.getElementById('testimonialCarousel');
     const carousel = new bootstrap.Carousel(carouselElement, {
       interval: 4000,
@@ -566,7 +586,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Rebuild slides on window resize (if breakpoint crosses 992)
     let lastItemsPerSlide = itemsPerSlide;
     window.addEventListener('resize', () => {
       const newItemsPerSlide = window.innerWidth >= 992 ? 2 : 1;

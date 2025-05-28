@@ -383,52 +383,51 @@ nav.navbar {
 =   Nav End    =
 ===============*/
 
+/* =============
+= Status Start =
+===============*/
+.company-stats-section {
+  background: #F0EFF5;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.company-stats-section img {
+  max-width: 45px;
+}
+@media (max-width: 991.98px) {
+  .stats-card {
+      padding-left: 0.75rem !important;
+      padding-right: 0.75rem !important;
+  }
+  .company-stats-section h4 {
+      font-size: 1.5rem;
+  }
+  .company-stats-section small {
+      font-size: 0.85rem;
+  }
+}
+/* =============
+=  Status End  =
+===============*/
 
 /* =============
 =  Body Start  =
 ===============*/
-.text-main {
-  color: #F95133 !important;
-}
 .main-color {
   color: #F95133;
 }
 .split-title span:first-child {
   color: #000;
 }
-
 .split-title span:last-child {
   color: #F95133;
-}
-.btn-main {
-  background-color: #F95133;
-  color: #fff;
-  border: none;
-  padding: 10px 25px;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-.btn-main:hover {
-  background-color: #e1421f;
-  color: #fff;
-}
-.section-title {
-  color: #F95133;
-  font-weight: bold;
-}
-.hero-section {
-  background: #f8f9fa;
-  padding: 100px 0;
-}
-.hero-title {
-  font-size: 2.5rem;
-  font-weight: 700;
 }
 .py-5 {
   padding-top: 6rem !important;
   padding-bottom: 6rem !important;
 }
-
+/* =============
+=   Body End   =
+===============*/
 
 /* =======================
 = Services Section Start =
@@ -450,7 +449,7 @@ nav.navbar {
   cursor: pointer;
 }
 .hover-shadow:hover {
-  transform: translateY(-6px);
+  transform: translateY(-10px);
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
 }
 .deep-shadow {
@@ -512,17 +511,17 @@ nav.navbar {
 .project-card {
   width: 100%;
   max-width: 320px;
-  transition: transform .3s ease, box-shadow 0.3s ease;
+  transition: transform .3s ease;
   border: none;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
   z-index: 1;
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.12); 
+  box-shadow: none !important;
 }
 .project-card:hover {
-  transform: translateY(5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); 
+  transform: translateY(10px);
+  box-shadow: none !important;
   z-index: 2;
 }
 .owl-theme .owl-dots {
