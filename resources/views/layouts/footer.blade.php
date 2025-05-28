@@ -13,29 +13,33 @@
                 <p class="text-dark mb-1" style="font-size: 13px;">Best Software Company In USA.</p>
                 <p class="text-dark" style="font-size: 13px;">We provide customized Mobile Application, software applications and web application development and support for the local and global market since 2010.</p>
             </div>
+
             <div class="col-md-3 mb-5 px-3">
                 <h5 class="text-dark" style="font-size: 1.15rem;">BANGLADESH OFFICE</h5>
-                <p class="text-dark" style="font-size: 13px;">Level-4, House#34, Lane# 6/2 Road#20/B , DUIP Plot, Block D, Mirpur-12, Dhaka, 1216</p>
-                <p class="text-dark" style="font-size: 13px;">📞 +880 1718 837 689</p>
-                <p class="text-dark" style="font-size: 13px;">✉️ admin@4axiz.com</p>
+                <p class="text-dark" style="font-size: 13px;"><i class="fas fa-map-marker-alt me-2 text-danger"></i> Level-4, House#34, Lane# 6/2 Road#20/B , DUIP Plot, Block D, Mirpur-12, Dhaka, 1216</p>
+                <p class="text-dark" style="font-size: 13px;"><i class="fas fa-phone me-2 text-success"></i> +880 1737 226 404</p>
+                <p class="text-dark" style="font-size: 13px;"><i class="fas fa-envelope me-2 text-primary"></i> nafizul35-480@diu.edu.bd</p>
             </div>
+
             <div class="col-md-3 mb-5 px-3">
                 <h5 class="text-dark" style="font-size: 1.15rem;">USA OFFICE</h5>
-                <p class="text-dark" style="font-size: 13px;">8120 Jennings Drive, Suite 128 C<br> Business and Community Service Bldg.<br> Cedar Falls, IA 50613-0130</p>
-                <p class="text-dark" style="font-size: 13px;">📞 +031 9961 27 82</p>
-                <p class="text-dark" style="font-size: 13px;">✉️ 4axizusa@4axiz.com</p>
+                <p class="text-dark" style="font-size: 13px;"><i class="fas fa-map-marker-alt me-2 text-danger"></i> 8120 Jennings Drive, Suite 128 C<br> Business and Community Service Bldg.<br> Cedar Falls, IA 50613-0130</p>
+                <p class="text-dark" style="font-size: 13px;"><i class="fas fa-phone me-2 text-success"></i> +031 9961 27 82</p>
+                <p class="text-dark" style="font-size: 13px;"><i class="fas fa-envelope me-2 text-primary"></i> nafizulislam.swe@gmail.com</p>
             </div>
+
             <div class="col-md-3 mb-5 px-3">
-            <h5 class="text-dark" style="font-size: 1.15rem;">OUR SERVICES</h5>
+                <h5 class="text-dark" style="font-size: 1.15rem;">OUR SERVICES</h5>
                 <ul class="list-unstyled text-dark" style="font-size: 13px;">
-                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none d-inline-block">Web Application Development</a></li>
-                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none d-inline-block">Mobile App Development</a></li>
-                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none d-inline-block">ERP Software Development</a></li>
-                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none d-inline-block">AI &amp; Machine Learning</a></li>
-                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none d-inline-block">Domain &amp; Hosting Services</a></li>
+                    <li class="mb-2"><i class="fas fa-code me-2 text-secondary"></i><a href="#" class="text-dark text-decoration-none">Web Application Development</a></li>
+                    <li class="mb-2"><i class="fas fa-mobile-alt me-2 text-secondary"></i><a href="#" class="text-dark text-decoration-none">Mobile App Development</a></li>
+                    <li class="mb-2"><i class="fas fa-cogs me-2 text-secondary"></i><a href="#" class="text-dark text-decoration-none">ERP Software Development</a></li>
+                    <li class="mb-2"><i class="fas fa-robot me-2 text-secondary"></i><a href="#" class="text-dark text-decoration-none">AI &amp; Machine Learning</a></li>
+                    <li class="mb-2"><i class="fas fa-globe me-2 text-secondary"></i><a href="#" class="text-dark text-decoration-none">Domain &amp; Hosting Services</a></li>
                 </ul>
             </div>
         </div>
+
 
         <!-- Thicker black border -->
         <hr class="my-0" style="border-top: 2px solid gray;">
