@@ -203,9 +203,9 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="row align-items-center">
       <!-- Left Side: Text Content -->
       <div class="col-lg-6 mb-4 mb-lg-0 mt-lg-n3">
-        <h2 class="fw-bold display-5 mb-3">
+        <h1 class="fw-bold display-5 mb-3">
           <span class="text-dark">13+</span> <span style="color: #F95133;">Years in Business</span>
-        </h2>
+        </h1>
         <p class="text-secondary small mb-4">
           Since our founding, we have been committed to delivering high-quality software solutions tailored to meet the diverse needs of our clients across the globe. With a presence in the USA, our expert team has helped hundreds of businesses grow with confidence.
         </p>
@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- ===== Our Services Section Start===== -->
 <section class="py-5 bg-white">
   <div class="container">
-    <h2 class="text-center fw-bold mb-3">Our <span style="color: #F95133;">Services</span></h2>
+    <h1 class="text-center fw-bold mb-3">Our <span style="color: #F95133;">Services</span></h1>
     <p class="text-center text-muted mb-5 small">
       Empowering businesses with a complete suite of web services – from design to deployment and beyond.
     </p>
@@ -336,32 +336,59 @@ document.addEventListener('DOMContentLoaded', () => {
 </section>
 <!-- ===== Our Services Section End===== -->
 
-<!-- ===== Our Clients Section Startt===== -->
-<section class="py-5 bg-white text-center">
+<!-- ===== Our Clients Section Start ===== -->
+<section class="py-5 bg-light text-center">
     <div class="container">
-        <h2 class="mb-4 fw-bold split-title">
+        <h1 class="mb-4 fw-bold split-title">
             <span>Our</span> <span>Clients</span>
-        </h2>
-        <div class="row justify-content-center align-items-center g-4">
-            <div class="col-4 col-md-2">
-                <img src="/images/client1.png" alt="Client 1" class="img-fluid">
-            </div>
-            <div class="col-4 col-md-2">
-                <img src="/images/client2.png" alt="Client 2" class="img-fluid">
-            </div>
-            <div class="col-4 col-md-2">
-                <img src="/images/client3.png" alt="Client 3" class="img-fluid">
+        </h1>
+        <p class="text-center text-muted mb-5 small">
+        With over 13 years of experience, we have proudly delivered tailored software solutions to a wide range of esteemed clients. Their trust in our expertise has empowered us to streamline operations, enhance digital efficiency, and build lasting partnerships.
+        </p>
+        <div class="client-slider-wrapper overflow-hidden position-relative">
+            <div class="client-slider d-flex align-items-center" id="clientSlider">
+                @php
+                    $logos = ['fa-dgfp', 'fa-bicm', 'fa-toyota', 'fa-great-eastern', 'fa-hospice', 'fa-msh', 'fa-northernlowa', 'fa-sanofi', 'fa-al-fatha', 'fa-undp', 'fa-unikart'];
+                @endphp
+                @foreach($logos as $logo)
+                    <div class="client-logo flex-shrink-0 px-4">
+                        <img src="{{ asset('images/clients/' . $logo . '.webp') }}" alt="{{ $logo }}" class="img-fluid">
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>
 </section>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.getElementById('clientSlider');
+    let speed = 1; // pixels per frame
+    const clone = slider.cloneNode(true);
+    clone.setAttribute("aria-hidden", "true");
+    slider.parentElement.appendChild(clone);
+
+    let position = 0;
+    function moveSlider() {
+        position -= speed;
+        if (position <= -slider.scrollWidth) {
+            position = 0;
+        }
+        slider.style.transform = `translateX(${position}px)`;
+        slider.nextElementSibling.style.transform = `translateX(${position + slider.scrollWidth}px)`;
+        requestAnimationFrame(moveSlider);
+    }
+    moveSlider();
+  });
+</script>
+<!-- ===== Our Clients Section End ===== -->
+
 <!-- ===== Featured Projects Section ===== -->
-<section class="py-5 bg-light">
+<section class="py-5 bg-white">
     <div class="container text-center">
-        <h2 class="mb-4 fw-bold split-title">
+        <h1 class="mb-4 fw-bold split-title">
             <span>Featured</span> <span>Projects</span>
-        </h2>
+        </h1>
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="card h-100 shadow-sm">
@@ -397,9 +424,9 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- ===== Testimonials Section ===== -->
 <section class="py-5 bg-white text-center">
     <div class="container">
-        <h2 class="mb-4 fw-bold split-title">
+        <h1 class="mb-4 fw-bold split-title">
             <span>Client</span> <span>Testimonials</span>
-        </h2>
+        </h1>
         <div class="row g-4">
             <div class="col-md-4">
                 <blockquote class="blockquote bg-light p-4 rounded">
@@ -426,7 +453,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- ===== Call To Action Section ===== -->
 <section class="py-5" style="background-color: #F95133;">
     <div class="container text-center text-white">
-        <h2 class="mb-3 fw-bold">Ready to start your next project?</h2>
+        <h1 class="mb-3 fw-bold">Ready to start your next project?</h1>
         <p class="mb-4">Contact us today for a free consultation.</p>
         <a href="/contact" class="btn btn-light btn-lg text-dark">Get In Touch</a>
     </div>

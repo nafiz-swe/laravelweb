@@ -1,5 +1,5 @@
 <!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-2">
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-2">
   <div class="container">
     
     <!-- Logo -->

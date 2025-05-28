@@ -320,7 +320,7 @@ nav.navbar {
   left: 0;
   width: 100%;
   z-index: 1050;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
   background-color: #f8f9fa !important;
 }
 .logo-img {
@@ -472,3 +472,35 @@ nav.navbar {
 = Services Section End =
 =======================*/
 
+
+/* ======================
+= Clients Section Start =
+========================*/
+.client-slider-wrapper {
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+}
+.client-slider {
+  display: flex;
+  white-space: nowrap;
+  will-change: transform;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.client-logo {
+  padding: 0 20px;
+}
+.client-logo img {
+  height: 60px;
+  width: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.client-logo img:hover {
+  filter: grayscale(0%);
+}
+/* ====================
+= Clients Section End =
+======================*/
