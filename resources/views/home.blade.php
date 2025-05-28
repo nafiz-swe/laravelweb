@@ -383,46 +383,78 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 <!-- ===== Our Clients Section End ===== -->
 
-<!-- ===== Featured Projects Section ===== -->
+<!-- ===== Featured Projects Section Start ===== -->
 <section class="py-5 bg-white">
     <div class="container text-center">
-        <h1 class="mb-4 fw-bold split-title">
+        <h1 class="mb-3 fw-bold split-title">
             <span>Featured</span> <span>Projects</span>
         </h1>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="/images/project1.jpg" class="card-img-top" alt="Project 1">
-                    <div class="card-body">
-                        <h5 class="card-title main-color">E-commerce Platform</h5>
-                        <p class="card-text">Built with Laravel & Vue.js. Integrated payment gateway.</p>
+        <p class="text-muted mb-5">
+            Over the last 13+ years, we have delivered modern software solutions across industries — from eCommerce to government archives.
+        </p>
+        @php
+            $projects = [
+                ['image' => 'project-Task-Management.webp', 'title' => 'Task Management', 'desc' => 'A complete task tracking and assignment tool.'],
+                ['image' => 'project-Online-Pharmacy.webp', 'title' => 'Online Pharmacy', 'desc' => 'Real-time medicine ordering system.'],
+                ['image' => 'project-Grocery-App.webp', 'title' => 'Grocery App', 'desc' => 'App for instant grocery delivery.'],
+                ['image' => 'project-app.webp', 'title' => 'Mobile App', 'desc' => 'Cross-platform scalable mobile app.'],
+                ['image' => 'project-Bazarnao-Ecommerce.webp', 'title' => 'Bazarnao Ecommerce', 'desc' => 'Smart shopping platform.'],
+                ['image' => 'project-DGFP-Archive.webp', 'title' => 'DGFP Archive', 'desc' => 'Government document archiving solution.'],
+            ];
+        @endphp
+        <div class="swiper mySwiper px-3 py-3">
+            <div class="swiper-wrapper">
+                @foreach($projects as $project)
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <div class="card project-card shadow-lg h-100">
+                            <img src="{{ asset('images/' . $project['image']) }}" class="card-img-top" alt="{{ $project['title'] }}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $project['title'] }}</h5>
+                                <p class="card-text">{{ $project['desc'] }}</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                @endforeach
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="/images/project2.jpg" class="card-img-top" alt="Project 2">
-                    <div class="card-body">
-                        <h5 class="card-title main-color">SaaS Dashboard</h5>
-                        <p class="card-text">Real-time analytics & user management features.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="/images/project3.jpg" class="card-img-top" alt="Project 3">
-                    <div class="card-body">
-                        <h5 class="card-title main-color">Mobile App Backend</h5>
-                        <p class="card-text">REST API built with Laravel Sanctum and Passport.</p>
-                    </div>
-                </div>
-            </div>
+            <div class="swiper-pagination mt-5"></div>
         </div>
     </div>
 </section>
+<!-- Swiper CSS & JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        centeredSlides: false,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+            }
+        }
+    });
+</script>
+<!-- ===== Featured Projects Section End ===== -->
 
 <!-- ===== Testimonials Section ===== -->
-<section class="py-5 bg-white text-center">
+<section class="py-5 bg-light text-center">
     <div class="container">
         <h1 class="mb-4 fw-bold split-title">
             <span>Client</span> <span>Testimonials</span>
@@ -458,7 +490,5 @@ document.addEventListener('DOMContentLoaded', () => {
         <a href="/contact" class="btn btn-light btn-lg text-dark">Get In Touch</a>
     </div>
 </section>
-
-
 
 @endsection
