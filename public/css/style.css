@@ -573,7 +573,83 @@ nav.navbar {
 .swiper-pagination-bullet-active {
   opacity: 1;
   background: #F95133 !important;
+  transform: scale(1.2);
 }
 /* ==============================
 = Featured Projects Section End =
 ===============================*/
+
+
+.custom-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1rem;
+  padding-left: 0;
+  list-style: none;
+  user-select: none;
+}
+.custom-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 30px;
+}
+.custom-indicators li.active {
+  background-color: #F95133;
+  transform: scale(1.2);
+}
+.profile-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-card:hover {
+  transform: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+}
+.profile-card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  border: 3px solid #F95133;
+  transition: border-color 0.3s ease;
+}
+.profile-card h5 {
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+  color: #222;
+}
+.profile-card small {
+  color: #888;
+}
+.profile-card p {
+  color: #555;
+  margin-top: 1rem;
+  font-style: italic;
+}
+.profile-card .stars {
+  color: #fbbf24; /* gold stars */
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+/* Smooth carousel slide */
+.carousel-item {
+  transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+/* Optional: add a slight fade effect on carousel slides */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.8s ease !important;
+}
