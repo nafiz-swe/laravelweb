@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Home | FourAxiz')
 @section('content')
 <!-- ===== Banner Section Start===== -->
 <section class="position-relative overflow-hidden">

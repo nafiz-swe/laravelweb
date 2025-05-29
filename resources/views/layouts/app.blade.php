@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fouraxiz</title>
+    <!-- Browser Tab-  Favicon -->
+    <link rel="icon" type="image/webp" href="{{ asset('images/fa-hosting.webp') }}">
+    
+    <!-- Page Title -->
+    <title>@yield('title')</title>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
  
     <!-- Toastr CSS -->

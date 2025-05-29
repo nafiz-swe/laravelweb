@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Contact | FourAxiz')
 @section('content')
 
 <!-- ===== Contact Title Section ===== -->
