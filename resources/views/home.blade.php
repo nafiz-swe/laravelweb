@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </p>
     <div class="row g-4 justify-content-center">
       <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 0;">
           <div class="image-wrapper">
             <img src="{{ asset('images/fa-web-dev.webp') }}" alt="Web Development" class="service-img">
           </div>
@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 0;">
           <div class="image-wrapper">
             <img src="{{ asset('images/fa-app-dev.webp') }}" alt="App Development" class="service-img">
           </div>
@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 0;">
           <div class="image-wrapper">
             <img src="{{ asset('images/fa-ai-ml.webp') }}" alt="AI & Machine Learning" class="service-img">
           </div>
@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 0;">
           <div class="image-wrapper">
             <img src="{{ asset('images/fa-software-testing.webp') }}" alt="Software Testing" class="service-img">
           </div>
@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 0;">
           <div class="image-wrapper">
             <img src="{{ asset('images/fa-security.webp') }}" alt="Security Solutions" class="service-img">
           </div>
@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 0;">
           <div class="image-wrapper">
             <img src="{{ asset('images/fa-hosting.webp') }}" alt="Domain & Hosting" class="service-img">
           </div>
@@ -329,7 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 0;">
           <div class="image-wrapper">
             <img src="{{ asset('images/fa-seo.webp') }}" alt="Digital Marketing" class="service-img">
           </div>
@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 0;">
           <div class="image-wrapper">
             <img src="{{ asset('images/fa-graphics.webp') }}" alt="Graphics Design" class="service-img">
           </div>
@@ -423,7 +423,7 @@ document.addEventListener('DOMContentLoaded', () => {
           We empower USA businesses with scalable, secure, and innovative technology that delivers real results — not promises.
         </p>
         <ul class="list-unstyled text-dark">
-          <li class="mb-3"><i class="fas fa-star text-warning me-2"></i><strong>15+ years</strong> serving top USA markets</li>
+          <li class="mb-3"><i class="fas fa-star text-warning me-2"></i><strong>13+ years</strong> serving top USA markets</li>
           <li class="mb-3"><i class="fas fa-clock text-primary me-2"></i><strong>Real-time support</strong> in USA business hours</li>
           <li class="mb-3"><i class="fas fa-lock text-success me-2"></i><strong>HIPAA / SOC 2</strong> security-compliant development</li>
           <li class="mb-3"><i class="fas fa-handshake text-danger me-2"></i><strong>Long-term partnerships</strong> with USA enterprises</li>

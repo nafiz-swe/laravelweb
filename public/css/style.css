@@ -505,7 +505,7 @@ nav.navbar {
   max-width: 320px;
   transition: transform .3s ease;
   border: none;
-  border-radius: 12px;
+  border-radius: 0;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -515,6 +515,9 @@ nav.navbar {
   transform: translateY(10px);
   box-shadow: none !important;
   z-index: 2;
+}
+.project-card img {
+  border-radius: 0;
 }
 .owl-theme .owl-dots {
   text-align: center;
@@ -546,7 +549,7 @@ nav.navbar {
 }
 .mySwiper {
   background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 30px 20px;
 }
 .swiper-pagination {
@@ -600,7 +603,7 @@ nav.navbar {
 .profile-card {
   background: white;
   padding: 1.5rem;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   text-align: center;
   margin: 0 0.5rem;
