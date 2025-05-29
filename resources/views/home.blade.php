@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="row row-cols-1 row-cols-md-5 g-3 g-md-4">
             <!-- Item 1 -->
             <div class="col">
-              <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
+              <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
                 <img src="{{ asset('images/fouraxiz-deal.webp') }}" alt="Years">
                   <div class="ms-2 text-start">
                       <h4 class="counter fw-bold mb-0" data-target="18" style="color: #F95133;">0</h4>
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <!-- Item 2 -->
             <div class="col">
-                <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
+                <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
                     <img src="{{ asset('images/fouraxiz-world.webp') }}" alt="Countries">
                     <div class="ms-2 text-start">
                         <h4 class="counter fw-bold mb-0" data-target="27" style="color: #F95133;">0</h4>
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <!-- Item 3 -->
             <div class="col">
-              <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
+              <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
                 <img src="{{ asset('images/fouraxiz-deadline.webp') }}" alt="Clients">
                   <div class="ms-2 text-start">
                       <h4 class="counter fw-bold mb-0" data-target="997" style="color: #F95133;">0</h4>
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <!-- Item 4 -->
             <div class="col">
-              <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
+              <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
                 <img src="{{ asset('images/fouraxiz-certificate.webp') }}" alt="Projects">
                   <div class="ms-2 text-start">
                       <h4 class="counter fw-bold mb-0" data-target="2847" style="color: #F95133;">0</h4>
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <!-- Item 5 -->
             <div class="col">
-              <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
+              <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
                 <img src="{{ asset('images/fouraxiz-24hr-support.webp') }}" alt="Support">
                     <div class="ms-2 text-start">
                       <h4 class="fw-bold mb-0" style="color: #F95133;">24/7</h4>

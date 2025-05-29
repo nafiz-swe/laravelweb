@@ -297,7 +297,7 @@ display: none;
 }
 .nav-link i {
   font-size: 1.2rem;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 .text-muted {
   font-size: 15px !important;
@@ -378,24 +378,33 @@ nav.navbar {
 /* =============
 = Status Start =
 ===============*/
-.company-stats-section {
-  /* background: #F0EFF5; */
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-.company-stats-section img {
-  max-width: 45px;
-}
 @media (max-width: 991.98px) {
+  .row-cols-md-5 > * {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
   .stats-card {
-      padding-left: 0.75rem !important;
-      padding-right: 0.75rem !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    text-align: left;
+    padding: 1rem !important;
+  }
+  .company-stats-section img {
+    max-width: 45px;
+    height: auto;
   }
   .company-stats-section h4 {
-      font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .company-stats-section small {
-      font-size: 0.85rem;
+    font-size: .875em;
   }
+}
+.stats-card {
+  transition: all 0.3s ease-in-out;
+}
+.p-md-3 {
+  padding: .55rem !important;
 }
 /* =============
 =  Status End  =
@@ -663,8 +672,8 @@ nav.navbar {
   margin: 0 0 10px !important; 
   padding: 20px !important; 
   max-width: 320px !important; 
-  border-radius: 8px !important; 
-  background-color: green !important; 
+  border-radius: 0 !important; 
+  background-color: #01ad01 !important; 
   background-position: 20px center !important; 
   background-repeat: no-repeat !important;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
