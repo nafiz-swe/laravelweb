@@ -185,11 +185,11 @@
       </ul>
 
       <!-- Only Monitor View Social Menu -->
-      <ul class="navbar-nav ms-auto flex-column align-items-end top-contact-social">
+      <ul class="navbar-nav top-contact-social">
         <li class="nav-item d-flex">
-          <a href="https://facebook.com" target="_blank" class="nav-link text-dark" style="padding: 0.5px;"><i class="bi bi-facebook" style="color: #1877F2;"></i></a>
-          <a href="https://www.linkedin.com/in/nafiz-swe/" target="_blank" class="nav-link text-dark" style="padding: 0.5px;"><i class="bi bi-linkedin" style="color: #0077B5;"></i></a>
-          <a href="https://twitter.com" target="_blank" class="nav-link text-dark" style="padding: 0.5px;"><i class="bi bi-twitter" style="color: #1DA1F2;"></i></a>
+          <a href="https://facebook.com" target="_blank" class="nav-link"><i class="bi bi-facebook" style="color: #1877F2;"></i></a>
+          <a href="https://www.linkedin.com/in/nafiz-swe/" target="_blank" class="nav-link"><i class="bi bi-linkedin" style="color: #0077B5;"></i></a>
+          <a href="https://twitter.com" target="_blank" class="nav-link"><i class="bi bi-twitter" style="color: #1DA1F2;"></i></a>
         </li>
         <li class="nav-item text-muted small">
           <a href="tel:+1 737 226 404" class="text-muted text-decoration-none d-flex align-items-center position-relative">
