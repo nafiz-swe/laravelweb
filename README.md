@@ -79,7 +79,7 @@ extension=pdo_mysql
 
 # ✅ Step 8: Restart Apache from XAMPP control panel
 
-# ✅ Step 9: Create the Database in MySQL
+# ✅ Step 9: Create the Database in MySQL (Note: Please collect the SQL file from the 'database' folder. It contains the data submitted through the contact form.)
 fouraxiz
 
 # ✅ Step 10: Run Laravel Migrations
@@ -91,6 +91,25 @@ php artisan serve
 # ✅ Step 12: Open your browser and go to:
 http://127.0.0.1:8000/
 
+# ✅ Step Info: OAfter 4Dyas
+
+# ✅ Step 13:  Create Contacts Table
+php artisan make:migration create_contacts_table
+php artisan migrate
+
+# ✅ Step 14:  Create Controller
+php artisan make:controller ContactController
+
+# ✅ Step 15:  Create Model
+php artisan make:model Contact
+
+# ✅ Step 16:  Add Routes
+use App\Http\Controllers\ContactController;
+Route::get('/contact', [ContactController::class, 'showForm'])->name('contact.form');
+Route::post('/contact', [ContactController::class, 'submitForm'])->name('contact.submit');
+
+# ✅ Step 16:  Contact Blade file
+Contacts Blade update
 
 # 👨‍💻 Developer Information
 My name is Nafizul Islam. I have completed my BSc in Software Engineering from Daffodil International University in 2023.
