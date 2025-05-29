@@ -118,22 +118,22 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- ===== Banner Section End===== -->
 
 <!-- ===== Company Stats Section Start===== -->
-<section class="py-5 my-0 company-stats-section">
+<section class="py-5 my-0 bg-whhite company-stats-section">
     <div class="container">
         <div class="row row-cols-1 row-cols-md-5 g-3 g-md-4">
             <!-- Item 1 -->
             <div class="col">
-                <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-3 h-100">
-                    <img src="{{ asset('images/fouraxiz-deal.webp') }}" alt="Years">
-                    <div class="ms-2 text-start">
-                        <h4 class="counter fw-bold mb-0" data-target="18" style="color: #FF0D0D;">0</h4>
-                        <small>Years in Business</small>
+              <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #FF0D0D;">
+                <img src="{{ asset('images/fouraxiz-deal.webp') }}" alt="Years">
+                  <div class="ms-2 text-start">
+                      <h4 class="counter fw-bold mb-0" data-target="18" style="color: #FF0D0D;">0</h4>
+                      <small>Years in Business</small>
                     </div>
                 </div>
             </div>
             <!-- Item 2 -->
             <div class="col">
-                <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-3 h-100">
+                <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #FF0D0D;">
                     <img src="{{ asset('images/fouraxiz-world.webp') }}" alt="Countries">
                     <div class="ms-2 text-start">
                         <h4 class="counter fw-bold mb-0" data-target="27" style="color: #FF0D0D;">0</h4>
@@ -143,31 +143,31 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <!-- Item 3 -->
             <div class="col">
-                <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-3 h-100">
-                    <img src="{{ asset('images/fouraxiz-deadline.webp') }}" alt="Clients">
-                    <div class="ms-2 text-start">
-                        <h4 class="counter fw-bold mb-0" data-target="997" style="color: #FF0D0D;">0</h4>
-                        <small>Clients Worldwide</small>
-                    </div>
+              <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #FF0D0D;">
+                <img src="{{ asset('images/fouraxiz-deadline.webp') }}" alt="Clients">
+                  <div class="ms-2 text-start">
+                      <h4 class="counter fw-bold mb-0" data-target="997" style="color: #FF0D0D;">0</h4>
+                      <small>Clients Worldwide</small>
+                  </div>
                 </div>
             </div>
             <!-- Item 4 -->
             <div class="col">
-                <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-3 h-100">
-                    <img src="{{ asset('images/fouraxiz-certificate.webp') }}" alt="Projects">
-                    <div class="ms-2 text-start">
-                        <h4 class="counter fw-bold mb-0" data-target="2847" style="color: #FF0D0D;">0</h4>
-                        <small>Projects Delivered</small>
+              <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #FF0D0D;">
+                <img src="{{ asset('images/fouraxiz-certificate.webp') }}" alt="Projects">
+                  <div class="ms-2 text-start">
+                      <h4 class="counter fw-bold mb-0" data-target="2847" style="color: #FF0D0D;">0</h4>
+                      <small>Projects Delivered</small>
                     </div>
                 </div>
             </div>
             <!-- Item 5 -->
             <div class="col">
-                <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-3 h-100">
-                    <img src="{{ asset('images/fouraxiz-24hr-support.webp') }}" alt="Support">
+              <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #FF0D0D;">
+                <img src="{{ asset('images/fouraxiz-24hr-support.webp') }}" alt="Support">
                     <div class="ms-2 text-start">
-                        <h4 class="fw-bold mb-0" style="color: #FF0D0D;">24/7</h4>
-                        <small>Support Available</small>
+                      <h4 class="fw-bold mb-0" style="color: #FF0D0D;">24/7</h4>
+                      <small>Support Available</small>
                     </div>
                 </div>
             </div>
@@ -404,6 +404,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 </script>
 <!-- ===== Our Clients Section End ===== -->
+
+
+
+
+
 
 <!-- ===== Featured Projects Section Start ===== -->
 <section class="py-5 bg-white">
