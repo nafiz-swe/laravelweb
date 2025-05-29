@@ -118,55 +118,55 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- ===== Banner Section End===== -->
 
 <!-- ===== Company Stats Section Start===== -->
-<section class="py-5 my-0 bg-whhite company-stats-section">
+<section class="py-5 my-0 company-stats-section" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
     <div class="container">
         <div class="row row-cols-1 row-cols-md-5 g-3 g-md-4">
             <!-- Item 1 -->
             <div class="col">
-              <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #FF0D0D;">
+              <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
                 <img src="{{ asset('images/fouraxiz-deal.webp') }}" alt="Years">
                   <div class="ms-2 text-start">
-                      <h4 class="counter fw-bold mb-0" data-target="18" style="color: #FF0D0D;">0</h4>
+                      <h4 class="counter fw-bold mb-0" data-target="18" style="color: #F95133;">0</h4>
                       <small>Years in Business</small>
                     </div>
                 </div>
             </div>
             <!-- Item 2 -->
             <div class="col">
-                <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #FF0D0D;">
+                <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
                     <img src="{{ asset('images/fouraxiz-world.webp') }}" alt="Countries">
                     <div class="ms-2 text-start">
-                        <h4 class="counter fw-bold mb-0" data-target="27" style="color: #FF0D0D;">0</h4>
+                        <h4 class="counter fw-bold mb-0" data-target="27" style="color: #F95133;">0</h4>
                         <small>Countries Served</small>
                     </div>
                 </div>
             </div>
             <!-- Item 3 -->
             <div class="col">
-              <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #FF0D0D;">
+              <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
                 <img src="{{ asset('images/fouraxiz-deadline.webp') }}" alt="Clients">
                   <div class="ms-2 text-start">
-                      <h4 class="counter fw-bold mb-0" data-target="997" style="color: #FF0D0D;">0</h4>
+                      <h4 class="counter fw-bold mb-0" data-target="997" style="color: #F95133;">0</h4>
                       <small>Clients Worldwide</small>
                   </div>
                 </div>
             </div>
             <!-- Item 4 -->
             <div class="col">
-              <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #FF0D0D;">
+              <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
                 <img src="{{ asset('images/fouraxiz-certificate.webp') }}" alt="Projects">
                   <div class="ms-2 text-start">
-                      <h4 class="counter fw-bold mb-0" data-target="2847" style="color: #FF0D0D;">0</h4>
+                      <h4 class="counter fw-bold mb-0" data-target="2847" style="color: #F95133;">0</h4>
                       <small>Projects Delivered</small>
                     </div>
                 </div>
             </div>
             <!-- Item 5 -->
             <div class="col">
-              <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #FF0D0D;">
+              <div class="stats-card d-flex align-items-center bg-white p-2 p-md-3 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
                 <img src="{{ asset('images/fouraxiz-24hr-support.webp') }}" alt="Support">
                     <div class="ms-2 text-start">
-                      <h4 class="fw-bold mb-0" style="color: #FF0D0D;">24/7</h4>
+                      <h4 class="fw-bold mb-0" style="color: #F95133;">24/7</h4>
                       <small>Support Available</small>
                     </div>
                 </div>
@@ -216,11 +216,10 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(counter);
     });
 </script>
-
 <!-- ===== Company Stats Section End===== -->
 
 <!-- ===== Experience Section Start===== -->
-<section class="py-5 bg-light">
+<section class="py-5 bg-white">
   <div class="container">
     <div class="row align-items-center">
       <!-- Left Side: Text Content -->
@@ -250,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- ===== Experience Section End===== -->
 
 <!-- ===== Our Services Section Start===== -->
-<section class="py-5 bg-white">
+<section class="py-5" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
   <div class="container">
     <h1 class="text-center fw-bold mb-3">Our <span style="color: #FF0D0D;">Services</span></h1>
     <p class="text-center text-muted mb-5 small">
@@ -359,7 +358,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- ===== Our Services Section End===== -->
 
 <!-- ===== Our Clients Section Start ===== -->
-<section class="py-5 bg-light text-center">
+<section class="py-5 bg-white text-center">
     <div class="container">
         <h1 class="mb-4 fw-bold split-title">
             <span>Our</span> <span>Clients</span>
@@ -406,40 +405,33 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- ===== Our Clients Section End ===== -->
 
 
-
-<section class="py-5" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec); font-family: 'Inter', sans-serif;">
-    <div class="container">
-        <div class="row align-items-center flex-lg-row flex-column">
-            <!-- Left Image -->
-            <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center img-container">
-                <img src="{{ asset('images/us-trust.webp') }}"
-                     alt="Trusted by US Companies"
-                     class="img-fluid rounded-2 shadow-lg"
-                     style="width: 100%; object-fit: contain; animation: fadeInLeft 1s ease;">
-            </div>
-
-            <!-- Right Text -->
-            <div class="col-lg-6 text-container">
-                <h2 class="fw-bold text-dark mb-3" style="font-size: 2rem;">Why Leading USA Brands Trust <span style="color: #FF0D0D;">4AXIZ</span></h2>
-                <p class="text-secondary mb-4" style="font-size: 15px;">
-                    We empower USA businesses with scalable, secure, and innovative technology that delivers real results — not promises.
-                </p>
-                <ul class="list-unstyled text-dark">
-                    <li class="mb-3"><i class="fas fa-star text-warning me-2"></i><strong>15+ years</strong> serving top USA markets</li>
-                    <li class="mb-3"><i class="fas fa-clock text-primary me-2"></i><strong>Real-time support</strong> in USA business hours</li>
-                    <li class="mb-3"><i class="fas fa-lock text-success me-2"></i><strong>HIPAA / SOC 2</strong> security-compliant development</li>
-                    <li class="mb-3"><i class="fas fa-handshake text-danger me-2"></i><strong>Long-term partnerships</strong> with USA enterprises</li>
-                </ul>
-            </div>
-        </div>
+<!-- ===== USA Section Start ===== -->
+<section class="py-5 text-left" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
+  <div class="container">
+    <div class="row align-items-center flex-lg-row flex-column">
+      <!-- Left Image -->
+      <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center img-container">
+        <img src="{{ asset('images/us-trust.webp') }}"
+          alt="Trusted by US Companies"
+          class="img-fluid rounded-2 shadow-lg"
+          style="width: 100%; object-fit: contain; animation: fadeInLeft 1s ease;">
+      </div>
+      <!-- Right Text -->
+      <div class="col-lg-6 text-container">
+        <h2 class="fw-bold text-dark mb-3" style="font-size: 2rem;">Why Leading USA Brands Trust <span style="color: #FF0D0D;">4AXIZ</span></h2>
+        <p class="text-secondary mb-4" style="font-size: 15px;">
+          We empower USA businesses with scalable, secure, and innovative technology that delivers real results — not promises.
+        </p>
+        <ul class="list-unstyled text-dark">
+          <li class="mb-3"><i class="fas fa-star text-warning me-2"></i><strong>15+ years</strong> serving top USA markets</li>
+          <li class="mb-3"><i class="fas fa-clock text-primary me-2"></i><strong>Real-time support</strong> in USA business hours</li>
+          <li class="mb-3"><i class="fas fa-lock text-success me-2"></i><strong>HIPAA / SOC 2</strong> security-compliant development</li>
+          <li class="mb-3"><i class="fas fa-handshake text-danger me-2"></i><strong>Long-term partnerships</strong> with USA enterprises</li>
+        </ul>
+      </div>
     </div>
-
-    <!-- Optional soft background pattern -->
-    <div class="position-absolute top-0 start-0 w-100 h-100"
-         style="background-image: url('{{ asset('images/pattern-light.svg') }}'); opacity: 0.04; background-repeat: repeat;">
-    </div>
+  </div>
 </section>
-
 <!-- CSS -->
 <style>
     @keyframes fadeInLeft {
@@ -557,7 +549,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- ===== Featured Projects Section End ===== -->
 
 <!-- ===== Client Testimonials Section Start ===== -->
-<section class="py-5 bg-light text-center">
+<section class="py-5 text-center" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
   <div class="container">
     <h1 class="mb-3 fw-bold split-title">
       <span>Client</span> <span>Testimonials</span>
