@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
       <!-- Right Side: Video -->
       <div class="col-lg-6 text-center">
-        <video class="img-fluid rounded-4 shadow-lg" style="max-height: 400px;" autoplay muted loop playsinline>
+        <video class="img-fluid rounded-2 shadow-lg" style="max-height: 400px;" autoplay muted loop playsinline>
           <source src="{{ asset('videos/fourAxiz-experience.mp4') }}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -407,6 +407,78 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+<section class="py-5" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec); font-family: 'Inter', sans-serif;">
+    <div class="container">
+        <div class="row align-items-center flex-lg-row flex-column">
+            <!-- Left Image -->
+            <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center img-container">
+                <img src="{{ asset('images/us-trust.webp') }}"
+                     alt="Trusted by US Companies"
+                     class="img-fluid rounded-2 shadow-lg"
+                     style="width: 100%; object-fit: contain; animation: fadeInLeft 1s ease;">
+            </div>
+
+            <!-- Right Text -->
+            <div class="col-lg-6 text-container">
+                <h2 class="fw-bold text-dark mb-3" style="font-size: 2rem;">Why Leading USA Brands Trust <span style="color: #FF0D0D;">4AXIZ</span></h2>
+                <p class="text-secondary mb-4" style="font-size: 15px;">
+                    We empower USA businesses with scalable, secure, and innovative technology that delivers real results — not promises.
+                </p>
+                <ul class="list-unstyled text-dark">
+                    <li class="mb-3"><i class="fas fa-star text-warning me-2"></i><strong>15+ years</strong> serving top USA markets</li>
+                    <li class="mb-3"><i class="fas fa-clock text-primary me-2"></i><strong>Real-time support</strong> in USA business hours</li>
+                    <li class="mb-3"><i class="fas fa-lock text-success me-2"></i><strong>HIPAA / SOC 2</strong> security-compliant development</li>
+                    <li class="mb-3"><i class="fas fa-handshake text-danger me-2"></i><strong>Long-term partnerships</strong> with USA enterprises</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional soft background pattern -->
+    <div class="position-absolute top-0 start-0 w-100 h-100"
+         style="background-image: url('{{ asset('images/pattern-light.svg') }}'); opacity: 0.04; background-repeat: repeat;">
+    </div>
+</section>
+
+<!-- CSS -->
+<style>
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 991.98px) {
+        .img-container {
+            display: block !important;
+            text-align: center;
+        }
+
+        .img-container img {
+            width: auto;
+            margin-bottom: 20px;
+        }
+
+        .text-container {
+            text-align: center;
+        }
+
+        .text-container h2 {
+            font-size: 1.5rem;
+        }
+
+        .text-container p,
+        .text-container ul li {
+            font-size: 14px;
+        }
+    }
+</style>
 
 
 
