@@ -1,5 +1,6 @@
 <footer class="text-white position-relative overflow-hidden d-flex flex-column justify-content-end"
-    style="background: url('{{ asset('images/fouraxiz-footer.webp') }}') center top 20px / 100% 100% no-repeat; height: 500px; font-family: 'Inter', sans-serif;">
+    style="background: url('{{ asset('images/fouraxiz-footer.webp') }}') center top 20px / 100% 100% no-repeat; min-height: 500px; font-family: 'Inter', sans-serif;">
+
 
     <!-- White transparent overlay -->
     <div class="position-absolute w-100 h-100" style="background: rgb(255 255 255 / 88%); top: 0; left: 0;"></div>

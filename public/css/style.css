@@ -736,3 +736,13 @@ nav.navbar {
 = PopUp Design End =
 ===================*/
 
+
+/* =============
+= Footer Start =
+===============*/
+@media (max-width: 991.98px) {
+  footer {
+      height: auto !important;
+      padding-top: 40px; /* top space jodi lage */
+  }
+}
