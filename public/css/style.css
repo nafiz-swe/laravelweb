@@ -201,13 +201,7 @@ display: none;
   border-top: 4px solid oklch(60.9% 0.126 221.723);
   border-bottom: 4px solid oklch(60.9% 0.126 221.723);
   border-radius: 0.5rem;
-  box-shadow:
-  -4px 6px 12px rgba(249, 81, 51, 0.2),
-  4px 6px 12px rgba(249, 81, 51, 0.2),
-  0px 8px 16px rgba(249, 81, 51, 0.3);
-  transition: all 0.3s ease-in-out;
-  position: absolute;
-  z-index: 9999;
+  box-shadow: -4px 6px 12px rgba(96, 129, 255, 0.2), 4px 6px 12px rgba(96, 129, 255, 0.2), 0px 8px 16px rgba(96, 129, 255, 0.3);  z-index: 9999;
 }
 .top-contact-social {
   display: flex;
@@ -479,6 +473,7 @@ nav.navbar {
   background-color: oklch(60.9% 0.126 221.723);
   color: #fff;
   border-color: oklch(60.9% 0.126 221.723);
+  box-shadow: -4px 6px 12px oklch(60.9% 0.126 221.723 / 0.2), 4px 6px 12px oklch(60.9% 0.126 221.723 / 0.2), 0px 8px 16px oklch(60.9% 0.126 221.723 / 0.3);
 }
 .hover-shadow {
   transition: all 0.3s ease;
