@@ -147,6 +147,36 @@
 <!-- ===== Experience Section End===== -->
 
 
+<!-- ===== Process Section Start ===== -->
+<section class="process-section">
+  <div class="container">
+    <div class="process-header">
+      <h5>How We Work</h5>
+      <h2>Simple Steps to Start</h2>
+      <p>We follow a streamlined process to deliver effective solutions with clarity and confidence.</p>
+    </div>
+    <div class="process-steps">
+      <div class="step-box">
+        <img src="{{ asset('images/icons/idea.svg') }}" alt="Step 1">
+        <h4><span>Step 1</span> Idea</h4>
+      </div>
+      <div class="step-box">
+        <img src="{{ asset('images/icons/plan.svg') }}" alt="Step 2">
+        <h4><span>Step 2</span> Planning</h4>
+      </div>
+      <div class="step-box">
+        <img src="{{ asset('images/icons/code.svg') }}" alt="Step 3">
+        <h4><span>Step 3</span> Development</h4>
+      </div>
+      <div class="step-box">
+        <img src="{{ asset('images/icons/launch.svg') }}" alt="Step 4">
+        <h4><span>Step 4</span> Launch</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== Process Section End ===== -->
+
 <!-- ===== Our Services Section Start===== -->
 <section class="py-5" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
   <div class="container">
