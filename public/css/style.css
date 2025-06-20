@@ -321,17 +321,19 @@ nav.navbar {
 }
 .contact-btn {
   background-color: transparent;
-  background-image: linear-gradient(180deg, #FF0D0D 0%, #C61E00 100%);
-  color: white;
-  border: none;
-  padding: 8px 18px;
-  border-radius: 2px;
+  /* background-image: linear-gradient(180deg, #FF0D0D 0%, #C61E00 100%); */
+  color: #000;
+  border: 2px solid #000;
+  padding: 4px 16px;
+  border-radius: 7px;
   font-weight: 500;
   transition: background 0.3s ease;
 }
 .contact-btn:hover {
   background-image: linear-gradient(180deg, #e13b20 0%, #a91700 100%);
   color: white;
+  border: none;
+  padding: 6px 16px;
 }
 /* phone icon bg wave start*/
 .custom-phone-icon {
