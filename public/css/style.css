@@ -67,7 +67,7 @@ section.position-relative {
 .hero-btn {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #F95133;
+  background-color: oklch(71.5% 0.143 215.221);
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -76,7 +76,7 @@ section.position-relative {
 }
 
 .hero-btn:hover {
-  background-color: #d74327; /* একটু গা dark hover কালার */
+  background-color: oklch(60.9% 0.126 221.723);
 }
 
 
@@ -133,7 +133,7 @@ ul.submenu {
   margin-top: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   list-style-type: none;
-  border-bottom: 1px solid #FF0D0D;
+  border-bottom: 1px solid oklch(60.9% 0.126 221.723);
 }
 ul.submenu.show-submenu {
   display: block;
@@ -158,7 +158,7 @@ ul.submenu li:hover {
   -4px 6px 12px rgb(249 81 51 / 21%), 4px 6px 12px rgb(249 81 51 / 11%), 0px 8px 16px rgb(249 81 51 / 20%)
 }
 ul.submenu li:hover a.dropdown-item {
-  color: #FF0D0D;
+  color: oklch(60.9% 0.126 221.723);
 }
 .nav-link.dropdown-toggle::after {
   display: none;
@@ -168,7 +168,7 @@ ul.submenu li:hover a.dropdown-item {
   position: relative;
   top: 24px;
   margin-left: -20px;
-  color: #FF0D0D;
+  color: oklch(60.9% 0.126 221.723);
   border-width: 0.35em 0.35em 0 0.35em;
   font-size: 2rem;
   transform: rotate(180deg);
@@ -198,8 +198,8 @@ display: none;
   display: block;
   margin-top: 0;
   padding: 10px 0;
-  border-top: 4px solid #FF0D0D;
-  border-bottom: 4px solid #FF0D0D;
+  border-top: 4px solid oklch(60.9% 0.126 221.723);
+  border-bottom: 4px solid oklch(60.9% 0.126 221.723);
   border-radius: 0.5rem;
   box-shadow:
   -4px 6px 12px rgba(249, 81, 51, 0.2),
@@ -241,17 +241,17 @@ display: none;
 }
 }
 .dropdown-item:hover {
-  color: #FF0D0D;
+  color: oklch(60.9% 0.126 221.723);
   background-color: #fff;
 }
 .nav-item:not(.dropdown) .nav-link:hover {
-  color: #FF0D0D;
+  color: oklch(60.9% 0.126 221.723);
   text-decoration: underline;
-  text-decoration-color: #FF0D0D;
+  text-decoration-color: oklch(60.9% 0.126 221.723);
   text-underline-offset: 4px;
 }
 .nav-item.dropdown .nav-link:hover {
-  color: #FF0D0D;
+  color: oklch(60.9% 0.126 221.723);
   text-decoration: none !important;
 }
 .px-1 {
@@ -297,7 +297,7 @@ nav.navbar {
 }
 
 .contact-btn:hover {
-  background-image: linear-gradient(180deg, #e13b20 0%, #a91700 100%);
+  background: oklch(60.9% 0.126 221.723);
   color: white;
   border: none;
   padding: 6px 16px;
@@ -306,7 +306,7 @@ nav.navbar {
 .custom-phone-icon {
   color: #fff;
   font-size: .9rem;
-  background: #F95133;
+  background: oklch(71.5% 0.143 215.221);
   border-radius: 50%;
   padding: 4px 8px;
   z-index: 2;
@@ -318,7 +318,7 @@ nav.navbar {
   left: 14px;
   width: 36px;
   height: 36px;
-  background-color: #FF0D0D;
+  background-color: oklch(60.9% 0.126 221.723);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   animation: ripple 1.5s infinite ease-out;
@@ -383,13 +383,13 @@ nav.navbar {
 =  Body Start  =
 ===============*/
 .main-color {
-  color: #FF0D0D;
+  color: oklch(60.9% 0.126 221.723);
 }
 .split-title span:first-child {
   color: #000;
 }
 .split-title span:last-child {
-  color: #FF0D0D;
+  color: oklch(60.9% 0.126 221.723);
 }
 .py-5 {
   padding-top: 6rem !important;
@@ -405,8 +405,7 @@ nav.navbar {
 ========================*/
 .process-section {
   padding: 80px 20px;
-  background: linear-gradient(90deg, #f95133 0%, #ff6a3c 100%);
-  color: #fff;
+  background-image: linear-gradient(90deg, oklch(71.5% 0.143 215.221) 0%, oklch(60.9% 0.126 221.723) 100%);  color: #fff;
   text-align: center;
 }
 
@@ -471,16 +470,15 @@ nav.navbar {
 = Services Section Start =
 ========================*/
 .btn-learn {
-  color: #FF0D0D;
-  border: 1px solid #FF0D0D;
+  color: oklch(60.9% 0.126 221.723);
+  border: 1px solid oklch(60.9% 0.126 221.723);
   background-color: transparent;
   transition: all 0.3s ease;
 }
 .btn-learn:hover {
-  background-color: #FF0D0D;
+  background-color: oklch(60.9% 0.126 221.723);
   color: #fff;
-  border-color: #FF0D0D;
-  box-shadow: 0 6px 18px rgba(249, 81, 51, 0.4);
+  border-color: oklch(60.9% 0.126 221.723);
 }
 .hover-shadow {
   transition: all 0.3s ease;
@@ -516,7 +514,7 @@ nav.navbar {
 .usa-content-box-full {
   padding: 40px;
   background: #fff;
-  border-radius: 20px;
+  border-radius: 0;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
@@ -525,16 +523,18 @@ nav.navbar {
   font-weight: 700;
   margin-bottom: 20px;
   color: #111;
+  text-align: center;
 }
 
 .brand-highlight {
-  color: #FF0D0D;
+  color: oklch(60.9% 0.126 221.723);
 }
 
 .usa-subtext {
   font-size: 15px;
   color: #555;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .usa-feature-box {
@@ -633,7 +633,7 @@ nav.navbar {
   transition: background 0.3s ease;
 }
 .owl-theme .owl-dots .owl-dot.active span {
-  background: #FF0D0D;
+  background: oklch(60.9% 0.126 221.723);
 }
 .card-img-top {
   height: 200px;
@@ -666,7 +666,7 @@ nav.navbar {
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #FF0D0D !important;
+  background: oklch(60.9% 0.126 221.723) !important;
   transform: scale(1.2);
 }
 /* ==============================
@@ -697,7 +697,7 @@ nav.navbar {
   margin-top: 30px;
 }
 .custom-indicators li.active {
-  background-color: #FF0D0D;
+  background-color: oklch(60.9% 0.126 221.723);
   transform: scale(1.2);
 }
 .profile-card {
@@ -719,7 +719,7 @@ nav.navbar {
   height: 80px;
   margin-bottom: 1rem;
   object-fit: cover;
-  border: 3px solid #FF0D0D;
+  border: 3px solid oklch(60.9% 0.126 221.723);
   transition: border-color 0.3s ease;
 }
 .profile-card h5 {

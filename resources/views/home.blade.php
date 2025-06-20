@@ -23,50 +23,50 @@
         <div class="row row-cols-1 row-cols-md-5 g-3 g-md-4">
             <!-- Item 1 -->
             <div class="col">
-              <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
+              <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid oklch(71.5% 0.143 215.221);">
                 <img src="{{ asset('images/fouraxiz-deal.webp') }}" alt="Years">
                   <div class="ms-2 text-start">
-                      <h4 class="counter fw-bold mb-0" data-target="18" style="color: #F95133;">0</h4>
+                      <h4 class="counter fw-bold mb-0" data-target="18" style="color: oklch(71.5% 0.143 215.221);">0</h4>
                       <small>Years in Business</small>
                     </div>
                 </div>
             </div>
             <!-- Item 2 -->
             <div class="col">
-                <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
+                <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid oklch(71.5% 0.143 215.221);">
                     <img src="{{ asset('images/fouraxiz-world.webp') }}" alt="Countries">
                     <div class="ms-2 text-start">
-                        <h4 class="counter fw-bold mb-0" data-target="27" style="color: #F95133;">0</h4>
+                        <h4 class="counter fw-bold mb-0" data-target="27" style="color: oklch(71.5% 0.143 215.221);">0</h4>
                         <small>Countries Served</small>
                     </div>
                 </div>
             </div>
             <!-- Item 3 -->
             <div class="col">
-              <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
+              <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid oklch(71.5% 0.143 215.221);">
                 <img src="{{ asset('images/fouraxiz-deadline.webp') }}" alt="Clients">
                   <div class="ms-2 text-start">
-                      <h4 class="counter fw-bold mb-0" data-target="997" style="color: #F95133;">0</h4>
+                      <h4 class="counter fw-bold mb-0" data-target="997" style="color: oklch(71.5% 0.143 215.221);">0</h4>
                       <small>Clients Worldwide</small>
                   </div>
                 </div>
             </div>
             <!-- Item 4 -->
             <div class="col">
-              <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
+              <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid oklch(71.5% 0.143 215.221);">
                 <img src="{{ asset('images/fouraxiz-certificate.webp') }}" alt="Projects">
                   <div class="ms-2 text-start">
-                      <h4 class="counter fw-bold mb-0" data-target="2847" style="color: #F95133;">0</h4>
+                      <h4 class="counter fw-bold mb-0" data-target="2847" style="color: oklch(71.5% 0.143 215.221);">0</h4>
                       <small>Projects Delivered</small>
                     </div>
                 </div>
             </div>
             <!-- Item 5 -->
             <div class="col">
-              <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid #F95133;">
+              <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid oklch(71.5% 0.143 215.221);">
                 <img src="{{ asset('images/fouraxiz-24hr-support.webp') }}" alt="Support">
                     <div class="ms-2 text-start">
-                      <h4 class="fw-bold mb-0" style="color: #F95133;">24/7</h4>
+                      <h4 class="fw-bold mb-0" style="color: oklch(71.5% 0.143 215.221);">24/7</h4>
                       <small>Support Available</small>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 mb-lg-0 mt-lg-n3">
         <h1 class="fw-bold display-5 mb-3">
-          <span class="text-dark">13+</span> <span style="color: #FF0D0D;">Years in Business</span>
+          <span class="text-dark">13+</span> <span style="color: oklch(60.9% 0.126 221.723);">Years in Business</span>
         </h1>
         <p class="text-secondary small mb-4">
           Since our founding, we have been committed to delivering high-quality software solutions tailored to meet the diverse needs of our clients across the globe. With a presence in the USA, our expert team has helped hundreds of businesses grow with confidence.
@@ -180,7 +180,7 @@
 <!-- ===== Our Services Section Start===== -->
 <section class="py-5" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
   <div class="container">
-    <h1 class="text-center fw-bold mb-3">Our <span style="color: #FF0D0D;">Services</span></h1>
+    <h1 class="text-center fw-bold mb-3">Our <span style="color: oklch(60.9% 0.126 221.723);">Services</span></h1>
     <p class="text-center text-muted mb-5 small">
       Empowering businesses with a complete suite of web services – from design to deployment and beyond.
     </p>
@@ -337,7 +337,7 @@
 
 <!-- ===== USA Section Start ===== -->
 <section class="py-5">
-  <div class="container-fluid px-lg-5">
+<div class="container px-0 px-md-2 px-xl-3">
     <div class="usa-content-box-full">
       <h2 class="usa-title">
         Why Leading USA Brands Trust <span class="brand-highlight">4AXIZ</span>
@@ -625,7 +625,7 @@
 <!-- ===== Client Testimonials Section End ===== -->
 
 <!-- ===== Call To Action Section ===== -->
-<section class="py-5" style="background-color: #F95133;">
+<section class="py-5" style="    background-image: linear-gradient(90deg, oklch(71.5% 0.143 215.221) 0%, oklch(60.9% 0.126 221.723) 100%);">
     <div class="container text-center text-white">
         <h1 class="mb-3 fw-bold">Ready to start your next project?</h1>
         <p class="mb-4">Contact us today for a free consultation.</p>

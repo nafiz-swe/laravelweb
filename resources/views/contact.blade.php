@@ -73,7 +73,7 @@
                 @endif -->
 
                 <div class="card shadow-sm border-0">
-                    <h3 class="card-header text-white text-center" style="background-color: #FF0D0D;">Contact Us</h3>
+                    <h3 class="card-header text-white text-center" style="background-color: oklch(60.9% 0.126 221.723);">Contact Us</h3>
                     <div class="card-body p-4 bg-white shadow">
                         <form method="POST" action="{{ route('contact.submit') }}">
                             @csrf
@@ -124,7 +124,7 @@
                                 @error('message')<small class="text-danger">{{ $message }}</small>@enderror
                             </div>
 
-                            <button type="submit" class="btn w-100 text-white" style="background-color: #FF0D0D;">Send Message</button>
+                            <button type="submit" class="btn w-100 text-white" style="background-color: oklch(60.9% 0.126 221.723);">Send Message</button>
                         </form>
                     </div>
                 </div>
