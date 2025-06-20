@@ -1,124 +1,24 @@
 @extends('layouts.app')
 @section('title', 'Home | FourAxiz')
 @section('content')
-<!-- ===== Banner Section Start===== -->
-<section class="position-relative overflow-hidden">
-  <img id="initialImage" src="{{ asset('images/fouraxiz-impression.webp') }}" alt="Initial Banner" class="initial-banner-image">
-  <video id="video1" autoplay muted playsinline class="banner-video active-video"></video>
-  <video id="video2" autoplay muted playsinline class="banner-video"></video>
-  <div class="video-blur-layer"></div>
-  
-  <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center overlay-clear">
-    <div class="text-center text-white">
-      <h1 class="typing-text mb-2"></h1>
-      <p id="typing-subtext" class="lead mt-2">Building Smart Solutions for a Digital World</p>
+<!-- ===== Hero Section Start ===== -->
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-text-box">
+      <h1>Empowering Digital Innovation</h1>
+      <p>We provide smart software solutions to help your business grow efficiently in the digital era.</p>
+      <a href="#services" class="hero-btn">Explore Services</a>
+    </div>
+    <div class="hero-image-box">
+      <img src="{{ asset('images/nafizHero3.webp') }}" alt="Hero Banner" class="hero-img">
     </div>
   </div>
 </section>
+<!-- ===== Hero Section End ===== -->
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const el = document.querySelector('.typing-text');
-  const subtextEl = document.getElementById('typing-subtext');
-  const video1 = document.getElementById('video1');
-  const video2 = document.getElementById('video2');
-  const initialImage = document.getElementById('initialImage');
-  const slides = [
-    {
-      video: "{{ asset('videos/fouraxiz-ai.mp4') }}",
-      text: "Transforming Ideas with AI-Powered Innovation",
-      subtext: "We harness the potential of artificial intelligence to deliver smarter, future-ready solutions."
-    },
-    {
-      video: "{{ asset('videos/fouraxiz-web.mp4') }}",
-      text: "Cutting-Edge Web & App Development Solutions",
-      subtext: "We build scalable web and mobile platforms using the most advanced and reliable technologies."
-    },
-    {
-      video: "{{ asset('videos/fouraxiz-cs.mp4') }}",
-      text: "Robust Cybersecurity Services for Your Business",
-      subtext: "Protecting digital assets with industry-leading security strategies and 24/7 protection."
-    }
-  ];
-
-  let index = 0;
-  let activeVideo = video1;
-  let inactiveVideo = video2;
-
-  const swapVideos = () => {
-    const temp = activeVideo;
-    activeVideo = inactiveVideo;
-    inactiveVideo = temp;
-  };
-
-  const loadVideo = (src, onReady) => {
-    inactiveVideo.innerHTML = '';
-    const source = document.createElement('source');
-    source.src = src;
-    source.type = 'video/mp4';
-    inactiveVideo.appendChild(source);
-    inactiveVideo.load();
-    inactiveVideo.oncanplay = () => {
-      onReady();
-    };
-  };
-
-  const typeWriter = (text, callback = null, i = 0) => {
-    if (i <= text.length) {
-      el.textContent = text.substring(0, i);
-      setTimeout(() => typeWriter(text, callback, i + 1), 115);
-    } else {
-      if (callback) setTimeout(callback, 1500);
-    }
-  };
-
-  const eraseText = (i, callback) => {
-    if (i >= 0) {
-      el.textContent = el.textContent.substring(0, i);
-      setTimeout(() => eraseText(i - 1, callback), 60);
-    } else if (callback) {
-      callback();
-    }
-  };
-
-  const playSlide = (idx) => {
-    const { video, text, subtext } = slides[idx];
-
-    loadVideo(video, () => {
-      inactiveVideo.play();
-
-      subtextEl.textContent = subtext;
-      subtextEl.style.display = 'block';
-
-      typeWriter(text, () => {
-        eraseText(text.length, () => {
-          index = (index + 1) % slides.length;
-          swapVideos();
-          playSlide(index);
-        });
-      });
-
-      activeVideo.classList.remove('active-video');
-      inactiveVideo.classList.add('active-video');
-    });
-  };
-
-  // Show subtext with img
-  subtextEl.style.display = 'block';
-  typeWriter("Welcome to Fouraxiz", () => {
-    eraseText("Welcome to Fouraxiz".length, () => {
-      // Img fade-out
-      initialImage.classList.add('fade-out');
-      playSlide(index);
-    });
-  });
-
-});
-</script>
-<!-- ===== Banner Section End===== -->
 
 <!-- ===== Company Stats Section Start===== -->
-<section class="py-5 my-0 company-stats-section" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
+<section class="py-5 my-0 company-stats-section">
     <div class="container">
         <div class="row row-cols-1 row-cols-md-5 g-3 g-md-4">
             <!-- Item 1 -->
@@ -219,10 +119,9 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- ===== Company Stats Section End===== -->
 
 <!-- ===== Experience Section Start===== -->
-<section class="py-5 bg-white">
+<!-- <section class="py-5 bg-white">
   <div class="container">
     <div class="row align-items-center">
-      <!-- Left Side: Text Content -->
       <div class="col-lg-6 mb-4 mb-lg-0 mt-lg-n3">
         <h1 class="fw-bold display-5 mb-3">
           <span class="text-dark">13+</span> <span style="color: #FF0D0D;">Years in Business</span>
@@ -236,7 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
           <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Digital Transformation Services</li>
         </ul>
       </div>
-      <!-- Right Side: Video -->
       <div class="col-lg-6 text-center">
         <video class="img-fluid rounded-2 shadow-lg" style="max-height: 400px;" autoplay muted loop playsinline>
           <source src="{{ asset('videos/fourAxiz-experience.mp4') }}" type="video/mp4">
@@ -245,8 +143,9 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- ===== Experience Section End===== -->
+
 
 <!-- ===== Our Services Section Start===== -->
 <section class="py-5" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
@@ -357,6 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </section>
 <!-- ===== Our Services Section End===== -->
 
+
 <!-- ===== Our Clients Section Start ===== -->
 <section class="py-5 bg-white text-center">
     <div class="container">
@@ -406,33 +306,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 <!-- ===== USA Section Start ===== -->
-<section class="py-5 text-left" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
-  <div class="container">
-    <div class="row align-items-center flex-lg-row flex-column">
-      <!-- Left Image -->
-      <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center img-container">
-        <img src="{{ asset('images/us-trust.webp') }}"
-          alt="Trusted by US Companies"
-          class="img-fluid rounded-2 shadow-lg"
-          style="width: 100%; object-fit: contain; animation: fadeInLeft 1s ease;">
-      </div>
-      <!-- Right Text -->
-      <div class="col-lg-6 text-container">
-        <h2 class="fw-bold text-dark mb-3" style="font-size: 2rem;">Why Leading USA Brands Trust <span style="color: #FF0D0D;">4AXIZ</span></h2>
-        <p class="text-secondary mb-4" style="font-size: 15px;">
-          We empower USA businesses with scalable, secure, and innovative technology that delivers real results — not promises.
-        </p>
-        <ul class="list-unstyled text-dark">
-          <li class="mb-3"><i class="fas fa-star text-warning me-2"></i><strong>13+ years</strong> serving top USA markets</li>
-          <li class="mb-3"><i class="fas fa-clock text-primary me-2"></i><strong>Real-time support</strong> in USA business hours</li>
-          <li class="mb-3"><i class="fas fa-lock text-success me-2"></i><strong>HIPAA / SOC 2</strong> security-compliant development</li>
-          <li class="mb-3"><i class="fas fa-handshake text-danger me-2"></i><strong>Long-term partnerships</strong> with USA enterprises</li>
-        </ul>
+<section class="py-5">
+  <div class="container-fluid px-lg-5">
+    <div class="usa-content-box-full">
+      <h2 class="usa-title">
+        Why Leading USA Brands Trust <span class="brand-highlight">4AXIZ</span>
+      </h2>
+      <p class="usa-subtext">
+        We empower USA businesses with scalable, secure, and innovative technology that delivers real results — not promises.
+      </p>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="usa-feature-box">
+            <i class="fas fa-star text-warning me-2"></i>
+            <strong>13+ years</strong> serving top USA markets
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="usa-feature-box">
+            <i class="fas fa-clock text-primary me-2"></i>
+            <strong>Real-time support</strong> in USA business hours
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="usa-feature-box">
+            <i class="fas fa-lock text-success me-2"></i>
+            <strong>HIPAA / SOC 2</strong> security-compliant development
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="usa-feature-box">
+            <i class="fas fa-handshake text-danger me-2"></i>
+            <strong>Long-term partnerships</strong> with USA enterprises
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<!-- CSS -->
+<!-- ===== Donald Trump END ===== -->
+
+
+
+
 <style>
     @keyframes fadeInLeft {
         from {

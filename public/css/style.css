@@ -1,5 +1,5 @@
 /* =============
-= Banner Start =
+= Hero Start =
 ===============*/
 body {
   overflow-x: hidden;
@@ -10,140 +10,102 @@ section.position-relative {
   height: 100vh;
   overflow: hidden;
 }
-.initial-banner-image {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: 1;
-  transition: opacity 1s ease-in-out;
+.hero-section {
+  background-color: #ffffff;
+  padding: 60px 5%;
+  box-sizing: border-box;
 }
-.initial-banner-image.fade-out {
-  opacity: 0;
-  z-index: 0;
-}
-.banner-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  z-index: 0;
-}
-.active-video {
-  opacity: 1;
-  z-index: 1;
-}
-.fade-out {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  pointer-events: none;
-}
-.video-blur-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  backdrop-filter: blur(.5px);
-  z-index: 1;
-}
-.overlay-clear {
-  position: absolute; 
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 2;
+.hero-content {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 5vh 10vw 0 10vw;
-  box-sizing: border-box;
-  text-align: center;
-  color: white;
-}
-.typing-text {
-  font-size: 3.5rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-  max-width: 100%;
-  display: inline;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
   position: relative;
-  padding: 0 1rem;
-  box-sizing: border-box;
+  top: 60px;
 }
-.typing-text::after {
-  content: '';
-  position: absolute;
-  width: 2px;
-  height: 1em;
-  background-color: #fff;
-  animation: blink 1s step-start infinite;
-  left: auto;
-  bottom: 0;
-  transform: translateX(2px);
+
+.hero-text-box {
+  flex: 1;
+  min-width: 300px;
+  max-width: 40%;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  padding: 30px 30px 30px 0;
+  border-radius: 0 50px 0 0;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+  margin-right: -110px;
 }
-#typing-subtext {
-  font-size: 1.25rem;
-  color: #eee;
-  margin-top: 10px;
+
+.hero-image-box {
+  flex: 2;
+  min-width: 300px;
+  text-align: right;
+  position: relative;
+  z-index: 1;
+}
+.hero-img {
+  width: 100%;
   max-width: 100%;
-  padding: 0 1rem;
-  box-sizing: border-box;
-  background:rgba(49, 47, 47, 0.25);
+  height: auto;
+  object-fit: cover;
+  border-radius: 0 10px 0 50px;
+} 
+.hero-text-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #222;
 }
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+.hero-text-box p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 20px;
 }
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #F95133;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.hero-btn:hover {
+  background-color: #d74327; /* একটু গা dark hover কালার */
+}
+
+
 @media (max-width: 768px) {
-  .overlay-clear {
-    padding: 0 5vw;
-  }
-  .typing-text {
-    font-size: 2rem;
-    padding: 0 0.5rem;
-  }
-  #typing-subtext {
-    font-size: 1rem;
-    padding: 0 0.5rem;
-  }
-}
-@media (max-width: 991.98px) {
-  .initial-banner-image {
-    width: 100vw;
-    height: 60vh;
-    object-fit: cover;
-  }
-  .banner-video {
-    width: 100vw;
-    height: 60vh;
-  }
-  section.position-relative {
-    height: 60vh;
-  }
-  .overlay-clear {
-    padding: 10vh 5vw 0 5vw; /* Text Updown */
+  .hero-content {
+    flex-direction: column-reverse;
     align-items: center;
+    text-align: center;
   }
-  .typing-text {
-    font-size: 1.5rem;
-    padding: 0 0.5rem;
+
+  .hero-text-box {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-right: 0px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: -70px;
+    padding: 30px;
   }
-  #typing-subtext {
-    font-size: 0.9rem;
-    padding: 0 0.5rem;
-    background: rgba(49, 47, 47, 0.4);
+
+  .hero-image-box {
+    text-align: center;
   }
-}
+
+  .hero-img {
+    max-width: 90%;
+  }
+} 
 /* =============
-=  Banner End  =
+=  Hero End  =
 ===============*/
 
 
@@ -321,14 +283,19 @@ nav.navbar {
 }
 .contact-btn {
   background-color: transparent;
-  /* background-image: linear-gradient(180deg, #FF0D0D 0%, #C61E00 100%); */
   color: #000;
   border: 2px solid #000;
   padding: 4px 16px;
   border-radius: 7px;
   font-weight: 500;
-  transition: background 0.3s ease;
+  transition: 
+    background 0.3s ease,
+    color 0.3s ease,
+    border 0.3s ease,
+    padding 0.3s ease;
+  cursor: pointer;
 }
+
 .contact-btn:hover {
   background-image: linear-gradient(180deg, #e13b20 0%, #a91700 100%);
   color: white;
@@ -432,6 +399,74 @@ nav.navbar {
 =   Body End   =
 ===============*/
 
+
+/* =======================
+= Process Section Start =
+========================*/
+.process-section {
+  padding: 80px 20px;
+  background: linear-gradient(90deg, #f95133 0%, #ff6a3c 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.process-header h5 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #ffe5dc;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.process-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.process-header p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #fff6f2;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.step-box {
+  flex: 1 1 200px;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.step-box img {
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.step-box h4 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.step-box h4 span {
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 5px;
+  color: #ffe1d9;
+}
+
+/* =======================
+=  Process Section End   =
+========================*/
+
+
 /* =======================
 = Services Section Start =
 ========================*/
@@ -472,6 +507,60 @@ nav.navbar {
 }
 /* =====================
 = Services Section End =
+=======================*/
+
+
+/* =====================
+=  USA Section Start   =
+=======================*/
+.usa-content-box-full {
+  padding: 40px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.usa-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.brand-highlight {
+  color: #FF0D0D;
+}
+
+.usa-subtext {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.usa-feature-box {
+  font-size: 15px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width: 768px) {
+  .usa-content-box {
+    padding: 25px;
+  }
+
+  .usa-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* =====================
+=   Donald Trump End   =
 =======================*/
 
 
