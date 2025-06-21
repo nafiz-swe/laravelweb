@@ -154,8 +154,7 @@ ul.submenu li a.dropdown-item {
 }
 ul.submenu li:hover {
   background-color: #fff;
-  box-shadow:
-  -4px 6px 12px rgb(249 81 51 / 21%), 4px 6px 12px rgb(249 81 51 / 11%), 0px 8px 16px rgb(249 81 51 / 20%)
+  box-shadow: -4px 6px 12px oklch(60.9% 0.126 221.723 / 0.2), 4px 6px 12px oklch(60.9% 0.126 221.723 / 0.2), 0px 8px 16px oklch(60.9% 0.126 221.723 / 0.3);
 }
 ul.submenu li:hover a.dropdown-item {
   color: oklch(60.9% 0.126 221.723);
