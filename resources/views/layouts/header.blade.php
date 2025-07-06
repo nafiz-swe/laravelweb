@@ -1,10 +1,10 @@
 <!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light py-2">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     
     <!-- Logo -->
     <a class="navbar-brand" href="{{ url('/') }}">
-      <img src="{{ asset('images/fouraxiz-logo.webp') }}" alt="Fouraxiz Logo" class="logo-img">
+      <img src="{{ asset('images/laravel-webstore.gif') }}" alt="Laravel Webstore" class="logo-img">
     </a>
     <!-- Toggle (Hamburger) Button -->
     <button class="navbar-toggler open-toggler" type="button">
@@ -24,10 +24,10 @@
           <a href="https://twitter.com" target="_blank" class="nav-link text-dark" style="padding: 0.5px;"><i class="bi bi-twitter" style="color: #1DA1F2;"></i></a>
         </li>
         <li class="nav-item text-muted small">
-          <a href="tel:+1 737 226 404" class="text-muted text-decoration-none d-flex align-items-center position-relative">
+          <a href="tel:+880 1737 226 404" class="text-muted text-decoration-none d-flex align-items-center position-relative">
             <span class="wave-ring"></span>
             <i class="bi bi-telephone-fill custom-phone-icon me-2"></i>
-            +1 1737 226 404
+            +880 1737 226 404
           </a>
         </li>
       </ul>
@@ -38,146 +38,22 @@
         <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
         </li>
 
+        <!-- Solutions -->
+        <li class="nav-item">
+            <a class="nav-link" href="#solutions">
+            Web Solutions
+          </a>
+        </li>
+
         <!-- Services -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li class="nav-item">
+          <a class="nav-link" href="#services">
             Services
           </a>
-          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-            <li><a class="dropdown-item" href="#">Augmented Reality App Development</a></li>
-            <li><a class="dropdown-item" href="#">Artificial Intelligence Services</a></li>
-            <li><a class="dropdown-item" href="#">Blockchain Development Services</a></li>
-            <li><a class="dropdown-item" href="#">Cloud Application Development Services</a></li>
-            <li><a class="dropdown-item" href="#">Cyber Security Services</a></li>
-            <li><a class="dropdown-item" href="#">Domain & Hosting Services</a></li>
-            <li><a class="dropdown-item" href="#">Machine Learning Services</a></li>
-            <li><a class="dropdown-item" href="#">Mobile Application Development</a></li>
-            <li><a class="dropdown-item" href="#">Product Design Services</a></li>
-            <li><a class="dropdown-item" href="#">Quality Assurance Services</a></li>
-            <li><a class="dropdown-item" href="#">SaaS Development Services</a></li>
-            <li><a class="dropdown-item" href="#">Virtual Reality App Development</a></li>
-            <li><a class="dropdown-item" href="#">Web Development Services</a></li>
-          </ul>
-        </li>
-
-        <!-- Solutions -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Solutions
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
-            <li><a class="dropdown-item" href="#">AI Photo and Video App Development</a></li>
-            <li><a class="dropdown-item" href="#">E-learning Software Development Services</a></li>
-            <li><a class="dropdown-item" href="#">Financial Software Solutions</a></li>
-            <li><a class="dropdown-item" href="#">Fitness Software Solutions</a></li>
-            <li><a class="dropdown-item" href="#">Healthcare Software Solutions</a></li>   
-            <li><a class="dropdown-item" href="#">Marketplace Development Services</a></li>
-            <li><a class="dropdown-item" href="#">Product Design Solution</a></li>
-            <li><a class="dropdown-item" href="#">Real Estate Solutions</a></li>
-            <li><a class="dropdown-item" href="#">Recruiting Solutions Development</a></li>
-            <li><a class="dropdown-item" href="#">Smart Contract Development Solutions</a></li>
-            <li><a class="dropdown-item" href="#">Social Media Solutions</a></li>
-            <li><a class="dropdown-item" href="#">Travel Software Solutions</a></li>
-          </ul>
-        </li>
-
-        <!-- Technologies -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="techDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Technologies
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="techDropdown">
-            <li>
-              <a class="dropdown-item" href="#">CMS Development</a>
-              <ul class="submenu">
-                <li><a class="dropdown-item" href="#">Joomla Development</a></li>
-                <li><a class="dropdown-item" href="#">Wix Development</a></li>
-                <li><a class="dropdown-item" href="#">WordPress Development</a></li>
-                <li><a class="dropdown-item" href="#">Shopify Development</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">C++ Development Services</a>
-              <ul class="submenu">
-                <li><a class="dropdown-item" href="#">Boost Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Qt Development Services</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">.NET Development Services</a>
-              <ul class="submenu">
-                <li><a class="dropdown-item" href="#">ASP.NET Core Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Blazor Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Entity Framework Development Services</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Java Development Services</a>
-              <ul class="submenu">
-                <li><a class="dropdown-item" href="#">Hibernate Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Spring Development Services</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">JavaScript Development Services</a>
-              <ul class="submenu">
-                <li><a class="dropdown-item" href="#">Express.js Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Node.js Development Services</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Kotlin Development Services</a>
-              <ul class="submenu">
-                <li><a class="dropdown-item" href="#">Ktor Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Spring Development Services</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">PHP Development Services</a>
-              <ul class="submenu">
-                <li><a class="dropdown-item" href="#">Laravel Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Symfony Development Services</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Python Development Services</a>
-              <ul class="submenu">
-                <li><a class="dropdown-item" href="#">Django Development Services</a></li>
-                <li><a class="dropdown-item" href="#">FastAPI Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Flask Development Services</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">React Development Services</a>
-              <ul class="submenu">
-                <li><a class="dropdown-item" href="#">Gatsby Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Next.js Development Services</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Swift Development Services</a>
-              <ul class="submenu">
-                <li><a class="dropdown-item" href="#">SwiftUI Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Vapor Development Services</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Vue.js Development Services</a>
-              <ul class="submenu">
-                <li><a class="dropdown-item" href="#">Nuxt.js Development Services</a></li>
-                <li><a class="dropdown-item" href="#">Quasar Development Services</a></li>
-              </ul>
-            </li>
-            <li><a class="dropdown-item" href="#">Unity Game Development Services</a></li>
-            <li><a class="dropdown-item" href="#">See All...</a></li>
-          </ul>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="#testimonials">Testimonials</a>
         </li>
         <li class="nav-item">
             <a class="btn contact-btn ms-3" href="{{ route('contact.form') }}">Contact Us</a>
@@ -192,10 +68,10 @@
           <a href="https://twitter.com" target="_blank" class="nav-link" style="padding-left: 0;"><i class="bi bi-twitter" style="color: #1DA1F2;"></i></a>
         </li>
         <li class="nav-item text-muted small">
-          <a href="tel:+1 737 226 404" class="text-muted text-decoration-none d-flex align-items-center position-relative">
+          <a href="tel:+880 1737 226 404" class="text-muted text-decoration-none d-flex align-items-center position-relative">
             <span class="wave-ring"></span>
             <i class="bi bi-telephone-fill custom-phone-icon me-2"></i>
-            +1 1737 226 404
+            +880 1737 226 404
           </a>
         </li>
       </ul>

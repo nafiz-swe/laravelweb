@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Home | FourAxiz')
+@section('title', 'Home | laravelweb')
 @section('content')
 <!-- ===== Hero Section Start ===== -->
 <section class="hero-section">
@@ -24,47 +24,47 @@
             <!-- Item 1 -->
             <div class="col">
               <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid oklch(71.5% 0.143 215.221);">
-                <img src="{{ asset('images/fouraxiz-deal.webp') }}" alt="Years">
+                <img src="{{ asset('images/icons/laravel-web-business.webp') }}" alt="Years Business">
                   <div class="ms-2 text-start">
-                      <h4 class="counter fw-bold mb-0" data-target="18" style="color: oklch(71.5% 0.143 215.221);">0</h4>
+                      <h4 class="counter fw-bold mb-0" data-target="1" style="color: oklch(71.5% 0.143 215.221);">0</h4>
                       <small>Years in Business</small>
                     </div>
                 </div>
             </div>
             <!-- Item 2 -->
             <div class="col">
-                <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid oklch(71.5% 0.143 215.221);">
-                    <img src="{{ asset('images/fouraxiz-world.webp') }}" alt="Countries">
-                    <div class="ms-2 text-start">
-                        <h4 class="counter fw-bold mb-0" data-target="27" style="color: oklch(71.5% 0.143 215.221);">0</h4>
-                        <small>Countries Served</small>
+              <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid oklch(71.5% 0.143 215.221);">
+                <img src="{{ asset('images/icons/laravel-web-delivery.webp') }}" alt="Projects Delivered">
+                  <div class="ms-2 text-start">
+                      <h4 class="counter fw-bold mb-0" data-target="17" style="color: oklch(71.5% 0.143 215.221);">0</h4>
+                      <small>Projects Delivered</small>
                     </div>
                 </div>
             </div>
             <!-- Item 3 -->
             <div class="col">
-              <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid oklch(71.5% 0.143 215.221);">
-                <img src="{{ asset('images/fouraxiz-deadline.webp') }}" alt="Clients">
-                  <div class="ms-2 text-start">
-                      <h4 class="counter fw-bold mb-0" data-target="997" style="color: oklch(71.5% 0.143 215.221);">0</h4>
-                      <small>Clients Worldwide</small>
-                  </div>
+                <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid oklch(71.5% 0.143 215.221);">
+                    <img src="{{ asset('images/icons/laravel-web-districts.webp') }}" alt="Districts Covered">
+                    <div class="ms-2 text-start">
+                        <h4 class="counter fw-bold mb-0" data-target="12" style="color: oklch(71.5% 0.143 215.221);">0</h4>
+                        <small>Districts Covered</small>
+                    </div>
                 </div>
             </div>
             <!-- Item 4 -->
             <div class="col">
               <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid oklch(71.5% 0.143 215.221);">
-                <img src="{{ asset('images/fouraxiz-certificate.webp') }}" alt="Projects">
+                <img src="{{ asset('images/icons/laravel-web-satisfied.webp') }}" alt="Client Satisfaction">
                   <div class="ms-2 text-start">
-                      <h4 class="counter fw-bold mb-0" data-target="2847" style="color: oklch(71.5% 0.143 215.221);">0</h4>
-                      <small>Projects Delivered</small>
-                    </div>
+                      <h4 class="fw-bold mb-0" style="color: oklch(71.5% 0.143 215.221);">98%</h4>
+                      <small> Client Satisfaction</small>
+                  </div>
                 </div>
             </div>
             <!-- Item 5 -->
             <div class="col">
               <div class="stats-card d-flex align-items-center bg-white p-2 rounded-0 h-100 shadow" style="border-left: 4px solid oklch(71.5% 0.143 215.221);">
-                <img src="{{ asset('images/fouraxiz-24hr-support.webp') }}" alt="Support">
+                <img src="{{ asset('images/icons/laravel-web-support.webp') }}" alt="Support Available">
                     <div class="ms-2 text-start">
                       <h4 class="fw-bold mb-0" style="color: oklch(71.5% 0.143 215.221);">24/7</h4>
                       <small>Support Available</small>
@@ -137,7 +137,7 @@
       </div>
       <div class="col-lg-6 text-center">
         <video class="img-fluid rounded-2 shadow-lg" style="max-height: 400px;" autoplay muted loop playsinline>
-          <source src="{{ asset('videos/fourAxiz-experience.mp4') }}" type="video/mp4">
+          <source src="{{ asset('videos/laravelweb-experience.mp4') }}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -158,19 +158,19 @@
     <div class="process-steps">
       <div class="step-box">
         <img src="{{ asset('images/icons/idea.svg') }}" alt="Step 1">
-        <h4><span>Step 1</span> Idea</h4>
+        <h4><span>Step 1</span> Discuss</h4>
       </div>
       <div class="step-box">
         <img src="{{ asset('images/icons/plan.svg') }}" alt="Step 2">
-        <h4><span>Step 2</span> Planning</h4>
+        <h4><span>Step 2</span> Select Design</h4>
       </div>
       <div class="step-box">
         <img src="{{ asset('images/icons/code.svg') }}" alt="Step 3">
-        <h4><span>Step 3</span> Development</h4>
+        <h4><span>Step 3</span> Customize</h4>
       </div>
       <div class="step-box">
         <img src="{{ asset('images/icons/launch.svg') }}" alt="Step 4">
-        <h4><span>Step 4</span> Launch</h4>
+        <h4><span>Step 4</span> Live Your Website</h4>
       </div>
     </div>
   </div>
@@ -178,109 +178,111 @@
 <!-- ===== Process Section End ===== -->
 
 <!-- ===== Our Services Section Start===== -->
-<section class="py-5" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
+<section class="py-5" id="solutions" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
   <div class="container">
-    <h1 class="text-center fw-bold mb-3">Our <span style="color: oklch(60.9% 0.126 221.723);">Services</span></h1>
+    <h1 class="text-center fw-bold mb-3">Web <span style="color: oklch(60.9% 0.126 221.723);">Solutions</span></h1>
     <p class="text-center text-muted mb-5 small">
       Empowering businesses with a complete suite of web services – from design to deployment and beyond.
     </p>
     <div class="row g-4 justify-content-center">
       <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 0;">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/fa-web-dev.webp') }}" alt="Web Development" class="service-img">
+            <img src="{{ asset('images/services/laravel-ecommerce.webp') }}" alt="E-commerce" class="service-img">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Web Development</h5>
-            <p class="card-text small">Expert web development services for your website – professional, reliable, and tailored to you.</p>
-            <a href="#" class="btn btn-learn btn-sm">Learn More</a>
+            <h5 class="card-title">E-commerce</h5>
+            <p class="card-text small">Custom online store with product showcase and order system.</p>
+            <a href="#" class="btn btn-learn btn-sm">Get Design</a>
           </div>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 0;">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/fa-app-dev.webp') }}" alt="App Development" class="service-img">
+            <img src="{{ asset('images/services/laravel-diagnostic.webp') }}" alt="Diagnostic Center" class="service-img">
           </div>
           <div class="card-body">
-            <h5 class="card-title">App Development</h5>
-            <p class="card-text small">Custom app development – innovative, seamless, and user-friendly solutions for your needs.</p>
-            <a href="#" class="btn btn-learn btn-sm">Learn More</a>
+            <h5 class="card-title">Diagnostic Center</h5>
+            <p class="card-text small">Online appointment and test report delivery system.</p>
+            <a href="#" class="btn btn-learn btn-sm">Get Design</a>
           </div>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 0;">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/fa-ai-ml.webp') }}" alt="AI & Machine Learning" class="service-img">
+            <img src="{{ asset('images/services/laravel-school.webp') }}" alt="School Management" class="service-img">
           </div>
           <div class="card-body">
-            <h5 class="card-title">AI & Machine Learning</h5>
-            <p class="card-text small">Cutting-edge AI and machine learning solutions – unlocking the power of your data.</p>
-            <a href="#" class="btn btn-learn btn-sm">Learn More</a>
+            <h5 class="card-title">School Management</h5>
+            <p class="card-text small">Notice board, admission info, and academic management.</p>
+            <a href="#" class="btn btn-learn btn-sm">Get Design</a>
           </div>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 0;">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/fa-software-testing.webp') }}" alt="Software Testing" class="service-img">
+            <img src="{{ asset('images/services/laravel-tuition.webp') }}" alt="Tuition Center" class="service-img">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Software Testing</h5>
-            <p class="card-text small">Quality-driven testing services for flawless performance and reliable functionality.</p>
-            <a href="#" class="btn btn-learn btn-sm">Learn More</a>
+            <h5 class="card-title">Tuition Center</h5>
+            <p class="card-text small">Course list, batch timing, and online registration system.</p>
+            <a href="#" class="btn btn-learn btn-sm">Get Design</a>
           </div>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 0;">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/fa-security.webp') }}" alt="Security Solutions" class="service-img">
+            <img src="{{ asset('images/services/laravel-restaurant.webp') }}" alt="Restaurant/Cafe Shop" class="service-img">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Security Solutions</h5>
-            <p class="card-text small">Robust digital security solutions – safeguard your data with confidence.</p>
-            <a href="#" class="btn btn-learn btn-sm">Learn More</a>
+            <h5 class="card-title">Restaurant/Cafe Shop</h5>
+            <p class="card-text small">Digital menu, food ordering, and table reservation system.</p>
+            <a href="#" class="btn btn-learn btn-sm">Get Design</a>
           </div>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 0;">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/fa-hosting.webp') }}" alt="Domain & Hosting" class="service-img">
+            <img src="{{ asset('images/services/laravel-hotel.webp') }}" alt="Hotel/Resort" class="service-img">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Domain & Hosting</h5>
-            <p class="card-text small">Reliable web hosting and domain solutions – empower your online presence effortlessly.</p>
-            <a href="#" class="btn btn-learn btn-sm">Learn More</a>
+            <h5 class="card-title">Hotel/Resort</h5>
+            <p class="card-text small">Room availability check with online booking facility.</p>
+            <a href="#" class="btn btn-learn btn-sm">Get Design</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
+          <div class="image-wrapper">
+            <img src="{{ asset('images/services/laravel-salon.webp') }}" alt="Salon/Beauty Parlor" class="service-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Salon/Beauty Parlor</h5>
+            <p class="card-text small">Service list, appointment booking, and customer feedback system.</p>
+            <a href="#" class="btn btn-learn btn-sm">Get Design</a>
           </div>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 0;">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/fa-seo.webp') }}" alt="Digital Marketing" class="service-img">
+            <img src="{{ asset('images/services/laravel-portfolio.webp') }}" alt="Portfolio/Personal Website" class="service-img">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Digital Marketing (SEO)</h5>
-            <p class="card-text small">Optimize your website with powerful SEO and digital marketing strategies.</p>
-            <a href="#" class="btn btn-learn btn-sm">Learn More</a>
+            <h5 class="card-title">Portfolio/Personal Website</h5>
+            <p class="card-text small">Personal profile with service showcase and contact form.</p>
+            <a href="#" class="btn btn-learn btn-sm">Get Design</a>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 0;">
-          <div class="image-wrapper">
-            <img src="{{ asset('images/fa-graphics.webp') }}" alt="Graphics Design" class="service-img">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Graphics Design</h5>
-            <p class="card-text small">Creative graphic design services – captivate your audience visually.</p>
-            <a href="#" class="btn btn-learn btn-sm">Learn More</a>
-          </div>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
@@ -291,7 +293,7 @@
 <section class="py-5 bg-white text-center">
     <div class="container">
         <h1 class="mb-4 fw-bold split-title">
-            <span>Our</span> <span>Clients</span>
+            Our <span>Clients</span>
         </h1>
         <p class="text-center text-muted mb-5 small">
         With over 13 years of experience, we have proudly delivered tailored software solutions to a wide range of esteemed clients. Their trust in our expertise has empowered us to streamline operations, enhance digital efficiency, and build lasting partnerships.
@@ -335,46 +337,65 @@
 <!-- ===== Our Clients Section End ===== -->
 
 
-<!-- ===== USA Section Start ===== -->
-<section class="py-5">
-<div class="container px-0 px-md-2 px-xl-3">
+<!-- ===== Quick Service Section Start ===== -->
+  <section class="py-5 text-center" id="services" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
+    <div class="container">
     <div class="usa-content-box-full">
-      <h2 class="usa-title">
-        Why Leading USA Brands Trust <span class="brand-highlight">4AXIZ</span>
-      </h2>
+        <h1 class="mb-4 fw-bold split-title">
+        We Provide Everything You <span>Need to Launch</span>
+      </h1>
       <p class="usa-subtext">
-        We empower USA businesses with scalable, secure, and innovative technology that delivers real results — not promises.
+        From domain to SEO, complete website solutions under one roof.
       </p>
       <div class="row">
+        
         <div class="col-md-6 mb-4">
           <div class="usa-feature-box">
-            <i class="fas fa-star text-warning me-2"></i>
-            <strong>13+ years</strong> serving top USA markets
+            <i class="fas fa-globe text-primary me-2"></i>
+            We help for domain purchase
           </div>
         </div>
+        
         <div class="col-md-6 mb-4">
           <div class="usa-feature-box">
-            <i class="fas fa-clock text-primary me-2"></i>
-            <strong>Real-time support</strong> in USA business hours
+            <i class="fas fa-server text-success me-2"></i>
+            We provide hosting solution
           </div>
         </div>
+
         <div class="col-md-6 mb-4">
           <div class="usa-feature-box">
-            <i class="fas fa-lock text-success me-2"></i>
-            <strong>HIPAA / SOC 2</strong> security-compliant development
+            <i class="fas fa-shield-alt text-warning me-2"></i>
+            Complete web security implementation
           </div>
         </div>
+
         <div class="col-md-6 mb-4">
           <div class="usa-feature-box">
-            <i class="fas fa-handshake text-danger me-2"></i>
-            <strong>Long-term partnerships</strong> with USA enterprises
+            <i class="fas fa-pencil-ruler text-danger me-2"></i>
+            Customizable design as per need
           </div>
         </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="usa-feature-box">
+            <i class="fas fa-cogs text-info me-2"></i>
+            Admin panel for easy management
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="usa-feature-box">
+            <i class="fas fa-chart-line text-success me-2"></i>
+            SEO-friendly website structure
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 </section>
-<!-- ===== Donald Trump END ===== -->
+<!-- ===== Quick Service Section END ===== -->
 
 
 
@@ -495,7 +516,7 @@
 <!-- ===== Featured Projects Section End ===== -->
 
 <!-- ===== Client Testimonials Section Start ===== -->
-<section class="py-5 text-center" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
+<section class="py-5 text-center" id="testimonials" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
   <div class="container">
     <h1 class="mb-3 fw-bold split-title">
       <span>Client</span> <span>Testimonials</span>
@@ -505,12 +526,12 @@
     </p>
     @php
       $testimonials = [
-          ['name' => 'Evan L.', 'title' => 'Marketing Head, BrightIdeas', 'image' => 'fouraxiz-client-2.webp', 'text' => 'The support and response time is top-notch!', 'stars' => 4],
-          ['name' => 'Alim R.', 'title' => 'CO, Amazon', 'image' => 'fouraxiz-client-1.webp', 'text' => 'Amazing team! Delivered exactly what we needed.', 'stars' => 5],
-          ['name' => 'Nafizul I.', 'title' => 'CTO, GenZ', 'image' => 'fouraxiz-client-3.webp', 'text' => 'Great experience working with this Laravel team.', 'stars' => 4],
-          ['name' => 'Luis W.', 'title' => 'Product Manager, Appify', 'image' => 'fouraxiz-client-4.webp', 'text' => 'Professional, fast and reliable — highly recommended!', 'stars' => 5],
-          ['name' => 'Ravi S.', 'title' => 'Founder, EduNext', 'image' => 'fouraxiz-client-5.webp', 'text' => 'They really care about our product success.', 'stars' => 3],
-          ['name' => 'Smith G.', 'title' => 'Lead Developer, SmartLabs', 'image' => 'fouraxiz-client-6.webp', 'text' => 'Excellent collaboration and great communication.', 'stars' => 5],
+          ['name' => 'Evan L.', 'title' => 'Marketing Head, BrightIdeas', 'image' => 'laravelweb-client-2.webp', 'text' => 'The support and response time is top-notch!', 'stars' => 4],
+          ['name' => 'Alim R.', 'title' => 'CO, Amazon', 'image' => 'laravelweb-client-1.webp', 'text' => 'Amazing team! Delivered exactly what we needed.', 'stars' => 5],
+          ['name' => 'Nafizul I.', 'title' => 'CTO, GenZ', 'image' => 'laravelweb-client-3.webp', 'text' => 'Great experience working with this Laravel team.', 'stars' => 4],
+          ['name' => 'Luis W.', 'title' => 'Product Manager, Appify', 'image' => 'laravelweb-client-4.webp', 'text' => 'Professional, fast and reliable — highly recommended!', 'stars' => 5],
+          ['name' => 'Ravi S.', 'title' => 'Founder, EduNext', 'image' => 'laravelweb-client-5.webp', 'text' => 'They really care about our product success.', 'stars' => 3],
+          ['name' => 'Smith G.', 'title' => 'Lead Developer, SmartLabs', 'image' => 'laravelweb-client-6.webp', 'text' => 'Excellent collaboration and great communication.', 'stars' => 5],
       ];
     @endphp
     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="hover">

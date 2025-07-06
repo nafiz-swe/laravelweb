@@ -1,5 +1,5 @@
 <footer class="text-white position-relative overflow-hidden d-flex flex-column justify-content-end"
-    style="background: url('{{ asset('images/fouraxiz-footer.webp') }}') center top 20px / 100% 100% no-repeat; min-height: 500px; font-family: 'Inter', sans-serif;">
+    style="background: url('{{ asset('images/laravelweb-footer.webp') }}') center top 20px / 100% 100% no-repeat; min-height: 500px; font-family: 'Inter', sans-serif;">
 
 
     <!-- White transparent overlay -->
@@ -9,7 +9,7 @@
         <div class="row gx-0 text-left">
             <div class="col-md-3 mb-5 px-3">
                 <!-- Logo -->
-                <img src="{{ asset('images/fouraxiz-logo.webp') }}" alt="4axiz Logo" style="max-width: 150px; height: auto;" class="mb-2">
+                <img src="{{ asset('images/laravelweb-logo.webp') }}" alt="4axiz Logo" style="max-width: 150px; height: auto;" class="mb-2">
                 <!-- Description Text -->
                 <p class="text-dark mb-1" style="font-size: 13px;">Best Software Company In USA.</p>
                 <p class="text-dark" style="font-size: 13px;">We provide customized Mobile Application, software applications and web application development and support for the local and global market since 2010.</p>
@@ -25,7 +25,7 @@
             <div class="col-md-3 mb-5 px-3">
                 <h5 class="text-dark" style="font-size: 1.15rem;">USA OFFICE</h5>
                 <p class="text-dark" style="font-size: 13px;"><i class="fas fa-map-marker-alt me-2 text-danger"></i> 8120 Jennings Drive, Suite 128 C<br> Business and Community Service Bldg.<br> Cedar Falls, IA 50613-0130</p>
-                <p class="text-dark" style="font-size: 13px;"><i class="fas fa-phone me-2 text-success"></i> +031 9961 27 82</p>
+                <p class="text-dark" style="font-size: 13px;"><i class="fas fa-phone me-2 text-success"></i> +880 1737 226 404</p>
                 <p class="text-dark" style="font-size: 13px;"><i class="fas fa-envelope me-2 text-primary"></i> nafizulislam.swe@gmail.com</p>
             </div>
 

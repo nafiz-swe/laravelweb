@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Browser Tab-  Favicon -->
-    <link rel="icon" type="image/webp" href="{{ asset('images/fa-hosting.webp') }}">
+    <link rel="icon" type="image/webp" href="{{ asset('images/laravel-favicon-icon.webp') }}">
     
     <!-- Page Title -->
     <title>@yield('title')</title>

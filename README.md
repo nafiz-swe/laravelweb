@@ -22,9 +22,9 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 
-# 🌐 Fouraxiz Laravel Project – Interview Submission
+# 🌐 laravelweb Laravel Project – Interview Submission
 
-## 🚀 Laravel Project Setup – `fouraxiz`
+## 🚀 Laravel Project Setup – `laravelweb`
 
 Follow these steps to install and run the Laravel project on your local machine.
 
@@ -51,12 +51,12 @@ Make sure your local machine has the following installed:
 # ✅ Step 2: Install Laravel installer globally using Composer
 composer global require laravel/installer
 
-# ✅ Step 3: Create a new Laravel project named 'fouraxiz'
-laravel new fouraxiz
+# ✅ Step 3: Create a new Laravel project named 'laravelweb'
+laravel new laravelweb
 # Wait around 5 to 10 minutes for the installation to complete
 
 # ✅ Step 4: Move into the project directory
-cd fouraxiz
+cd laravelweb
 
 # ✅ Step 5: Open the project in Visual Studio Code
 code .
@@ -80,7 +80,7 @@ extension=pdo_mysql
 # ✅ Step 8: Restart Apache from XAMPP control panel
 
 # ✅ Step 9: Create the Database in MySQL (Note: Please collect the SQL file from the 'database' folder. It contains the data submitted through the contact form.)
-fouraxiz
+laravelweb
 
 # ✅ Step 10: Run Laravel Migrations
 php artisan migrate
@@ -114,19 +114,5 @@ Contacts Blade update
 # 👨‍💻 Developer Information
 My name is Nafizul Islam. I have completed my BSc in Software Engineering from Daffodil International University in 2023.
 
-This Laravel project is developed as part of my **internship interview task** for **Fouraxiz Software Company** (USA office site front page design).
-
 ---
-
-# 📢 Interview Task Details
-**Position:** Intern – WordPress/Laravel Developer  
-**Platform:** BD Jobs Fair – 21 May 2025  
-**Location:** KBI, Farmgate, Dhaka
-
-> You have been shortlisted for the position of Intern WordPress/Laravel Developer through the BD Jobs Fair – 2025. As part of the interview process, please design the front page of our site (https://fouraxiz.com) targeted for our USA office. Submit your work link via email by **31/05/2025**. Top performers will be selected for the final appointment.  
-> Md. Alim Razi
-> Manager Admin  
-> 4axiz IT Ltd.  
-> 📧 admin@4axiz.com
-
 ---

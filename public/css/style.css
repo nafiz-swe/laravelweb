@@ -116,92 +116,7 @@ section.position-relative {
 .top-contact-social-mobile .nav-link:hover i {
   color: #e13b20;
 }
-li > a.dropdown-item {
-  font-weight: 400;
-  color: #000000;     
-  text-decoration: none;
-  padding: 6px 12px;  
-  display: block;
-}
-ul.submenu {
-  display: none;
-  padding: 10px 0;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  max-width: 350px;
-  margin-top: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  list-style-type: none;
-  border-bottom: 1px solid oklch(60.9% 0.126 221.723);
-}
-ul.submenu.show-submenu {
-  display: block;
-}
-ul.submenu li {
-  padding-left: 20px;
-  border-bottom: 1px solid #e0e0e0;
-  transition: background-color 0.3s ease;
-}
-ul.submenu li:last-child {
-  border-bottom: none;
-}
-ul.submenu li a.dropdown-item {
-  font-weight: 400;
-  color: #666666;
-  text-decoration: none;
-  display: block;
-}
-ul.submenu li:hover {
-  background-color: #fff;
-  box-shadow: -4px 6px 12px oklch(60.9% 0.126 221.723 / 0.2), 4px 6px 12px oklch(60.9% 0.126 221.723 / 0.2), 0px 8px 16px oklch(60.9% 0.126 221.723 / 0.3);
-}
-ul.submenu li:hover a.dropdown-item {
-  color: oklch(60.9% 0.126 221.723);
-}
-.nav-link.dropdown-toggle::after {
-  display: none;
-  transition: opacity 0.3s ease;
-  opacity: 0;
-  z-index: 1;
-  position: relative;
-  top: 24px;
-  margin-left: -20px;
-  color: oklch(60.9% 0.126 221.723);
-  border-width: 0.35em 0.35em 0 0.35em;
-  font-size: 2rem;
-  transform: rotate(180deg);
-}
-.nav-item.dropdown:hover > .nav-link.dropdown-toggle::after,
-.nav-link.dropdown-toggle:focus::after,
-.nav-link.dropdown-toggle[aria-expanded="true"]::after {
-  display: inline-block;
-  opacity: 1;
-}
-.nav-item.dropdown > .nav-link::after {
-display: none;
-}
-.nav-item.dropdown.show > .nav-link::after {
-  display: inline-block;
-  content: "";
-  margin-left: 0.3em;
-  vertical-align: 0.3em;
-  border-top: 0.3em solid;
-  border-right: 0.3em solid transparent;
-  border-left: 0.3em solid transparent;
-}
-.nav-item.dropdown:hover .dropdown-menu {
-  max-height: 300px;
-  overflow-y: auto;       
-  overflow-x: hidden;
-  display: block;
-  margin-top: 0;
-  padding: 10px 0;
-  border-top: 4px solid oklch(60.9% 0.126 221.723);
-  border-bottom: 4px solid oklch(60.9% 0.126 221.723);
-  border-radius: 0.5rem;
-  box-shadow: -4px 6px 12px rgba(96, 129, 255, 0.2), 4px 6px 12px rgba(96, 129, 255, 0.2), 0px 8px 16px rgba(96, 129, 255, 0.3);  z-index: 9999;
-}
+
 .top-contact-social {
   display: flex;
   flex-direction: row !important;
@@ -220,6 +135,9 @@ display: none;
 }
 /* Mobile view (<= 991.98px) */
 @media (max-width: 991.98px) {
+  .contact-btn{
+    margin-bottom: 30px;
+  }
 .top-contact-social {
   display: none;
 }
@@ -269,16 +187,17 @@ nav.navbar {
   z-index: 1050;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
   background-color: #f8f9fa !important;
+  padding: 0 !important
 }
 .logo-img {
-  height: 50px;
+  height: 65px;
   object-fit: contain;
 }
 .contact-btn {
   background-color: transparent;
   color: #000;
-  border: 2px solid #000;
-  padding: 4px 16px;
+  border: 1px solid #000;
+  padding: 5px 16px;
   border-radius: 7px;
   font-weight: 500;
   transition: 
@@ -367,6 +286,9 @@ nav.navbar {
 }
 .p-md-3 {
   padding: .55rem !important;
+}
+.stats-card img {
+  width: 80px;
 }
 /* =============
 =  Status End  =
@@ -502,15 +424,9 @@ nav.navbar {
 =======================*/
 
 
-/* =====================
-=  USA Section Start   =
-=======================*/
-.usa-content-box-full {
-  padding: 40px;
-  background: #fff;
-  border-radius: 0;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-}
+/* ==========================
+=  Services Section Start   =
+===========================*/
 
 .usa-title {
   font-size: 2rem;
@@ -551,11 +467,14 @@ nav.navbar {
   .usa-title {
     font-size: 1.5rem;
   }
+  .logo-img {
+  height: 55px;
+}
 }
 
-/* =====================
-=   Donald Trump End   =
-=======================*/
+/* =========================
+=   Services Section End   =
+==========================*/
 
 
 /* ======================
