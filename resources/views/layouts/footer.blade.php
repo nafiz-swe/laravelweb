@@ -9,10 +9,10 @@
         <div class="row gx-0 text-left">
             <div class="col-md-3 mb-5 px-3">
                 <!-- Logo -->
-                <img src="{{ asset('images/laravelweb-logo.webp') }}" alt="4axiz Logo" style="max-width: 150px; height: auto;" class="mb-2">
+                <img src="{{ asset('images/laravel-web-footer.gif') }}" alt="4axiz Logo" style="max-width: 150px; height: auto;" class="mb-2">
                 <!-- Description Text -->
-                <p class="text-dark mb-1" style="font-size: 13px;">Best Software Company In USA.</p>
-                <p class="text-dark" style="font-size: 13px;">We provide customized Mobile Application, software applications and web application development and support for the local and global market since 2010.</p>
+                <p class="text-dark mb-1" style="font-size: 13px;">Best Software Solutions in Bangladesh with Laravel & PHP</p>
+                <p class="text-dark" style="font-size: 13px;">We develop secure and modern Web Applications using Laravel & PHP. The design is ready, and we will customize everything exactly as per your choice to suit your local business needs.</p>
             </div>
 
             <div class="col-md-3 mb-5 px-3">
@@ -32,11 +32,14 @@
             <div class="col-md-3 mb-5 px-3">
                 <h5 class="text-dark" style="font-size: 1.15rem;">OUR SERVICES</h5>
                 <ul class="list-unstyled text-dark" style="font-size: 13px;">
-                    <li class="mb-2"><i class="fas fa-code me-2 text-secondary"></i><a href="#" class="text-dark">Web Application Development</a></li>
-                    <li class="mb-2"><i class="fas fa-mobile-alt me-2 text-secondary"></i><a href="#" class="text-dark">Mobile App Development</a></li>
-                    <li class="mb-2"><i class="fas fa-cogs me-2 text-secondary"></i><a href="#" class="text-dark">ERP Software Development</a></li>
-                    <li class="mb-2"><i class="fas fa-robot me-2 text-secondary"></i><a href="#" class="text-dark">AI &amp; Machine Learning</a></li>
-                    <li class="mb-2"><i class="fas fa-globe me-2 text-secondary"></i><a href="#" class="text-dark">Domain &amp; Hosting Services</a></li>
+                    <li class="mb-2"><i class="fas fa-globe me-2 text-secondary"></i><a href="#" class="text-dark">Help for domain purchase</a></li>
+                    <li class="mb-2"><i class="fas fa-server me-2 text-secondary"></i><a href="#" class="text-dark">Provide hosting solution</a></li>
+                    <li class="mb-2"><i class="fas fa-shield-alt me-2 text-secondary"></i><a href="#" class="text-dark">Web security implementation</a></li>
+                    <li class="mb-2"><i class="fas fa-code me-2 text-secondary"></i><a href="#" class="text-dark">Customizable design</a></li>
+                    <li class="mb-2"><i class="fas fa-cogs me-2 text-secondary"></i><a href="#" class="text-dark">Admin panel for management</a></li>
+                    <li class="mb-2"><i class="fas fa-chart-line me-2 text-secondary"></i><a href="#" class="text-dark">SEO-friendly website structure</a></li>
+                    <li class="mb-2"><i class="fab fa-facebook-square me-2 text-secondary"></i><a href="#" class="text-dark">Business facebook page setup</a></li>
+                    <li class="mb-2"><i class="fas fa-paper-plane me-2 text-secondary"></i><a href="#" class="text-dark">Business email setup</a></li>
                 </ul>
             </div>
         </div>
@@ -48,9 +51,10 @@
         <!-- Copyright -->
         <div class="text-center py-4">
             <small class="text-dark" style="font-size: 13px;">
-                &copy; 2025. All Rights Reserved By 
+                &copy; 2025. All Rights Reserved Laravelweb.com | Developed by 
                 <a href="https://github.com/nafiz-swe" target="_blank" class="fw-bold text-decoration-none" style="font-size: 13px; color: oklch(60.9% 0.126 221.723);">Nafizul Islam</a>
             </small>
+
         </div>
     </div>
 </footer>

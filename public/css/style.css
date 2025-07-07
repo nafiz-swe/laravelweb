@@ -12,7 +12,7 @@ section.position-relative {
 }
 .hero-section {
   background-color: #ffffff;
-  padding: 60px 5%;
+  padding: 0px 0px 5% 60px;
   box-sizing: border-box;
 }
 .hero-content {
@@ -50,7 +50,7 @@ section.position-relative {
   max-width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 0 10px 0 50px;
+  border-radius: 0 0 0 50px;
 } 
 .hero-text-box h1 {
   font-size: 2.5rem;
@@ -67,7 +67,7 @@ section.position-relative {
 .hero-btn {
   display: inline-block;
   padding: 12px 24px;
-  background-color: oklch(71.5% 0.143 215.221);
+  background-color: oklch(60.9% 0.126 221.723);
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -76,7 +76,7 @@ section.position-relative {
 }
 
 .hero-btn:hover {
-  background-color: oklch(60.9% 0.126 221.723);
+  background-color: oklch(71.5% 0.143 215.221);
 }
 
 
@@ -89,20 +89,24 @@ section.position-relative {
 
   .hero-text-box {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 42px 42px 0 0;;
     margin-right: 0px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-top: -70px;
     padding: 30px;
   }
-
+.hero-img {
+  border-radius: 0;;
+}
   .hero-image-box {
     text-align: center;
   }
-
-  .hero-img {
-    max-width: 90%;
+  .hero-section{
+    padding: 0;
   }
+  .hero-text-box h1 {
+  font-size: 2rem !important;
+}
 } 
 /* =============
 =  Hero End  =
@@ -330,12 +334,6 @@ nav.navbar {
   color: #ffe5dc;
   font-weight: 500;
   letter-spacing: 1px;
-}
-
-.process-header h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 15px;
 }
 
 .process-header p {

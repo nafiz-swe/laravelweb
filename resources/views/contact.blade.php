@@ -99,20 +99,15 @@
                             <div class="mb-3">
                                 <label for="inquiry" class="form-label">Your Inquiry About</label>
                                 <select name="inquiry" class="form-select" required>
-                                    <option value="">-- Select Service --</option>
-                                    <option>AR App</option>
-                                    <option>AI Services</option>
-                                    <option>Blockchain</option>
-                                    <option>Cloud Apps</option>
-                                    <option>Cyber Security</option>
-                                    <option>Domain & Hosting</option>
-                                    <option>Machine Learning</option>
-                                    <option>Mobile Apps</option>
-                                    <option>Product Design</option>
-                                    <option>QA Services</option>
-                                    <option>SaaS Dev</option>
-                                    <option>VR App</option>
-                                    <option>Web Dev</option>
+                                    <option value="">-- Select Web Solution --</option>
+                                    <option>Diagnostic Center</option>
+                                    <option>E-commerce</option>
+                                    <option>Portfolio/Personal Website</option>
+                                    <option>Resort/Hotel</option>
+                                    <option>Restaurant/Cafe Shop</option>
+                                    <option>Salon/Beauty Parlor</option>
+                                    <option>School Management</option>
+                                    <option>Tuition Center</option>
                                     <option>Other</option>
                                 </select>
                                 @error('inquiry')<small class="text-danger">{{ $message }}</small>@enderror

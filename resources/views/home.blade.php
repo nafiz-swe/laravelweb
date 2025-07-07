@@ -10,7 +10,7 @@
       <a href="#services" class="hero-btn">Explore Services</a>
     </div>
     <div class="hero-image-box">
-      <img src="{{ asset('images/nafizHero3.webp') }}" alt="Hero Banner" class="hero-img">
+      <img src="{{ asset('images/laravel-web-hero.webp') }}" alt="Hero Banner" class="hero-img">
     </div>
   </div>
 </section>
@@ -152,24 +152,24 @@
   <div class="container">
     <div class="process-header">
       <h5>How We Work</h5>
-      <h2>Simple Steps to Start</h2>
+      <h1>Simple Steps to Start</h1>
       <p>We follow a streamlined process to deliver effective solutions with clarity and confidence.</p>
     </div>
     <div class="process-steps">
       <div class="step-box">
-        <img src="{{ asset('images/icons/idea.svg') }}" alt="Step 1">
-        <h4><span>Step 1</span> Discuss</h4>
+        <img src="{{ asset('images/icons/discussion.webp') }}" alt="Project Discuss">
+        <h4><span>Step 1</span> Project Discuss</h4>
       </div>
       <div class="step-box">
-        <img src="{{ asset('images/icons/plan.svg') }}" alt="Step 2">
-        <h4><span>Step 2</span> Select Design</h4>
+        <img src="{{ asset('images/icons/designSelect.webp') }}" alt="Confirm Design">
+        <h4><span>Step 2</span> Confirm Design</h4>
       </div>
       <div class="step-box">
-        <img src="{{ asset('images/icons/code.svg') }}" alt="Step 3">
+        <img src="{{ asset('images/icons/customize.webp') }}" alt="Customize">
         <h4><span>Step 3</span> Customize</h4>
       </div>
       <div class="step-box">
-        <img src="{{ asset('images/icons/launch.svg') }}" alt="Step 4">
+        <img src="{{ asset('images/icons/liveWeb.webp') }}" alt="Live Your Website">
         <h4><span>Step 4</span> Live Your Website</h4>
       </div>
     </div>
@@ -188,85 +188,24 @@
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/services/laravel-ecommerce.webp') }}" alt="E-commerce" class="service-img">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">E-commerce</h5>
-            <p class="card-text small">Custom online store with product showcase and order system.</p>
-            <a href="#" class="btn btn-learn btn-sm">Get Design</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
-          <div class="image-wrapper">
             <img src="{{ asset('images/services/laravel-diagnostic.webp') }}" alt="Diagnostic Center" class="service-img">
           </div>
           <div class="card-body">
             <h5 class="card-title">Diagnostic Center</h5>
             <p class="card-text small">Online appointment and test report delivery system.</p>
-            <a href="#" class="btn btn-learn btn-sm">Get Design</a>
+            <a href="{{ route('diagnostic.center') }}" class="btn btn-learn btn-sm">Get Design</a>
           </div>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/services/laravel-school.webp') }}" alt="School Management" class="service-img">
+            <img src="{{ asset('images/services/laravel-ecommerce.webp') }}" alt="E-commerce" class="service-img">
           </div>
           <div class="card-body">
-            <h5 class="card-title">School Management</h5>
-            <p class="card-text small">Notice board, admission info, and academic management.</p>
-            <a href="#" class="btn btn-learn btn-sm">Get Design</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
-          <div class="image-wrapper">
-            <img src="{{ asset('images/services/laravel-tuition.webp') }}" alt="Tuition Center" class="service-img">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Tuition Center</h5>
-            <p class="card-text small">Course list, batch timing, and online registration system.</p>
-            <a href="#" class="btn btn-learn btn-sm">Get Design</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
-          <div class="image-wrapper">
-            <img src="{{ asset('images/services/laravel-restaurant.webp') }}" alt="Restaurant/Cafe Shop" class="service-img">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Restaurant/Cafe Shop</h5>
-            <p class="card-text small">Digital menu, food ordering, and table reservation system.</p>
-            <a href="#" class="btn btn-learn btn-sm">Get Design</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
-          <div class="image-wrapper">
-            <img src="{{ asset('images/services/laravel-hotel.webp') }}" alt="Hotel/Resort" class="service-img">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Hotel/Resort</h5>
-            <p class="card-text small">Room availability check with online booking facility.</p>
-            <a href="#" class="btn btn-learn btn-sm">Get Design</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
-          <div class="image-wrapper">
-            <img src="{{ asset('images/services/laravel-salon.webp') }}" alt="Salon/Beauty Parlor" class="service-img">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Salon/Beauty Parlor</h5>
-            <p class="card-text small">Service list, appointment booking, and customer feedback system.</p>
-            <a href="#" class="btn btn-learn btn-sm">Get Design</a>
+            <h5 class="card-title">E-commerce</h5>
+            <p class="card-text small">Custom online store with product showcase and order system.</p>
+            <a href="{{ route('ecommerce') }}" class="btn btn-learn btn-sm">Get Design</a>
           </div>
         </div>
       </div>
@@ -278,7 +217,67 @@
           <div class="card-body">
             <h5 class="card-title">Portfolio/Personal Website</h5>
             <p class="card-text small">Personal profile with service showcase and contact form.</p>
-            <a href="#" class="btn btn-learn btn-sm">Get Design</a>
+            <a href="{{ route('portfolio') }}" class="btn btn-learn btn-sm">Get Design</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
+          <div class="image-wrapper">
+            <img src="{{ asset('images/services/laravel-hotel.webp') }}" alt="Hotel/Resort" class="service-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Resort/Hotel</h5>
+            <p class="card-text small">Room availability check with online booking facility.</p>
+            <a href="{{ route('resort.hotel') }}" class="btn btn-learn btn-sm">Get Design</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
+          <div class="image-wrapper">
+            <img src="{{ asset('images/services/laravel-restaurant.webp') }}" alt="Restaurant/Cafe Shop" class="service-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Restaurant/Cafe Shop</h5>
+            <p class="card-text small">Digital menu, food ordering, and table reservation system.</p>
+            <a href="{{ route('restaurant.cafe') }}" class="btn btn-learn btn-sm">Get Design</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
+          <div class="image-wrapper">
+            <img src="{{ asset('images/services/laravel-salon.webp') }}" alt="Salon/Beauty Parlor" class="service-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Salon/Beauty Parlor</h5>
+            <p class="card-text small">Service list, appointment booking, and customer feedback system.</p>
+            <a href="{{ route('salon.beauty') }}" class="btn btn-learn btn-sm">Get Design</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
+          <div class="image-wrapper">
+            <img src="{{ asset('images/services/laravel-school.webp') }}" alt="School Management" class="service-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">School Management</h5>
+            <p class="card-text small">Notice board, admission info, and academic management.</p>
+            <a href="{{ route('school.management') }}" class="btn btn-learn btn-sm">Get Design</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
+          <div class="image-wrapper">
+            <img src="{{ asset('images/services/laravel-tuition.webp') }}" alt="Tuition Center" class="service-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Tuition Center</h5>
+            <p class="card-text small">Course list, batch timing, and online registration system.</p>
+            <a href="{{ route('tuition.center') }}" class="btn btn-learn btn-sm">Get Design</a>
           </div>
         </div>
       </div>
@@ -372,7 +371,7 @@
 
         <div class="col-md-6 mb-4">
           <div class="usa-feature-box">
-            <i class="fas fa-pencil-ruler text-danger me-2"></i>
+            <i class="fas fa-code text-danger me-2"></i>
             Customizable design as per need
           </div>
         </div>
@@ -388,6 +387,20 @@
           <div class="usa-feature-box">
             <i class="fas fa-chart-line text-success me-2"></i>
             SEO-friendly website structure
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="usa-feature-box">
+            <i class="fab fa-facebook-square text-primary me-2"></i>
+            Your business Facebook page setup
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="usa-feature-box">
+            <i class="fas fa-paper-plane text-primary me-2"></i>
+            Professional business email setup (info@domain.com)
           </div>
         </div>
 
