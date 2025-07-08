@@ -86,7 +86,6 @@ section.position-relative {
     align-items: center;
     text-align: center;
   }
-
   .hero-text-box {
     max-width: 100%;
     border-radius: 42px 42px 0 0;;
@@ -106,6 +105,9 @@ section.position-relative {
   }
   .hero-text-box h1 {
   font-size: 2rem !important;
+}
+.mobile-sidebar {
+  margin-bottom: 3rem;
 }
 } 
 /* =============

@@ -1,11 +1,24 @@
 @extends('layouts.app')
-
 @section('title', 'E-commerce Responsive & Theme Preview')
 
 @section('content')
-<div class="container my-5">
-    <h1 class="mb-5 text-center">E-commerce Website Design Showcase</h1>
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-text-box">
+      <h1>E-commerce Web Solution</h1>
+      <p>We develop secure and modern Web Applications using Laravel & PHP. The design is ready, and we will customize everything exactly as per your choice to suit your local business needs.</p>
+      <a href="{{ route('estimates.ecommerce') }}" class="hero-btn">Project Estimates</a>
+    </div>
+    <div class="hero-image-box">
+      <img src="{{ asset('images/banner/ecommerce-hero.webp') }}" alt="Hero Banner" class="hero-img">
+    </div>
+  </div>
+</section>
 
+{{-- Main Design user-interface/ecommerce --}}
+<div class="container my-5 pt-5">
+    <h1 class="text-center mt-5 mb-3"><span>E-commerce</span> User Interface</h1>
+    <p class="text-center mb-5">Discover responsive e-commerce designs with multiple Laravel themes. Switch between mobile and desktop views and select your preferred user interface.</p>
     {{-- Responsive Selection --}}
     <div class="d-flex justify-content-center mb-3 gap-3">
         <button class="btn btn-outline category-btn active" data-category="mobile">Mobile Responsive</button>
@@ -13,15 +26,27 @@
     </div>
 
     {{-- Theme Selection --}}
-    <div class="d-flex justify-content-center mb-5 gap-3">
-        <button class="btn btn-outline theme-btn active" data-theme="flower">Flower Theme</button>
-        <button class="btn btn-outline theme-btn" data-theme="ocean">Ocean Theme</button>
-        <button class="btn btn-outline theme-btn" data-theme="royal">Royal Theme</button>
+    <div class="d-flex justify-content-center mb-5 gap-3 flex-wrap">
+        <button class="btn btn-outline theme-btn active" data-theme="zarabella">Zarabella UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="trendaxo">Trendaxo UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="techovia">Techovia UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="shoponex">Shoponex UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="greenora">Greenora UI</button>
     </div>
 
+    <!-- 
+    Zarabella:	Trendy, Premium Fashion Vibe
+    Trendaxo:	   Trend + Axo, Strong Masculine Feel
+    Techovia:	   Technology +ovia, Modern & Sleek
+    Shoponex:	Shop + One + ex, Unique & Smooth
+    Greenora:	Green + Aura, Organic Product Feel
+    -->
+ 
     <div class="row">
         {{-- Left Side: Page Sections --}}
-        <div class="col-md-3">
+        <div class="col-md-3 mobile-sidebar">
+            <h4 class="mb-3">Page Sections</h4>
+            <p class="text-muted">Click to view different sections of the website.</p>
             <div id="pageSections" class="list-group">
                 {{-- Page buttons dynamically insert হবে --}}
             </div>
@@ -30,10 +55,12 @@
         {{-- Right Side: Image Preview --}}
         <div class="col-md-9">
             <div class="text-center">
-                <img id="previewImage" src="{{ asset('images/showcase/mobile-flower-hero.webp') }}" alt="Preview Image" class="img-fluid rounded shadow">
+                <img id="previewImage" src="{{ asset('images/user-interface/ecommerce/mobile-zarabella-hero.webp') }}" alt="Preview Image" class="img-fluid rounded shadow">
                 <div class="mt-5">
-                    <button class="btn btn-get-design me-2">Get This Design</button>
-                    <button class="btn btn-view-details" id="viewDetailsBtn">View Details</button>
+                    <button onclick="window.location.href='{{ route('estimates.ecommerce') }}'" class="btn btn-get-design me-2">
+                        Delivery & Cost Info
+                    </button>
+                    <button class="btn btn-view-details" id="viewDetailsBtn">Page Details</button>
                 </div>
             </div>
         </div>
@@ -54,72 +81,72 @@
         </div>
     </div>
 </div>
+
 <style>
-    /* Responsive Active Button */
-    .category-btn {
-        border: 1px solid #0092b8;
-    }
-    .category-btn.active {
-        background-color: #0092b8;
-        color: #fff;
-        border-color: #0092b8;
-    }
-    .category-btn:hover {
-        background-color: #00b8db;
-        color: #fff;
-        border-color: #00b8db;
-    }
-
-    /* Theme Active Button */
-    .theme-btn {
-        border: 1px solid #45556c; 
-    }
-    .theme-btn.active {
-        background-color: #45556c;
-        color: #fff;
-        border: 1px solid #45556c;
-    }
-    .theme-btn:hover {
-        background-color: #62748e; /* Matching darker hover shade */
-        color: #fff;
-        border: 1px solid #62748e;
-    }
-
-    /* Get This Design Button | #getDesignBtn.active { */
-    .btn-get-design  {
-        background-color: #0092b8;
-        border: 1px solid #0092b8;
-        color: #fff;
-    }
-    .btn-get-design:hover {
-        background-color: #00b8db;
-        border: 1px solid #00b8db;
-        color: #fff;
-    }
-
-        /* View Details Button */
-    .btn-view-details  {
-        background-color: #45556c;
-        border: 1px solid #45556c;
-        color: #fff;
-    }
-    .btn-view-details:hover {
-        background-color: #62748e;
-        border: 1px solid #62748e;
-        color: #fff;
-    }
-
-    /* Page Sections Button Active */
-    #pageSections .list-group-item.active {
-        background-color: #0092b8;
-        color: #fff;
-        border-color: #0092b8;
-    }
-    #pageSections .list-group-item:hover {
-        background-color: #00b8db;
-        color: #fff;
-        border-color: #00b8db;
-    }
+span {
+    color: #0092b8;
+}
+/* Responsive Active Button */
+.category-btn {
+    border: 1px solid #0092b8;
+}
+.category-btn.active {
+    background-color: #0092b8;
+    color: #fff;
+    border-color: #0092b8;
+}
+.category-btn:hover {
+    background-color: #00b8db;
+    color: #fff;
+    border-color: #00b8db;
+}
+/* Theme Active Button */
+.theme-btn {
+    border: 1px solid #45556c; 
+}
+.theme-btn.active {
+    background-color: #45556c;
+    color: #fff;
+    border: 1px solid #45556c;
+}
+.theme-btn:hover {
+    background-color: #62748e;
+    color: #fff;
+    border: 1px solid #62748e;
+}
+/* Get This Design Button */
+.btn-get-design  {
+    background-color: #0092b8;
+    border: 1px solid #0092b8;
+    color: #fff;
+}
+.btn-get-design:hover {
+    background-color: #00b8db;
+    border: 1px solid #00b8db;
+    color: #fff;
+}
+/* View Details Button */
+.btn-view-details  {
+    background-color: #45556c;
+    border: 1px solid #45556c;
+    color: #fff;
+}
+.btn-view-details:hover {
+    background-color: #62748e;
+    border: 1px solid #62748e;
+    color: #fff;
+}
+/* Page Sections Active */
+#pageSections .list-group-item.active {
+    background-color: #0092b8;
+    color: #fff;
+    border-color: #0092b8;
+}
+#pageSections .list-group-item:hover {
+    background-color: #00b8db;
+    color: #fff;
+    border-color: #00b8db;
+}
 </style>
 
 
@@ -127,88 +154,141 @@
 <script>
     const images = {
         mobile: {
-            flower: {
-                hero: "{{ asset('images/showcase/mobile-flower-hero.webp') }}",
-                menu: "{{ asset('images/showcase/mobile-flower-menu.webp') }}",
-                home: "{{ asset('images/showcase/mobile-flower-home.webp') }}",
-                product: "{{ asset('images/showcase/mobile-flower-product.webp') }}",
-                footer: "{{ asset('images/showcase/mobile-flower-footer.webp') }}",
-                signup: "{{ asset('images/showcase/mobile-flower-signup.webp') }}",
-                login: "{{ asset('images/showcase/mobile-flower-login.webp') }}",
-                account: "{{ asset('images/showcase/mobile-flower-account.webp') }}",
-                contact: "{{ asset('images/showcase/mobile-flower-contact.webp') }}",
-                checkout: "{{ asset('images/showcase/mobile-flower-checkout.webp') }}",
-                admin: "{{ asset('images/showcase/mobile-flower-admin.webp') }}"
+            zarabella: {
+                hero: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-menu.webp') }}",
+                home: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-home.webp') }}",
+                product: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-product.webp') }}",
+                footer: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-signup.webp') }}",
+                login: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-login.webp') }}",
+                account: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-account.webp') }}",
+                contact: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-admin.webp') }}"
             },
-            ocean: {
-                hero: "{{ asset('images/showcase/mobile-ocean-hero.webp') }}",
-                menu: "{{ asset('images/showcase/mobile-ocean-menu.webp') }}",
-                home: "{{ asset('images/showcase/mobile-ocean-home.webp') }}",
-                product: "{{ asset('images/showcase/mobile-ocean-product.webp') }}",
-                footer: "{{ asset('images/showcase/mobile-ocean-footer.webp') }}",
-                signup: "{{ asset('images/showcase/mobile-ocean-signup.webp') }}",
-                login: "{{ asset('images/showcase/mobile-ocean-login.webp') }}",
-                account: "{{ asset('images/showcase/mobile-ocean-account.webp') }}",
-                contact: "{{ asset('images/showcase/mobile-ocean-contact.webp') }}",
-                checkout: "{{ asset('images/showcase/mobile-ocean-checkout.webp') }}",
-                admin: "{{ asset('images/showcase/mobile-ocean-admin.webp') }}"
+            trendaxo: {
+                hero: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-menu.webp') }}",
+                home: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-home.webp') }}",
+                product: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-product.webp') }}",
+                footer: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-signup.webp') }}",
+                login: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-login.webp') }}",
+                account: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-account.webp') }}",
+                contact: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-admin.webp') }}"
             },
-            royal: {
-                hero: "{{ asset('images/showcase/mobile-royal-hero.webp') }}",
-                menu: "{{ asset('images/showcase/mobile-royal-menu.webp') }}",
-                home: "{{ asset('images/showcase/mobile-royal-home.webp') }}",
-                product: "{{ asset('images/showcase/mobile-royal-product.webp') }}",
-                footer: "{{ asset('images/showcase/mobile-royal-footer.webp') }}",
-                signup: "{{ asset('images/showcase/mobile-royal-signup.webp') }}",
-                login: "{{ asset('images/showcase/mobile-royal-login.webp') }}",
-                account: "{{ asset('images/showcase/mobile-royal-account.webp') }}",
-                contact: "{{ asset('images/showcase/mobile-royal-contact.webp') }}",
-                checkout: "{{ asset('images/showcase/mobile-royal-checkout.webp') }}",
-                admin: "{{ asset('images/showcase/mobile-royal-admin.webp') }}"
+            techovia: {
+                hero: "{{ asset('images/user-interface/ecommerce/mobile-techovia-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/ecommerce/mobile-techovia-menu.webp') }}",
+                home: "{{ asset('images/user-interface/ecommerce/mobile-techovia-home.webp') }}",
+                product: "{{ asset('images/user-interface/ecommerce/mobile-techovia-product.webp') }}",
+                footer: "{{ asset('images/user-interface/ecommerce/mobile-techovia-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/ecommerce/mobile-techovia-signup.webp') }}",
+                login: "{{ asset('images/user-interface/ecommerce/mobile-techovia-login.webp') }}",
+                account: "{{ asset('images/user-interface/ecommerce/mobile-techovia-account.webp') }}",
+                contact: "{{ asset('images/user-interface/ecommerce/mobile-techovia-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/ecommerce/mobile-techovia-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/ecommerce/mobile-techovia-admin.webp') }}"
+            },
+            shoponex: {
+                hero: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-menu.webp') }}",
+                home: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-home.webp') }}",
+                product: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-product.webp') }}",
+                footer: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-signup.webp') }}",
+                login: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-login.webp') }}",
+                account: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-account.webp') }}",
+                contact: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-admin.webp') }}"
+            },
+            greenora: {
+                hero: "{{ asset('images/user-interface/ecommerce/mobile-greenora-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/ecommerce/mobile-greenora-menu.webp') }}",
+                home: "{{ asset('images/user-interface/ecommerce/mobile-greenora-home.webp') }}",
+                product: "{{ asset('images/user-interface/ecommerce/mobile-greenora-product.webp') }}",
+                footer: "{{ asset('images/user-interface/ecommerce/mobile-greenora-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/ecommerce/mobile-greenora-signup.webp') }}",
+                login: "{{ asset('images/user-interface/ecommerce/mobile-greenora-login.webp') }}",
+                account: "{{ asset('images/user-interface/ecommerce/mobile-greenora-account.webp') }}",
+                contact: "{{ asset('images/user-interface/ecommerce/mobile-greenora-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/ecommerce/mobile-greenora-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/ecommerce/mobile-greenora-admin.webp') }}"
             }
         },
         desktop: {
-            flower: {
-                hero: "{{ asset('images/showcase/desktop-flower-hero.webp') }}",
-                menu: "{{ asset('images/showcase/desktop-flower-menu.webp') }}",
-                home: "{{ asset('images/showcase/desktop-flower-home.webp') }}",
-                product: "{{ asset('images/showcase/desktop-flower-product.webp') }}",
-                footer: "{{ asset('images/showcase/desktop-flower-footer.webp') }}",
-                signup: "{{ asset('images/showcase/desktop-flower-signup.webp') }}",
-                login: "{{ asset('images/showcase/desktop-flower-login.webp') }}",
-                account: "{{ asset('images/showcase/desktop-flower-account.webp') }}",
-                contact: "{{ asset('images/showcase/desktop-flower-contact.webp') }}",
-                checkout: "{{ asset('images/showcase/desktop-flower-checkout.webp') }}",
-                admin: "{{ asset('images/showcase/desktop-flower-admin.webp') }}"
+            zarabella: {
+                hero: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-menu.webp') }}",
+                home: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-home.webp') }}",
+                product: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-product.webp') }}",
+                footer: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-signup.webp') }}",
+                login: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-login.webp') }}",
+                account: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-account.webp') }}",
+                contact: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-admin.webp') }}"
             },
-            ocean: {
-                hero: "{{ asset('images/showcase/desktop-ocean-hero.webp') }}",
-                menu: "{{ asset('images/showcase/desktop-ocean-menu.webp') }}",
-                home: "{{ asset('images/showcase/desktop-ocean-home.webp') }}",
-                product: "{{ asset('images/showcase/desktop-ocean-product.webp') }}",
-                footer: "{{ asset('images/showcase/desktop-ocean-footer.webp') }}",
-                signup: "{{ asset('images/showcase/desktop-ocean-signup.webp') }}",
-                login: "{{ asset('images/showcase/desktop-ocean-login.webp') }}",
-                account: "{{ asset('images/showcase/desktop-ocean-account.webp') }}",
-                contact: "{{ asset('images/showcase/desktop-ocean-contact.webp') }}",
-                checkout: "{{ asset('images/showcase/desktop-ocean-checkout.webp') }}",
-                admin: "{{ asset('images/showcase/desktop-ocean-admin.webp') }}"
+            trendaxo: {
+                hero: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-menu.webp') }}",
+                home: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-home.webp') }}",
+                product: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-product.webp') }}",
+                footer: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-signup.webp') }}",
+                login: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-login.webp') }}",
+                account: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-account.webp') }}",
+                contact: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-admin.webp') }}"
             },
-            royal: {
-                hero: "{{ asset('images/showcase/desktop-royal-hero.webp') }}",
-                menu: "{{ asset('images/showcase/desktop-royal-menu.webp') }}",
-                home: "{{ asset('images/showcase/desktop-royal-home.webp') }}",
-                product: "{{ asset('images/showcase/desktop-royal-product.webp') }}",
-                footer: "{{ asset('images/showcase/desktop-royal-footer.webp') }}",
-                signup: "{{ asset('images/showcase/desktop-royal-signup.webp') }}",
-                login: "{{ asset('images/showcase/desktop-royal-login.webp') }}",
-                account: "{{ asset('images/showcase/desktop-royal-account.webp') }}",
-                contact: "{{ asset('images/showcase/desktop-royal-contact.webp') }}",
-                checkout: "{{ asset('images/showcase/desktop-royal-checkout.webp') }}",
-                admin: "{{ asset('images/showcase/desktop-royal-admin.webp') }}"
+            techovia: {
+                hero: "{{ asset('images/user-interface/ecommerce/desktop-techovia-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/ecommerce/desktop-techovia-menu.webp') }}",
+                home: "{{ asset('images/user-interface/ecommerce/desktop-techovia-home.webp') }}",
+                product: "{{ asset('images/user-interface/ecommerce/desktop-techovia-product.webp') }}",
+                footer: "{{ asset('images/user-interface/ecommerce/desktop-techovia-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/ecommerce/desktop-techovia-signup.webp') }}",
+                login: "{{ asset('images/user-interface/ecommerce/desktop-techovia-login.webp') }}",
+                account: "{{ asset('images/user-interface/ecommerce/desktop-techovia-account.webp') }}",
+                contact: "{{ asset('images/user-interface/ecommerce/desktop-techovia-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/ecommerce/desktop-techovia-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/ecommerce/desktop-techovia-admin.webp') }}"
+            },
+            shoponex: {
+                hero: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-menu.webp') }}",
+                home: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-home.webp') }}",
+                product: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-product.webp') }}",
+                footer: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-signup.webp') }}",
+                login: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-login.webp') }}",
+                account: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-account.webp') }}",
+                contact: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-admin.webp') }}"
+            },
+            greenora: {
+                hero: "{{ asset('images/user-interface/ecommerce/desktop-greenora-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/ecommerce/desktop-greenora-menu.webp') }}",
+                home: "{{ asset('images/user-interface/ecommerce/desktop-greenora-home.webp') }}",
+                product: "{{ asset('images/user-interface/ecommerce/desktop-greenora-product.webp') }}",
+                footer: "{{ asset('images/user-interface/ecommerce/desktop-greenora-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/ecommerce/desktop-greenora-signup.webp') }}",
+                login: "{{ asset('images/user-interface/ecommerce/desktop-greenora-login.webp') }}",
+                account: "{{ asset('images/user-interface/ecommerce/desktop-greenora-account.webp') }}",
+                contact: "{{ asset('images/user-interface/ecommerce/desktop-greenora-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/ecommerce/desktop-greenora-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/ecommerce/desktop-greenora-admin.webp') }}"
             }
         }
     };
+
 
      const detailsText = {
         hero: "This section shows your website's Hero Banner and Navigation area.",
@@ -229,17 +309,17 @@
         menu: 'Menu & Categories',
         home: 'Homepage Highlights',
         product: 'Product Details',
-        footer: 'Footer Section',
+        checkout: 'Checkout & Payment',
         signup: 'Sign Up',
         login: 'Login',
         account: 'My Account',
         contact: 'Contact Us',
-        checkout: 'Checkout & Payment',
+        footer: 'Footer Section',
         admin: 'Admin Panel'
     };
 
     let currentCategory = 'mobile';
-    let currentTheme = 'flower';
+    let currentTheme = 'zarabella';
     let currentPage = 'hero';
 
     const pageSectionsDiv = document.getElementById('pageSections');
@@ -308,7 +388,6 @@
         const modal = new bootstrap.Modal(document.getElementById('detailsModal'));
         modal.show();
     });
-
 
     // Init
     loadPageButtons();

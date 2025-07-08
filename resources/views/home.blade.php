@@ -10,7 +10,7 @@
       <a href="#services" class="hero-btn">Explore Services</a>
     </div>
     <div class="hero-image-box">
-      <img src="{{ asset('images/laravel-web-hero.webp') }}" alt="Hero Banner" class="hero-img">
+      <img src="{{ asset('images/banner/laravel-web-hero.webp') }}" alt="Hero Banner" class="hero-img">
     </div>
   </div>
 </section>
