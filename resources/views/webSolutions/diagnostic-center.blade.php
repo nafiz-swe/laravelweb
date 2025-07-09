@@ -38,7 +38,7 @@
     </div>
 
     <!-- 
-    bBovista — Bio + Vision + Vista (clear lab result focus)
+    Biovista — Bio + Vision + Vista (clear lab result focus)
     Diagnovera — Diagnosis + Vera (truth & trust)
     Mediora — Medical + Aura (peaceful, premium medical vibe)
     Neurovia — Neuro + via (brain/nerve related path)
@@ -397,3 +397,61 @@ span {
     updateImage();
 </script>
 @endsection
+
+<!-- 
+//Diagnostic Center
+Biovista
+Diagnovera
+Mediora
+Neurovia
+Pathodex
+----------
+//E-commerce
+Greenora
+Shoponex
+Techovia
+Trendaxo
+Zarabella
+----------
+//Portfolio/Personal Website
+Doccura
+Enginuva
+Lawverra
+Studiora
+Tutorix
+----------
+//Resort/Hotel Booking
+Havenox
+Luxavera
+Restova
+Seanova
+Suntherra
+----------
+//Restaurant/Cafe Shop
+Cafedra
+Cafionix
+Grillora
+Mealvix
+Restolina
+----------
+//Salon/Beauty Parlor
+Beautonix
+Glowvanta
+Glowtica
+Salonova
+Parlorix
+----------
+//School Management
+Edunex
+Eduvanta
+Learnova
+Scholix
+Scholora
+----------
+//Tuition Center
+Hometora
+Tutorella
+Tutorflare
+Tutornova
+Tutorvanta
+-->
