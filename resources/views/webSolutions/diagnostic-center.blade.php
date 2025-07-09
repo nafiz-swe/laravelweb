@@ -38,7 +38,7 @@
     </div>
 
     <!-- 
-    biovista — Bio + Vision + Vista (clear lab result focus)
+    bBovista — Bio + Vision + Vista (clear lab result focus)
     Diagnovera — Diagnosis + Vera (truth & trust)
     Mediora — Medical + Aura (peaceful, premium medical vibe)
     Neurovia — Neuro + via (brain/nerve related path)

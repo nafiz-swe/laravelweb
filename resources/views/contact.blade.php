@@ -11,7 +11,7 @@
         <p class="text-center text-muted mb-2 small">
             Looking for reliable software solutions? Send us a message—our team is ready to assist you with your digital needs.
         </p>
-        <div class="hero-animated-bar"></div>
+        <div class="hero-animated-bar mb-5"></div>
 
     </div>
 </section>
@@ -75,29 +75,39 @@
 
                             <div class="mb-3">
                                 <label for="inquiry" class="form-label">Your Inquiry About</label>
-                                <select name="inquiry" class="form-select" required>
+                                <select name="inquiry" id="inquiry" class="form-select" required>
                                     <option value="">-- Select Web Solution --</option>
-                                    <option>Diagnostic Center</option>
-                                    <option>E-commerce</option>
-                                    <option>Portfolio/Personal Website</option>
-                                    <option>Resort/Hotel</option>
-                                    <option>Restaurant/Cafe Shop</option>
-                                    <option>Salon/Beauty Parlor</option>
-                                    <option>School Management</option>
-                                    <option>Tuition Center</option>
-                                    <option>Other</option>
+                                    <option value="Diagnostic Center">Diagnostic Center</option>
+                                    <option value="E-commerce">E-commerce</option>
+                                    <option value="Portfolio/Personal Website">Portfolio/Personal Website</option>
+                                    <option value="Resort/Hotel Booking">Resort/Hotel Booking</option>
+                                    <option value="Restaurant/Cafe Shop">Restaurant/Cafe Shop</option>
+                                    <option value="Salon/Beauty Parlor">Salon/Beauty Parlor</option>
+                                    <option value="School Management">School Management</option>
+                                    <option value="Tuition Center">Tuition Center</option>
+                                    <option value="Other">Other</option>
                                 </select>
                                 @error('inquiry')<small class="text-danger">{{ $message }}</small>@enderror
                             </div>
 
+                            <!-- Theme selector -->
+                            <div class="mb-3" id="theme-section" style="display: none;">
+                                <label class="form-label">Your Preferred Laravel Theme</label>
+                                <select name="theme" id="theme" class="form-select">
+                                    <option value="">-- Select Theme --</option>
+                                </select>
+                            </div>
+
                             <div class="mb-3">
-                                <label for="message" class="form-label">Type project details</label>
+                                <label for="message" class="form-label">Type Project Details</label>
                                 <textarea name="message" rows="5" class="form-control" placeholder="Write your project details here..." required></textarea>
                                 @error('message')<small class="text-danger">{{ $message }}</small>@enderror
                             </div>
 
                             <button type="submit" class="btn w-100 text-white py-2 btn-contact">Send Message</button>
                         </form>
+
+
                     </div>
                 </div>
 
@@ -105,5 +115,38 @@
         </div>
     </div>
 </section>
+<script>
+    const themes = {
+        "Diagnostic Center": ["Biovista", "Diagnovera", "Mediora", "Neurovia", "Pathodex"],
+        "E-commerce": ["Greenora", "Shoponex", "Techovia", "Trendaxo", "Zarabella"],
+        "Portfolio/Personal Website": ["Doccura", "Enginuva", "Lawverra", "Studiora", "Tutorix"],
+        "Resort/Hotel Booking": ["Havenox", "Luxavera", "Restova", "Seanova", "Suntherra"],
+        "Restaurant/Cafe Shop": ["Cafedra", "Cafionix", "Grillora", "Mealvix", "Restolina"],
+        "Salon/Beauty Parlor": ["Beautonix", "Glowvanta", "Glowtica", "Salonova", "Parlorix"],
+        "School Management": ["Edunex", "Eduvanta", "Learnova", "Scholix", "Scholora"],
+        "Tuition Center": ["Hometora", "Tutorella", "Tutorflare", "Tutornova", "Tutorvanta"]
+    };
+
+    document.getElementById('inquiry').addEventListener('change', function () {
+        const selected = this.value;
+        const themeSection = document.getElementById('theme-section');
+        const themeSelect = document.getElementById('theme');
+
+        // Reset themes
+        themeSelect.innerHTML = `<option value="">-- Select Theme --</option>`;
+
+        if (themes[selected]) {
+            themeSection.style.display = 'block';
+            themes[selected].forEach(theme => {
+                const option = document.createElement('option');
+                option.value = theme;
+                option.text = theme;
+                themeSelect.appendChild(option);
+            });
+        } else {
+            themeSection.style.display = 'none';
+        }
+    });
+</script>
 
 @endsection
