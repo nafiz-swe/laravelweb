@@ -458,7 +458,7 @@
 <section class="py-5 bg-white">
     <div class="container text-center">
         <h1 class="mb-3 fw-bold split-title">
-            <span>Featured</span> <span>Projects</span>
+            <span>Laravel</span> <span>Theme</span>
         </h1>
         <p class="text-muted mb-5">
             Over the last 13+ years, we have delivered modern software solutions across industries — from eCommerce to government archives.
