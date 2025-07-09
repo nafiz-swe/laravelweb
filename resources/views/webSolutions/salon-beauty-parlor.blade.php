@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'E-commerce Responsive & Theme Preview')
+@section('title', 'Salon/Parlor Theme Preview')
 
 @section('content')
 <section class="hero-section">
@@ -15,7 +15,7 @@
   </div>
 </section>
 
-{{-- Main Design user-interface/ecommerce --}}
+{{-- Main Design user-interface/salon --}}
 <div class="container my-5 pt-5">
     <h1 class="text-center mt-5 mb-3"><span>Salon/Beauty Parlor</span> User Interface</h1>
     <p class="text-center mb-5">Discover responsive salon/beauty parlor designs with multiple Laravel themes. Switch between mobile and desktop views and select your preferred user interface.</p>
@@ -27,11 +27,11 @@
 
     {{-- Theme Selection --}}
     <div class="d-flex justify-content-center mb-5 gap-3 flex-wrap">
-        <button class="btn btn-outline theme-btn active" data-theme="zarabella">Beautonix UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="trendaxo">Glowvanta UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="techovia">Glowtica UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="shoponex">Salonova UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="greenora">Parlorix UI</button>
+        <button class="btn btn-outline theme-btn active" data-theme="beautonix">Beautonix UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="glowvanta">Glowvanta UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="glowtica">Glowtica UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="salonova">Salonova UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="parlorix">Parlorix UI</button>
     </div>
 
     <!-- 
@@ -55,7 +55,7 @@
         {{-- Right Side: Image Preview --}}
         <div class="col-md-9">
             <div class="text-center">
-                <img id="previewImage" src="{{ asset('images/user-interface/ecommerce/mobile-zarabella-hero.webp') }}" alt="Preview Image" class="img-fluid rounded shadow">
+                <img id="previewImage" src="{{ asset('images/user-interface/salon/mobile-beautonix-hero.webp') }}" alt="Preview Image" class="img-fluid rounded shadow">
                 <div class="mt-5">
                     <button onclick="window.location.href='{{ route('estimates.salon') }}'" class="btn btn-get-design me-2">
                         Delivery & Cost Info
@@ -154,137 +154,137 @@ span {
 <script>
     const images = {
         mobile: {
-            zarabella: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-admin.webp') }}"
+            beautonix: {
+                hero: "{{ asset('images/user-interface/salon/mobile-beautonix-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/salon/mobile-beautonix-menu.webp') }}",
+                home: "{{ asset('images/user-interface/salon/mobile-beautonix-home.webp') }}",
+                product: "{{ asset('images/user-interface/salon/mobile-beautonix-product.webp') }}",
+                footer: "{{ asset('images/user-interface/salon/mobile-beautonix-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/salon/mobile-beautonix-signup.webp') }}",
+                login: "{{ asset('images/user-interface/salon/mobile-beautonix-login.webp') }}",
+                account: "{{ asset('images/user-interface/salon/mobile-beautonix-account.webp') }}",
+                contact: "{{ asset('images/user-interface/salon/mobile-beautonix-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/salon/mobile-beautonix-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/salon/mobile-beautonix-admin.webp') }}"
             },
-            trendaxo: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-admin.webp') }}"
+            glowvanta: {
+                hero: "{{ asset('images/user-interface/salon/mobile-glowvanta-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/salon/mobile-glowvanta-menu.webp') }}",
+                home: "{{ asset('images/user-interface/salon/mobile-glowvanta-home.webp') }}",
+                product: "{{ asset('images/user-interface/salon/mobile-glowvanta-product.webp') }}",
+                footer: "{{ asset('images/user-interface/salon/mobile-glowvanta-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/salon/mobile-glowvanta-signup.webp') }}",
+                login: "{{ asset('images/user-interface/salon/mobile-glowvanta-login.webp') }}",
+                account: "{{ asset('images/user-interface/salon/mobile-glowvanta-account.webp') }}",
+                contact: "{{ asset('images/user-interface/salon/mobile-glowvanta-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/salon/mobile-glowvanta-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/salon/mobile-glowvanta-admin.webp') }}"
             },
-            techovia: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-techovia-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-techovia-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-techovia-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-techovia-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-techovia-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-techovia-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-techovia-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-techovia-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-techovia-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-techovia-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-techovia-admin.webp') }}"
+            glowtica: {
+                hero: "{{ asset('images/user-interface/salon/mobile-glowtica-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/salon/mobile-glowtica-menu.webp') }}",
+                home: "{{ asset('images/user-interface/salon/mobile-glowtica-home.webp') }}",
+                product: "{{ asset('images/user-interface/salon/mobile-glowtica-product.webp') }}",
+                footer: "{{ asset('images/user-interface/salon/mobile-glowtica-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/salon/mobile-glowtica-signup.webp') }}",
+                login: "{{ asset('images/user-interface/salon/mobile-glowtica-login.webp') }}",
+                account: "{{ asset('images/user-interface/salon/mobile-glowtica-account.webp') }}",
+                contact: "{{ asset('images/user-interface/salon/mobile-glowtica-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/salon/mobile-glowtica-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/salon/mobile-glowtica-admin.webp') }}"
             },
-            shoponex: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-admin.webp') }}"
+            salonova: {
+                hero: "{{ asset('images/user-interface/salon/mobile-salonova-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/salon/mobile-salonova-menu.webp') }}",
+                home: "{{ asset('images/user-interface/salon/mobile-salonova-home.webp') }}",
+                product: "{{ asset('images/user-interface/salon/mobile-salonova-product.webp') }}",
+                footer: "{{ asset('images/user-interface/salon/mobile-salonova-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/salon/mobile-salonova-signup.webp') }}",
+                login: "{{ asset('images/user-interface/salon/mobile-salonova-login.webp') }}",
+                account: "{{ asset('images/user-interface/salon/mobile-salonova-account.webp') }}",
+                contact: "{{ asset('images/user-interface/salon/mobile-salonova-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/salon/mobile-salonova-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/salon/mobile-salonova-admin.webp') }}"
             },
-            greenora: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-greenora-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-greenora-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-greenora-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-greenora-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-greenora-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-greenora-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-greenora-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-greenora-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-greenora-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-greenora-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-greenora-admin.webp') }}"
+            parlorix: {
+                hero: "{{ asset('images/user-interface/salon/mobile-parlorix-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/salon/mobile-parlorix-menu.webp') }}",
+                home: "{{ asset('images/user-interface/salon/mobile-parlorix-home.webp') }}",
+                product: "{{ asset('images/user-interface/salon/mobile-parlorix-product.webp') }}",
+                footer: "{{ asset('images/user-interface/salon/mobile-parlorix-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/salon/mobile-parlorix-signup.webp') }}",
+                login: "{{ asset('images/user-interface/salon/mobile-parlorix-login.webp') }}",
+                account: "{{ asset('images/user-interface/salon/mobile-parlorix-account.webp') }}",
+                contact: "{{ asset('images/user-interface/salon/mobile-parlorix-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/salon/mobile-parlorix-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/salon/mobile-parlorix-admin.webp') }}"
             }
         },
         desktop: {
-            zarabella: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-admin.webp') }}"
+            beautonix: {
+                hero: "{{ asset('images/user-interface/salon/desktop-beautonix-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/salon/desktop-beautonix-menu.webp') }}",
+                home: "{{ asset('images/user-interface/salon/desktop-beautonix-home.webp') }}",
+                product: "{{ asset('images/user-interface/salon/desktop-beautonix-product.webp') }}",
+                footer: "{{ asset('images/user-interface/salon/desktop-beautonix-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/salon/desktop-beautonix-signup.webp') }}",
+                login: "{{ asset('images/user-interface/salon/desktop-beautonix-login.webp') }}",
+                account: "{{ asset('images/user-interface/salon/desktop-beautonix-account.webp') }}",
+                contact: "{{ asset('images/user-interface/salon/desktop-beautonix-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/salon/desktop-beautonix-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/salon/desktop-beautonix-admin.webp') }}"
             },
-            trendaxo: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-admin.webp') }}"
+            glowvanta: {
+                hero: "{{ asset('images/user-interface/salon/desktop-glowvanta-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/salon/desktop-glowvanta-menu.webp') }}",
+                home: "{{ asset('images/user-interface/salon/desktop-glowvanta-home.webp') }}",
+                product: "{{ asset('images/user-interface/salon/desktop-glowvanta-product.webp') }}",
+                footer: "{{ asset('images/user-interface/salon/desktop-glowvanta-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/salon/desktop-glowvanta-signup.webp') }}",
+                login: "{{ asset('images/user-interface/salon/desktop-glowvanta-login.webp') }}",
+                account: "{{ asset('images/user-interface/salon/desktop-glowvanta-account.webp') }}",
+                contact: "{{ asset('images/user-interface/salon/desktop-glowvanta-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/salon/desktop-glowvanta-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/salon/desktop-glowvanta-admin.webp') }}"
             },
-            techovia: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-techovia-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-techovia-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-techovia-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-techovia-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-techovia-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-techovia-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-techovia-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-techovia-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-techovia-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-techovia-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-techovia-admin.webp') }}"
+            glowtica: {
+                hero: "{{ asset('images/user-interface/salon/desktop-glowtica-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/salon/desktop-glowtica-menu.webp') }}",
+                home: "{{ asset('images/user-interface/salon/desktop-glowtica-home.webp') }}",
+                product: "{{ asset('images/user-interface/salon/desktop-glowtica-product.webp') }}",
+                footer: "{{ asset('images/user-interface/salon/desktop-glowtica-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/salon/desktop-glowtica-signup.webp') }}",
+                login: "{{ asset('images/user-interface/salon/desktop-glowtica-login.webp') }}",
+                account: "{{ asset('images/user-interface/salon/desktop-glowtica-account.webp') }}",
+                contact: "{{ asset('images/user-interface/salon/desktop-glowtica-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/salon/desktop-glowtica-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/salon/desktop-glowtica-admin.webp') }}"
             },
-            shoponex: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-admin.webp') }}"
+            salonova: {
+                hero: "{{ asset('images/user-interface/salon/desktop-salonova-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/salon/desktop-salonova-menu.webp') }}",
+                home: "{{ asset('images/user-interface/salon/desktop-salonova-home.webp') }}",
+                product: "{{ asset('images/user-interface/salon/desktop-salonova-product.webp') }}",
+                footer: "{{ asset('images/user-interface/salon/desktop-salonova-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/salon/desktop-salonova-signup.webp') }}",
+                login: "{{ asset('images/user-interface/salon/desktop-salonova-login.webp') }}",
+                account: "{{ asset('images/user-interface/salon/desktop-salonova-account.webp') }}",
+                contact: "{{ asset('images/user-interface/salon/desktop-salonova-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/salon/desktop-salonova-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/salon/desktop-salonova-admin.webp') }}"
             },
-            greenora: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-greenora-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-greenora-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-greenora-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-greenora-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-greenora-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-greenora-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-greenora-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-greenora-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-greenora-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-greenora-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-greenora-admin.webp') }}"
+            parlorix: {
+                hero: "{{ asset('images/user-interface/salon/desktop-parlorix-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/salon/desktop-parlorix-menu.webp') }}",
+                home: "{{ asset('images/user-interface/salon/desktop-parlorix-home.webp') }}",
+                product: "{{ asset('images/user-interface/salon/desktop-parlorix-product.webp') }}",
+                footer: "{{ asset('images/user-interface/salon/desktop-parlorix-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/salon/desktop-parlorix-signup.webp') }}",
+                login: "{{ asset('images/user-interface/salon/desktop-parlorix-login.webp') }}",
+                account: "{{ asset('images/user-interface/salon/desktop-parlorix-account.webp') }}",
+                contact: "{{ asset('images/user-interface/salon/desktop-parlorix-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/salon/desktop-parlorix-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/salon/desktop-parlorix-admin.webp') }}"
             }
         }
     };
@@ -319,7 +319,7 @@ span {
     };
 
     let currentCategory = 'mobile';
-    let currentTheme = 'zarabella';
+    let currentTheme = 'beautonix';
     let currentPage = 'hero';
 
     const pageSectionsDiv = document.getElementById('pageSections');

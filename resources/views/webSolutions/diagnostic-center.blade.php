@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'E-commerce Responsive & Theme Preview')
+@section('title', 'Diagnostic Center Theme Preview')
 
 @section('content')
 <section class="hero-section">
@@ -15,7 +15,7 @@
   </div>
 </section>
 
-{{-- Main Design user-interface/ecommerce --}}
+{{-- Main Design user-interface/diagnostic --}}
 <div class="container my-5 pt-5">
     <h1 class="text-center mt-5 mb-3"><span>Diagnostic Center</span> User Interface</h1>
     <p class="text-center mb-5">Discover responsive diagnostic center designs with multiple Laravel themes. Switch between mobile and desktop views and select your preferred user interface.</p>

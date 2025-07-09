@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'E-commerce Responsive & Theme Preview')
+@section('title', 'Resort/Hotel Theme Preview')
 
 @section('content')
 <section class="hero-section">
@@ -15,7 +15,7 @@
   </div>
 </section>
 
-{{-- Main Design user-interface/ecommerce --}}
+{{-- Main Design user-interface/resort --}}
 <div class="container my-5 pt-5">
     <h1 class="text-center mt-5 mb-3"><span>Resort/Hotel</span> User Interface</h1>
     <p class="text-center mb-5">Discover responsive resort/hotel designs with multiple Laravel themes. Switch between mobile and desktop views and select your preferred user interface.</p>
@@ -27,11 +27,11 @@
 
     {{-- Theme Selection --}}
     <div class="d-flex justify-content-center mb-5 gap-3 flex-wrap">
-        <button class="btn btn-outline theme-btn active" data-theme="zarabella">Havenox UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="trendaxo">Luxavera UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="techovia">Restova UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="shoponex">Seanova UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="greenora">Suntherra UI</button>
+        <button class="btn btn-outline theme-btn active" data-theme="havenox">Havenox UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="luxavera">Luxavera UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="restova">Restova UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="seanova">Seanova UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="suntherra">Suntherra UI</button>
     </div>
 
     <!-- 
@@ -55,7 +55,7 @@
         {{-- Right Side: Image Preview --}}
         <div class="col-md-9">
             <div class="text-center">
-                <img id="previewImage" src="{{ asset('images/user-interface/ecommerce/mobile-zarabella-hero.webp') }}" alt="Preview Image" class="img-fluid rounded shadow">
+                <img id="previewImage" src="{{ asset('images/user-interface/resort/mobile-havenox-hero.webp') }}" alt="Preview Image" class="img-fluid rounded shadow">
                 <div class="mt-5">
                     <button onclick="window.location.href='{{ route('estimates.resort') }}'" class="btn btn-get-design me-2">
                         Delivery & Cost Info
@@ -154,137 +154,137 @@ span {
 <script>
     const images = {
         mobile: {
-            zarabella: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-admin.webp') }}"
+            havenox: {
+                hero: "{{ asset('images/user-interface/resort/mobile-havenox-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/resort/mobile-havenox-menu.webp') }}",
+                home: "{{ asset('images/user-interface/resort/mobile-havenox-home.webp') }}",
+                product: "{{ asset('images/user-interface/resort/mobile-havenox-product.webp') }}",
+                footer: "{{ asset('images/user-interface/resort/mobile-havenox-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/resort/mobile-havenox-signup.webp') }}",
+                login: "{{ asset('images/user-interface/resort/mobile-havenox-login.webp') }}",
+                account: "{{ asset('images/user-interface/resort/mobile-havenox-account.webp') }}",
+                contact: "{{ asset('images/user-interface/resort/mobile-havenox-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/resort/mobile-havenox-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/resort/mobile-havenox-admin.webp') }}"
             },
-            trendaxo: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-admin.webp') }}"
+            luxavera: {
+                hero: "{{ asset('images/user-interface/resort/mobile-luxavera-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/resort/mobile-luxavera-menu.webp') }}",
+                home: "{{ asset('images/user-interface/resort/mobile-luxavera-home.webp') }}",
+                product: "{{ asset('images/user-interface/resort/mobile-luxavera-product.webp') }}",
+                footer: "{{ asset('images/user-interface/resort/mobile-luxavera-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/resort/mobile-luxavera-signup.webp') }}",
+                login: "{{ asset('images/user-interface/resort/mobile-luxavera-login.webp') }}",
+                account: "{{ asset('images/user-interface/resort/mobile-luxavera-account.webp') }}",
+                contact: "{{ asset('images/user-interface/resort/mobile-luxavera-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/resort/mobile-luxavera-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/resort/mobile-luxavera-admin.webp') }}"
             },
-            techovia: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-techovia-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-techovia-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-techovia-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-techovia-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-techovia-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-techovia-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-techovia-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-techovia-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-techovia-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-techovia-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-techovia-admin.webp') }}"
+            restova: {
+                hero: "{{ asset('images/user-interface/resort/mobile-restova-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/resort/mobile-restova-menu.webp') }}",
+                home: "{{ asset('images/user-interface/resort/mobile-restova-home.webp') }}",
+                product: "{{ asset('images/user-interface/resort/mobile-restova-product.webp') }}",
+                footer: "{{ asset('images/user-interface/resort/mobile-restova-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/resort/mobile-restova-signup.webp') }}",
+                login: "{{ asset('images/user-interface/resort/mobile-restova-login.webp') }}",
+                account: "{{ asset('images/user-interface/resort/mobile-restova-account.webp') }}",
+                contact: "{{ asset('images/user-interface/resort/mobile-restova-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/resort/mobile-restova-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/resort/mobile-restova-admin.webp') }}"
             },
-            shoponex: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-admin.webp') }}"
+            seanova: {
+                hero: "{{ asset('images/user-interface/resort/mobile-seanova-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/resort/mobile-seanova-menu.webp') }}",
+                home: "{{ asset('images/user-interface/resort/mobile-seanova-home.webp') }}",
+                product: "{{ asset('images/user-interface/resort/mobile-seanova-product.webp') }}",
+                footer: "{{ asset('images/user-interface/resort/mobile-seanova-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/resort/mobile-seanova-signup.webp') }}",
+                login: "{{ asset('images/user-interface/resort/mobile-seanova-login.webp') }}",
+                account: "{{ asset('images/user-interface/resort/mobile-seanova-account.webp') }}",
+                contact: "{{ asset('images/user-interface/resort/mobile-seanova-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/resort/mobile-seanova-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/resort/mobile-seanova-admin.webp') }}"
             },
-            greenora: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-greenora-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-greenora-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-greenora-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-greenora-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-greenora-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-greenora-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-greenora-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-greenora-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-greenora-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-greenora-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-greenora-admin.webp') }}"
+            suntherra: {
+                hero: "{{ asset('images/user-interface/resort/mobile-suntherra-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/resort/mobile-suntherra-menu.webp') }}",
+                home: "{{ asset('images/user-interface/resort/mobile-suntherra-home.webp') }}",
+                product: "{{ asset('images/user-interface/resort/mobile-suntherra-product.webp') }}",
+                footer: "{{ asset('images/user-interface/resort/mobile-suntherra-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/resort/mobile-suntherra-signup.webp') }}",
+                login: "{{ asset('images/user-interface/resort/mobile-suntherra-login.webp') }}",
+                account: "{{ asset('images/user-interface/resort/mobile-suntherra-account.webp') }}",
+                contact: "{{ asset('images/user-interface/resort/mobile-suntherra-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/resort/mobile-suntherra-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/resort/mobile-suntherra-admin.webp') }}"
             }
         },
         desktop: {
-            zarabella: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-admin.webp') }}"
+            havenox: {
+                hero: "{{ asset('images/user-interface/resort/desktop-havenox-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/resort/desktop-havenox-menu.webp') }}",
+                home: "{{ asset('images/user-interface/resort/desktop-havenox-home.webp') }}",
+                product: "{{ asset('images/user-interface/resort/desktop-havenox-product.webp') }}",
+                footer: "{{ asset('images/user-interface/resort/desktop-havenox-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/resort/desktop-havenox-signup.webp') }}",
+                login: "{{ asset('images/user-interface/resort/desktop-havenox-login.webp') }}",
+                account: "{{ asset('images/user-interface/resort/desktop-havenox-account.webp') }}",
+                contact: "{{ asset('images/user-interface/resort/desktop-havenox-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/resort/desktop-havenox-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/resort/desktop-havenox-admin.webp') }}"
             },
-            trendaxo: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-admin.webp') }}"
+            luxavera: {
+                hero: "{{ asset('images/user-interface/resort/desktop-luxavera-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/resort/desktop-luxavera-menu.webp') }}",
+                home: "{{ asset('images/user-interface/resort/desktop-luxavera-home.webp') }}",
+                product: "{{ asset('images/user-interface/resort/desktop-luxavera-product.webp') }}",
+                footer: "{{ asset('images/user-interface/resort/desktop-luxavera-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/resort/desktop-luxavera-signup.webp') }}",
+                login: "{{ asset('images/user-interface/resort/desktop-luxavera-login.webp') }}",
+                account: "{{ asset('images/user-interface/resort/desktop-luxavera-account.webp') }}",
+                contact: "{{ asset('images/user-interface/resort/desktop-luxavera-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/resort/desktop-luxavera-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/resort/desktop-luxavera-admin.webp') }}"
             },
-            techovia: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-techovia-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-techovia-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-techovia-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-techovia-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-techovia-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-techovia-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-techovia-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-techovia-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-techovia-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-techovia-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-techovia-admin.webp') }}"
+            restova: {
+                hero: "{{ asset('images/user-interface/resort/desktop-restova-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/resort/desktop-restova-menu.webp') }}",
+                home: "{{ asset('images/user-interface/resort/desktop-restova-home.webp') }}",
+                product: "{{ asset('images/user-interface/resort/desktop-restova-product.webp') }}",
+                footer: "{{ asset('images/user-interface/resort/desktop-restova-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/resort/desktop-restova-signup.webp') }}",
+                login: "{{ asset('images/user-interface/resort/desktop-restova-login.webp') }}",
+                account: "{{ asset('images/user-interface/resort/desktop-restova-account.webp') }}",
+                contact: "{{ asset('images/user-interface/resort/desktop-restova-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/resort/desktop-restova-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/resort/desktop-restova-admin.webp') }}"
             },
-            shoponex: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-admin.webp') }}"
+            seanova: {
+                hero: "{{ asset('images/user-interface/resort/desktop-seanova-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/resort/desktop-seanova-menu.webp') }}",
+                home: "{{ asset('images/user-interface/resort/desktop-seanova-home.webp') }}",
+                product: "{{ asset('images/user-interface/resort/desktop-seanova-product.webp') }}",
+                footer: "{{ asset('images/user-interface/resort/desktop-seanova-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/resort/desktop-seanova-signup.webp') }}",
+                login: "{{ asset('images/user-interface/resort/desktop-seanova-login.webp') }}",
+                account: "{{ asset('images/user-interface/resort/desktop-seanova-account.webp') }}",
+                contact: "{{ asset('images/user-interface/resort/desktop-seanova-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/resort/desktop-seanova-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/resort/desktop-seanova-admin.webp') }}"
             },
-            greenora: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-greenora-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-greenora-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-greenora-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-greenora-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-greenora-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-greenora-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-greenora-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-greenora-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-greenora-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-greenora-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-greenora-admin.webp') }}"
+            suntherra: {
+                hero: "{{ asset('images/user-interface/resort/desktop-suntherra-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/resort/desktop-suntherra-menu.webp') }}",
+                home: "{{ asset('images/user-interface/resort/desktop-suntherra-home.webp') }}",
+                product: "{{ asset('images/user-interface/resort/desktop-suntherra-product.webp') }}",
+                footer: "{{ asset('images/user-interface/resort/desktop-suntherra-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/resort/desktop-suntherra-signup.webp') }}",
+                login: "{{ asset('images/user-interface/resort/desktop-suntherra-login.webp') }}",
+                account: "{{ asset('images/user-interface/resort/desktop-suntherra-account.webp') }}",
+                contact: "{{ asset('images/user-interface/resort/desktop-suntherra-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/resort/desktop-suntherra-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/resort/desktop-suntherra-admin.webp') }}"
             }
         }
     };
@@ -319,7 +319,7 @@ span {
     };
 
     let currentCategory = 'mobile';
-    let currentTheme = 'zarabella';
+    let currentTheme = 'havenox';
     let currentPage = 'hero';
 
     const pageSectionsDiv = document.getElementById('pageSections');

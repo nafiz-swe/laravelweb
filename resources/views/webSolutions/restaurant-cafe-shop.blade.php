@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'E-commerce Responsive & Theme Preview')
+@section('title', 'Restaurant/Cafe Theme Preview')
 
 @section('content')
 <section class="hero-section">
@@ -15,7 +15,7 @@
   </div>
 </section>
 
-{{-- Main Design user-interface/ecommerce --}}
+{{-- Main Design user-interface/restaurant --}}
 <div class="container my-5 pt-5">
     <h1 class="text-center mt-5 mb-3"><span>Restaurant/Cafe</span> User Interface</h1>
     <p class="text-center mb-5">Discover responsive restaurant/cafe designs with multiple Laravel themes. Switch between mobile and desktop views and select your preferred user interface.</p>
@@ -27,11 +27,11 @@
 
     {{-- Theme Selection --}}
     <div class="d-flex justify-content-center mb-5 gap-3 flex-wrap">
-        <button class="btn btn-outline theme-btn active" data-theme="zarabella">Cafedra UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="trendaxo">Cafionix UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="techovia">Grillora UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="shoponex">Mealvix UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="greenora">Restolina UI</button>
+        <button class="btn btn-outline theme-btn active" data-theme="cafedra">Cafedra UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="cafionix">Cafionix UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="grillora">Grillora UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="mealvix">Mealvix UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="restolina">Restolina UI</button>
     </div>
 
     <!-- 
@@ -55,7 +55,7 @@
         {{-- Right Side: Image Preview --}}
         <div class="col-md-9">
             <div class="text-center">
-                <img id="previewImage" src="{{ asset('images/user-interface/ecommerce/mobile-zarabella-hero.webp') }}" alt="Preview Image" class="img-fluid rounded shadow">
+                <img id="previewImage" src="{{ asset('images/user-interface/restaurant/mobile-cafedra-hero.webp') }}" alt="Preview Image" class="img-fluid rounded shadow">
                 <div class="mt-5">
                     <button onclick="window.location.href='{{ route('estimates.restaurant') }}'" class="btn btn-get-design me-2">
                         Delivery & Cost Info
@@ -154,137 +154,137 @@ span {
 <script>
     const images = {
         mobile: {
-            zarabella: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-admin.webp') }}"
+            cafedra: {
+                hero: "{{ asset('images/user-interface/restaurant/mobile-cafedra-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/restaurant/mobile-cafedra-menu.webp') }}",
+                home: "{{ asset('images/user-interface/restaurant/mobile-cafedra-home.webp') }}",
+                product: "{{ asset('images/user-interface/restaurant/mobile-cafedra-product.webp') }}",
+                footer: "{{ asset('images/user-interface/restaurant/mobile-cafedra-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/restaurant/mobile-cafedra-signup.webp') }}",
+                login: "{{ asset('images/user-interface/restaurant/mobile-cafedra-login.webp') }}",
+                account: "{{ asset('images/user-interface/restaurant/mobile-cafedra-account.webp') }}",
+                contact: "{{ asset('images/user-interface/restaurant/mobile-cafedra-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/restaurant/mobile-cafedra-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/restaurant/mobile-cafedra-admin.webp') }}"
             },
-            trendaxo: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-admin.webp') }}"
+            cafionix: {
+                hero: "{{ asset('images/user-interface/restaurant/mobile-cafionix-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/restaurant/mobile-cafionix-menu.webp') }}",
+                home: "{{ asset('images/user-interface/restaurant/mobile-cafionix-home.webp') }}",
+                product: "{{ asset('images/user-interface/restaurant/mobile-cafionix-product.webp') }}",
+                footer: "{{ asset('images/user-interface/restaurant/mobile-cafionix-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/restaurant/mobile-cafionix-signup.webp') }}",
+                login: "{{ asset('images/user-interface/restaurant/mobile-cafionix-login.webp') }}",
+                account: "{{ asset('images/user-interface/restaurant/mobile-cafionix-account.webp') }}",
+                contact: "{{ asset('images/user-interface/restaurant/mobile-cafionix-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/restaurant/mobile-cafionix-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/restaurant/mobile-cafionix-admin.webp') }}"
             },
-            techovia: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-techovia-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-techovia-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-techovia-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-techovia-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-techovia-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-techovia-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-techovia-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-techovia-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-techovia-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-techovia-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-techovia-admin.webp') }}"
+            grillora: {
+                hero: "{{ asset('images/user-interface/restaurant/mobile-grillora-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/restaurant/mobile-grillora-menu.webp') }}",
+                home: "{{ asset('images/user-interface/restaurant/mobile-grillora-home.webp') }}",
+                product: "{{ asset('images/user-interface/restaurant/mobile-grillora-product.webp') }}",
+                footer: "{{ asset('images/user-interface/restaurant/mobile-grillora-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/restaurant/mobile-grillora-signup.webp') }}",
+                login: "{{ asset('images/user-interface/restaurant/mobile-grillora-login.webp') }}",
+                account: "{{ asset('images/user-interface/restaurant/mobile-grillora-account.webp') }}",
+                contact: "{{ asset('images/user-interface/restaurant/mobile-grillora-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/restaurant/mobile-grillora-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/restaurant/mobile-grillora-admin.webp') }}"
             },
-            shoponex: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-admin.webp') }}"
+            mealvix: {
+                hero: "{{ asset('images/user-interface/restaurant/mobile-mealvix-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/restaurant/mobile-mealvix-menu.webp') }}",
+                home: "{{ asset('images/user-interface/restaurant/mobile-mealvix-home.webp') }}",
+                product: "{{ asset('images/user-interface/restaurant/mobile-mealvix-product.webp') }}",
+                footer: "{{ asset('images/user-interface/restaurant/mobile-mealvix-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/restaurant/mobile-mealvix-signup.webp') }}",
+                login: "{{ asset('images/user-interface/restaurant/mobile-mealvix-login.webp') }}",
+                account: "{{ asset('images/user-interface/restaurant/mobile-mealvix-account.webp') }}",
+                contact: "{{ asset('images/user-interface/restaurant/mobile-mealvix-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/restaurant/mobile-mealvix-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/restaurant/mobile-mealvix-admin.webp') }}"
             },
-            greenora: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-greenora-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-greenora-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-greenora-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-greenora-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-greenora-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-greenora-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-greenora-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-greenora-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-greenora-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-greenora-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-greenora-admin.webp') }}"
+            restolina: {
+                hero: "{{ asset('images/user-interface/restaurant/mobile-restolina-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/restaurant/mobile-restolina-menu.webp') }}",
+                home: "{{ asset('images/user-interface/restaurant/mobile-restolina-home.webp') }}",
+                product: "{{ asset('images/user-interface/restaurant/mobile-restolina-product.webp') }}",
+                footer: "{{ asset('images/user-interface/restaurant/mobile-restolina-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/restaurant/mobile-restolina-signup.webp') }}",
+                login: "{{ asset('images/user-interface/restaurant/mobile-restolina-login.webp') }}",
+                account: "{{ asset('images/user-interface/restaurant/mobile-restolina-account.webp') }}",
+                contact: "{{ asset('images/user-interface/restaurant/mobile-restolina-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/restaurant/mobile-restolina-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/restaurant/mobile-restolina-admin.webp') }}"
             }
         },
         desktop: {
-            zarabella: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-admin.webp') }}"
+            cafedra: {
+                hero: "{{ asset('images/user-interface/restaurant/desktop-cafedra-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/restaurant/desktop-cafedra-menu.webp') }}",
+                home: "{{ asset('images/user-interface/restaurant/desktop-cafedra-home.webp') }}",
+                product: "{{ asset('images/user-interface/restaurant/desktop-cafedra-product.webp') }}",
+                footer: "{{ asset('images/user-interface/restaurant/desktop-cafedra-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/restaurant/desktop-cafedra-signup.webp') }}",
+                login: "{{ asset('images/user-interface/restaurant/desktop-cafedra-login.webp') }}",
+                account: "{{ asset('images/user-interface/restaurant/desktop-cafedra-account.webp') }}",
+                contact: "{{ asset('images/user-interface/restaurant/desktop-cafedra-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/restaurant/desktop-cafedra-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/restaurant/desktop-cafedra-admin.webp') }}"
             },
-            trendaxo: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-admin.webp') }}"
+            cafionix: {
+                hero: "{{ asset('images/user-interface/restaurant/desktop-cafionix-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/restaurant/desktop-cafionix-menu.webp') }}",
+                home: "{{ asset('images/user-interface/restaurant/desktop-cafionix-home.webp') }}",
+                product: "{{ asset('images/user-interface/restaurant/desktop-cafionix-product.webp') }}",
+                footer: "{{ asset('images/user-interface/restaurant/desktop-cafionix-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/restaurant/desktop-cafionix-signup.webp') }}",
+                login: "{{ asset('images/user-interface/restaurant/desktop-cafionix-login.webp') }}",
+                account: "{{ asset('images/user-interface/restaurant/desktop-cafionix-account.webp') }}",
+                contact: "{{ asset('images/user-interface/restaurant/desktop-cafionix-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/restaurant/desktop-cafionix-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/restaurant/desktop-cafionix-admin.webp') }}"
             },
-            techovia: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-techovia-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-techovia-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-techovia-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-techovia-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-techovia-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-techovia-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-techovia-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-techovia-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-techovia-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-techovia-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-techovia-admin.webp') }}"
+            grillora: {
+                hero: "{{ asset('images/user-interface/restaurant/desktop-grillora-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/restaurant/desktop-grillora-menu.webp') }}",
+                home: "{{ asset('images/user-interface/restaurant/desktop-grillora-home.webp') }}",
+                product: "{{ asset('images/user-interface/restaurant/desktop-grillora-product.webp') }}",
+                footer: "{{ asset('images/user-interface/restaurant/desktop-grillora-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/restaurant/desktop-grillora-signup.webp') }}",
+                login: "{{ asset('images/user-interface/restaurant/desktop-grillora-login.webp') }}",
+                account: "{{ asset('images/user-interface/restaurant/desktop-grillora-account.webp') }}",
+                contact: "{{ asset('images/user-interface/restaurant/desktop-grillora-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/restaurant/desktop-grillora-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/restaurant/desktop-grillora-admin.webp') }}"
             },
-            shoponex: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-admin.webp') }}"
+            mealvix: {
+                hero: "{{ asset('images/user-interface/restaurant/desktop-mealvix-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/restaurant/desktop-mealvix-menu.webp') }}",
+                home: "{{ asset('images/user-interface/restaurant/desktop-mealvix-home.webp') }}",
+                product: "{{ asset('images/user-interface/restaurant/desktop-mealvix-product.webp') }}",
+                footer: "{{ asset('images/user-interface/restaurant/desktop-mealvix-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/restaurant/desktop-mealvix-signup.webp') }}",
+                login: "{{ asset('images/user-interface/restaurant/desktop-mealvix-login.webp') }}",
+                account: "{{ asset('images/user-interface/restaurant/desktop-mealvix-account.webp') }}",
+                contact: "{{ asset('images/user-interface/restaurant/desktop-mealvix-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/restaurant/desktop-mealvix-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/restaurant/desktop-mealvix-admin.webp') }}"
             },
-            greenora: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-greenora-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-greenora-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-greenora-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-greenora-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-greenora-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-greenora-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-greenora-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-greenora-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-greenora-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-greenora-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-greenora-admin.webp') }}"
+            restolina: {
+                hero: "{{ asset('images/user-interface/restaurant/desktop-restolina-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/restaurant/desktop-restolina-menu.webp') }}",
+                home: "{{ asset('images/user-interface/restaurant/desktop-restolina-home.webp') }}",
+                product: "{{ asset('images/user-interface/restaurant/desktop-restolina-product.webp') }}",
+                footer: "{{ asset('images/user-interface/restaurant/desktop-restolina-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/restaurant/desktop-restolina-signup.webp') }}",
+                login: "{{ asset('images/user-interface/restaurant/desktop-restolina-login.webp') }}",
+                account: "{{ asset('images/user-interface/restaurant/desktop-restolina-account.webp') }}",
+                contact: "{{ asset('images/user-interface/restaurant/desktop-restolina-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/restaurant/desktop-restolina-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/restaurant/desktop-restolina-admin.webp') }}"
             }
         }
     };
@@ -319,7 +319,7 @@ span {
     };
 
     let currentCategory = 'mobile';
-    let currentTheme = 'zarabella';
+    let currentTheme = 'cafedra';
     let currentPage = 'hero';
 
     const pageSectionsDiv = document.getElementById('pageSections');

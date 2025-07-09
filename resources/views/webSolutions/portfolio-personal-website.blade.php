@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'E-commerce Responsive & Theme Preview')
+@section('title', 'Portfolio Theme Preview')
 
 @section('content')
 <section class="hero-section">
@@ -15,7 +15,7 @@
   </div>
 </section>
 
-{{-- Main Design user-interface/ecommerce --}}
+{{-- Main Design user-interface/portfolio --}}
 <div class="container my-5 pt-5">
     <h1 class="text-center mt-5 mb-3"><span>Portfolio</span> User Interface</h1>
     <p class="text-center mb-5">Discover responsive portfolio designs with multiple Laravel themes. Switch between mobile and desktop views and select your preferred user interface.</p>
@@ -27,11 +27,11 @@
 
     {{-- Theme Selection --}}
     <div class="d-flex justify-content-center mb-5 gap-3 flex-wrap">
-        <button class="btn btn-outline theme-btn active" data-theme="zarabella">Doccura UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="trendaxo">Enginuva UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="techovia">Lawverra UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="shoponex">Studiora UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="greenora">Tutorix UI</button>
+        <button class="btn btn-outline theme-btn active" data-theme="doccura">Doccura UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="enginuva">Enginuva UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="lawverra">Lawverra UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="studiora">Studiora UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="tutorix">Tutorix UI</button>
     </div>
 
     <!-- 
@@ -55,7 +55,7 @@
         {{-- Right Side: Image Preview --}}
         <div class="col-md-9">
             <div class="text-center">
-                <img id="previewImage" src="{{ asset('images/user-interface/ecommerce/mobile-zarabella-hero.webp') }}" alt="Preview Image" class="img-fluid rounded shadow">
+                <img id="previewImage" src="{{ asset('images/user-interface/portfolio/mobile-doccura-hero.webp') }}" alt="Preview Image" class="img-fluid rounded shadow">
                 <div class="mt-5">
                     <button onclick="window.location.href='{{ route('estimates.portfolio') }}'" class="btn btn-get-design me-2">
                         Delivery & Cost Info
@@ -154,137 +154,137 @@ span {
 <script>
     const images = {
         mobile: {
-            zarabella: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-admin.webp') }}"
+            doccura: {
+                hero: "{{ asset('images/user-interface/portfolio/mobile-doccura-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/portfolio/mobile-doccura-menu.webp') }}",
+                home: "{{ asset('images/user-interface/portfolio/mobile-doccura-home.webp') }}",
+                product: "{{ asset('images/user-interface/portfolio/mobile-doccura-product.webp') }}",
+                footer: "{{ asset('images/user-interface/portfolio/mobile-doccura-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/portfolio/mobile-doccura-signup.webp') }}",
+                login: "{{ asset('images/user-interface/portfolio/mobile-doccura-login.webp') }}",
+                account: "{{ asset('images/user-interface/portfolio/mobile-doccura-account.webp') }}",
+                contact: "{{ asset('images/user-interface/portfolio/mobile-doccura-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/portfolio/mobile-doccura-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/portfolio/mobile-doccura-admin.webp') }}"
             },
-            trendaxo: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-admin.webp') }}"
+            enginuva: {
+                hero: "{{ asset('images/user-interface/portfolio/mobile-enginuva-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/portfolio/mobile-enginuva-menu.webp') }}",
+                home: "{{ asset('images/user-interface/portfolio/mobile-enginuva-home.webp') }}",
+                product: "{{ asset('images/user-interface/portfolio/mobile-enginuva-product.webp') }}",
+                footer: "{{ asset('images/user-interface/portfolio/mobile-enginuva-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/portfolio/mobile-enginuva-signup.webp') }}",
+                login: "{{ asset('images/user-interface/portfolio/mobile-enginuva-login.webp') }}",
+                account: "{{ asset('images/user-interface/portfolio/mobile-enginuva-account.webp') }}",
+                contact: "{{ asset('images/user-interface/portfolio/mobile-enginuva-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/portfolio/mobile-enginuva-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/portfolio/mobile-enginuva-admin.webp') }}"
             },
-            techovia: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-techovia-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-techovia-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-techovia-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-techovia-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-techovia-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-techovia-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-techovia-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-techovia-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-techovia-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-techovia-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-techovia-admin.webp') }}"
+            lawverra: {
+                hero: "{{ asset('images/user-interface/portfolio/mobile-lawverra-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/portfolio/mobile-lawverra-menu.webp') }}",
+                home: "{{ asset('images/user-interface/portfolio/mobile-lawverra-home.webp') }}",
+                product: "{{ asset('images/user-interface/portfolio/mobile-lawverra-product.webp') }}",
+                footer: "{{ asset('images/user-interface/portfolio/mobile-lawverra-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/portfolio/mobile-lawverra-signup.webp') }}",
+                login: "{{ asset('images/user-interface/portfolio/mobile-lawverra-login.webp') }}",
+                account: "{{ asset('images/user-interface/portfolio/mobile-lawverra-account.webp') }}",
+                contact: "{{ asset('images/user-interface/portfolio/mobile-lawverra-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/portfolio/mobile-lawverra-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/portfolio/mobile-lawverra-admin.webp') }}"
             },
-            shoponex: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-admin.webp') }}"
+            studiora: {
+                hero: "{{ asset('images/user-interface/portfolio/mobile-studiora-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/portfolio/mobile-studiora-menu.webp') }}",
+                home: "{{ asset('images/user-interface/portfolio/mobile-studiora-home.webp') }}",
+                product: "{{ asset('images/user-interface/portfolio/mobile-studiora-product.webp') }}",
+                footer: "{{ asset('images/user-interface/portfolio/mobile-studiora-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/portfolio/mobile-studiora-signup.webp') }}",
+                login: "{{ asset('images/user-interface/portfolio/mobile-studiora-login.webp') }}",
+                account: "{{ asset('images/user-interface/portfolio/mobile-studiora-account.webp') }}",
+                contact: "{{ asset('images/user-interface/portfolio/mobile-studiora-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/portfolio/mobile-studiora-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/portfolio/mobile-studiora-admin.webp') }}"
             },
-            greenora: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-greenora-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-greenora-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-greenora-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-greenora-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-greenora-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-greenora-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-greenora-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-greenora-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-greenora-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-greenora-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-greenora-admin.webp') }}"
+            tutorix: {
+                hero: "{{ asset('images/user-interface/portfolio/mobile-tutorix-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/portfolio/mobile-tutorix-menu.webp') }}",
+                home: "{{ asset('images/user-interface/portfolio/mobile-tutorix-home.webp') }}",
+                product: "{{ asset('images/user-interface/portfolio/mobile-tutorix-product.webp') }}",
+                footer: "{{ asset('images/user-interface/portfolio/mobile-tutorix-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/portfolio/mobile-tutorix-signup.webp') }}",
+                login: "{{ asset('images/user-interface/portfolio/mobile-tutorix-login.webp') }}",
+                account: "{{ asset('images/user-interface/portfolio/mobile-tutorix-account.webp') }}",
+                contact: "{{ asset('images/user-interface/portfolio/mobile-tutorix-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/portfolio/mobile-tutorix-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/portfolio/mobile-tutorix-admin.webp') }}"
             }
         },
         desktop: {
-            zarabella: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-admin.webp') }}"
+            doccura: {
+                hero: "{{ asset('images/user-interface/portfolio/desktop-doccura-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/portfolio/desktop-doccura-menu.webp') }}",
+                home: "{{ asset('images/user-interface/portfolio/desktop-doccura-home.webp') }}",
+                product: "{{ asset('images/user-interface/portfolio/desktop-doccura-product.webp') }}",
+                footer: "{{ asset('images/user-interface/portfolio/desktop-doccura-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/portfolio/desktop-doccura-signup.webp') }}",
+                login: "{{ asset('images/user-interface/portfolio/desktop-doccura-login.webp') }}",
+                account: "{{ asset('images/user-interface/portfolio/desktop-doccura-account.webp') }}",
+                contact: "{{ asset('images/user-interface/portfolio/desktop-doccura-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/portfolio/desktop-doccura-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/portfolio/desktop-doccura-admin.webp') }}"
             },
-            trendaxo: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-admin.webp') }}"
+            enginuva: {
+                hero: "{{ asset('images/user-interface/portfolio/desktop-enginuva-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/portfolio/desktop-enginuva-menu.webp') }}",
+                home: "{{ asset('images/user-interface/portfolio/desktop-enginuva-home.webp') }}",
+                product: "{{ asset('images/user-interface/portfolio/desktop-enginuva-product.webp') }}",
+                footer: "{{ asset('images/user-interface/portfolio/desktop-enginuva-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/portfolio/desktop-enginuva-signup.webp') }}",
+                login: "{{ asset('images/user-interface/portfolio/desktop-enginuva-login.webp') }}",
+                account: "{{ asset('images/user-interface/portfolio/desktop-enginuva-account.webp') }}",
+                contact: "{{ asset('images/user-interface/portfolio/desktop-enginuva-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/portfolio/desktop-enginuva-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/portfolio/desktop-enginuva-admin.webp') }}"
             },
-            techovia: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-techovia-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-techovia-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-techovia-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-techovia-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-techovia-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-techovia-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-techovia-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-techovia-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-techovia-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-techovia-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-techovia-admin.webp') }}"
+            lawverra: {
+                hero: "{{ asset('images/user-interface/portfolio/desktop-lawverra-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/portfolio/desktop-lawverra-menu.webp') }}",
+                home: "{{ asset('images/user-interface/portfolio/desktop-lawverra-home.webp') }}",
+                product: "{{ asset('images/user-interface/portfolio/desktop-lawverra-product.webp') }}",
+                footer: "{{ asset('images/user-interface/portfolio/desktop-lawverra-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/portfolio/desktop-lawverra-signup.webp') }}",
+                login: "{{ asset('images/user-interface/portfolio/desktop-lawverra-login.webp') }}",
+                account: "{{ asset('images/user-interface/portfolio/desktop-lawverra-account.webp') }}",
+                contact: "{{ asset('images/user-interface/portfolio/desktop-lawverra-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/portfolio/desktop-lawverra-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/portfolio/desktop-lawverra-admin.webp') }}"
             },
-            shoponex: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-admin.webp') }}"
+            studiora: {
+                hero: "{{ asset('images/user-interface/portfolio/desktop-studiora-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/portfolio/desktop-studiora-menu.webp') }}",
+                home: "{{ asset('images/user-interface/portfolio/desktop-studiora-home.webp') }}",
+                product: "{{ asset('images/user-interface/portfolio/desktop-studiora-product.webp') }}",
+                footer: "{{ asset('images/user-interface/portfolio/desktop-studiora-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/portfolio/desktop-studiora-signup.webp') }}",
+                login: "{{ asset('images/user-interface/portfolio/desktop-studiora-login.webp') }}",
+                account: "{{ asset('images/user-interface/portfolio/desktop-studiora-account.webp') }}",
+                contact: "{{ asset('images/user-interface/portfolio/desktop-studiora-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/portfolio/desktop-studiora-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/portfolio/desktop-studiora-admin.webp') }}"
             },
-            greenora: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-greenora-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-greenora-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-greenora-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-greenora-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-greenora-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-greenora-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-greenora-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-greenora-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-greenora-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-greenora-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-greenora-admin.webp') }}"
+            tutorix: {
+                hero: "{{ asset('images/user-interface/portfolio/desktop-tutorix-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/portfolio/desktop-tutorix-menu.webp') }}",
+                home: "{{ asset('images/user-interface/portfolio/desktop-tutorix-home.webp') }}",
+                product: "{{ asset('images/user-interface/portfolio/desktop-tutorix-product.webp') }}",
+                footer: "{{ asset('images/user-interface/portfolio/desktop-tutorix-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/portfolio/desktop-tutorix-signup.webp') }}",
+                login: "{{ asset('images/user-interface/portfolio/desktop-tutorix-login.webp') }}",
+                account: "{{ asset('images/user-interface/portfolio/desktop-tutorix-account.webp') }}",
+                contact: "{{ asset('images/user-interface/portfolio/desktop-tutorix-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/portfolio/desktop-tutorix-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/portfolio/desktop-tutorix-admin.webp') }}"
             }
         }
     };
@@ -319,7 +319,7 @@ span {
     };
 
     let currentCategory = 'mobile';
-    let currentTheme = 'zarabella';
+    let currentTheme = 'doccura';
     let currentPage = 'hero';
 
     const pageSectionsDiv = document.getElementById('pageSections');

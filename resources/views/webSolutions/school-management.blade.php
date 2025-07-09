@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'E-commerce Responsive & Theme Preview')
+@section('title', 'School Management Theme Preview')
 
 @section('content')
 <section class="hero-section">
@@ -15,7 +15,7 @@
   </div>
 </section>
 
-{{-- Main Design user-interface/ecommerce --}}
+{{-- Main Design user-interface/school --}}
 <div class="container my-5 pt-5">
     <h1 class="text-center mt-5 mb-3"><span>School Management</span> User Interface</h1>
     <p class="text-center mb-5">Discover responsive school management designs with multiple Laravel themes. Switch between mobile and desktop views and select your preferred user interface.</p>
@@ -27,11 +27,11 @@
 
     {{-- Theme Selection --}}
     <div class="d-flex justify-content-center mb-5 gap-3 flex-wrap">
-        <button class="btn btn-outline theme-btn active" data-theme="zarabella">Zarabella UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="trendaxo">Trendaxo UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="techovia">Techovia UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="shoponex">Shoponex UI</button>
-        <button class="btn btn-outline theme-btn" data-theme="greenora">Greenora UI</button>
+        <button class="btn btn-outline theme-btn active" data-theme="edunex">Edunex UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="eduvanta">Eduvanta UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="learnova">Learnova UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="scholix">Scholix UI</button>
+        <button class="btn btn-outline theme-btn" data-theme="scholora">Scholora UI</button>
     </div>
 
     <!-- 
@@ -55,7 +55,7 @@
         {{-- Right Side: Image Preview --}}
         <div class="col-md-9">
             <div class="text-center">
-                <img id="previewImage" src="{{ asset('images/user-interface/ecommerce/mobile-zarabella-hero.webp') }}" alt="Preview Image" class="img-fluid rounded shadow">
+                <img id="previewImage" src="{{ asset('images/user-interface/school/mobile-edunex-hero.webp') }}" alt="Preview Image" class="img-fluid rounded shadow">
                 <div class="mt-5">
                     <button onclick="window.location.href='{{ route('estimates.school') }}'" class="btn btn-get-design me-2">
                         Delivery & Cost Info
@@ -154,137 +154,137 @@ span {
 <script>
     const images = {
         mobile: {
-            zarabella: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-zarabella-admin.webp') }}"
+            edunex: {
+                hero: "{{ asset('images/user-interface/school/mobile-edunex-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/school/mobile-edunex-menu.webp') }}",
+                home: "{{ asset('images/user-interface/school/mobile-edunex-home.webp') }}",
+                product: "{{ asset('images/user-interface/school/mobile-edunex-product.webp') }}",
+                footer: "{{ asset('images/user-interface/school/mobile-edunex-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/school/mobile-edunex-signup.webp') }}",
+                login: "{{ asset('images/user-interface/school/mobile-edunex-login.webp') }}",
+                account: "{{ asset('images/user-interface/school/mobile-edunex-account.webp') }}",
+                contact: "{{ asset('images/user-interface/school/mobile-edunex-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/school/mobile-edunex-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/school/mobile-edunex-admin.webp') }}"
             },
-            trendaxo: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-trendaxo-admin.webp') }}"
+            eduvanta: {
+                hero: "{{ asset('images/user-interface/school/mobile-eduvanta-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/school/mobile-eduvanta-menu.webp') }}",
+                home: "{{ asset('images/user-interface/school/mobile-eduvanta-home.webp') }}",
+                product: "{{ asset('images/user-interface/school/mobile-eduvanta-product.webp') }}",
+                footer: "{{ asset('images/user-interface/school/mobile-eduvanta-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/school/mobile-eduvanta-signup.webp') }}",
+                login: "{{ asset('images/user-interface/school/mobile-eduvanta-login.webp') }}",
+                account: "{{ asset('images/user-interface/school/mobile-eduvanta-account.webp') }}",
+                contact: "{{ asset('images/user-interface/school/mobile-eduvanta-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/school/mobile-eduvanta-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/school/mobile-eduvanta-admin.webp') }}"
             },
-            techovia: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-techovia-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-techovia-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-techovia-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-techovia-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-techovia-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-techovia-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-techovia-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-techovia-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-techovia-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-techovia-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-techovia-admin.webp') }}"
+            learnova: {
+                hero: "{{ asset('images/user-interface/school/mobile-learnova-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/school/mobile-learnova-menu.webp') }}",
+                home: "{{ asset('images/user-interface/school/mobile-learnova-home.webp') }}",
+                product: "{{ asset('images/user-interface/school/mobile-learnova-product.webp') }}",
+                footer: "{{ asset('images/user-interface/school/mobile-learnova-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/school/mobile-learnova-signup.webp') }}",
+                login: "{{ asset('images/user-interface/school/mobile-learnova-login.webp') }}",
+                account: "{{ asset('images/user-interface/school/mobile-learnova-account.webp') }}",
+                contact: "{{ asset('images/user-interface/school/mobile-learnova-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/school/mobile-learnova-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/school/mobile-learnova-admin.webp') }}"
             },
-            shoponex: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-shoponex-admin.webp') }}"
+            scholix: {
+                hero: "{{ asset('images/user-interface/school/mobile-scholix-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/school/mobile-scholix-menu.webp') }}",
+                home: "{{ asset('images/user-interface/school/mobile-scholix-home.webp') }}",
+                product: "{{ asset('images/user-interface/school/mobile-scholix-product.webp') }}",
+                footer: "{{ asset('images/user-interface/school/mobile-scholix-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/school/mobile-scholix-signup.webp') }}",
+                login: "{{ asset('images/user-interface/school/mobile-scholix-login.webp') }}",
+                account: "{{ asset('images/user-interface/school/mobile-scholix-account.webp') }}",
+                contact: "{{ asset('images/user-interface/school/mobile-scholix-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/school/mobile-scholix-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/school/mobile-scholix-admin.webp') }}"
             },
-            greenora: {
-                hero: "{{ asset('images/user-interface/ecommerce/mobile-greenora-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/mobile-greenora-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/mobile-greenora-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/mobile-greenora-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/mobile-greenora-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/mobile-greenora-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/mobile-greenora-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/mobile-greenora-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/mobile-greenora-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/mobile-greenora-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/mobile-greenora-admin.webp') }}"
+            scholora: {
+                hero: "{{ asset('images/user-interface/school/mobile-scholora-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/school/mobile-scholora-menu.webp') }}",
+                home: "{{ asset('images/user-interface/school/mobile-scholora-home.webp') }}",
+                product: "{{ asset('images/user-interface/school/mobile-scholora-product.webp') }}",
+                footer: "{{ asset('images/user-interface/school/mobile-scholora-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/school/mobile-scholora-signup.webp') }}",
+                login: "{{ asset('images/user-interface/school/mobile-scholora-login.webp') }}",
+                account: "{{ asset('images/user-interface/school/mobile-scholora-account.webp') }}",
+                contact: "{{ asset('images/user-interface/school/mobile-scholora-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/school/mobile-scholora-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/school/mobile-scholora-admin.webp') }}"
             }
         },
         desktop: {
-            zarabella: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-zarabella-admin.webp') }}"
+            edunex: {
+                hero: "{{ asset('images/user-interface/school/desktop-edunex-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/school/desktop-edunex-menu.webp') }}",
+                home: "{{ asset('images/user-interface/school/desktop-edunex-home.webp') }}",
+                product: "{{ asset('images/user-interface/school/desktop-edunex-product.webp') }}",
+                footer: "{{ asset('images/user-interface/school/desktop-edunex-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/school/desktop-edunex-signup.webp') }}",
+                login: "{{ asset('images/user-interface/school/desktop-edunex-login.webp') }}",
+                account: "{{ asset('images/user-interface/school/desktop-edunex-account.webp') }}",
+                contact: "{{ asset('images/user-interface/school/desktop-edunex-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/school/desktop-edunex-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/school/desktop-edunex-admin.webp') }}"
             },
-            trendaxo: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-trendaxo-admin.webp') }}"
+            eduvanta: {
+                hero: "{{ asset('images/user-interface/school/desktop-eduvanta-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/school/desktop-eduvanta-menu.webp') }}",
+                home: "{{ asset('images/user-interface/school/desktop-eduvanta-home.webp') }}",
+                product: "{{ asset('images/user-interface/school/desktop-eduvanta-product.webp') }}",
+                footer: "{{ asset('images/user-interface/school/desktop-eduvanta-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/school/desktop-eduvanta-signup.webp') }}",
+                login: "{{ asset('images/user-interface/school/desktop-eduvanta-login.webp') }}",
+                account: "{{ asset('images/user-interface/school/desktop-eduvanta-account.webp') }}",
+                contact: "{{ asset('images/user-interface/school/desktop-eduvanta-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/school/desktop-eduvanta-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/school/desktop-eduvanta-admin.webp') }}"
             },
-            techovia: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-techovia-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-techovia-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-techovia-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-techovia-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-techovia-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-techovia-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-techovia-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-techovia-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-techovia-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-techovia-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-techovia-admin.webp') }}"
+            learnova: {
+                hero: "{{ asset('images/user-interface/school/desktop-learnova-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/school/desktop-learnova-menu.webp') }}",
+                home: "{{ asset('images/user-interface/school/desktop-learnova-home.webp') }}",
+                product: "{{ asset('images/user-interface/school/desktop-learnova-product.webp') }}",
+                footer: "{{ asset('images/user-interface/school/desktop-learnova-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/school/desktop-learnova-signup.webp') }}",
+                login: "{{ asset('images/user-interface/school/desktop-learnova-login.webp') }}",
+                account: "{{ asset('images/user-interface/school/desktop-learnova-account.webp') }}",
+                contact: "{{ asset('images/user-interface/school/desktop-learnova-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/school/desktop-learnova-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/school/desktop-learnova-admin.webp') }}"
             },
-            shoponex: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-shoponex-admin.webp') }}"
+            scholix: {
+                hero: "{{ asset('images/user-interface/school/desktop-scholix-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/school/desktop-scholix-menu.webp') }}",
+                home: "{{ asset('images/user-interface/school/desktop-scholix-home.webp') }}",
+                product: "{{ asset('images/user-interface/school/desktop-scholix-product.webp') }}",
+                footer: "{{ asset('images/user-interface/school/desktop-scholix-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/school/desktop-scholix-signup.webp') }}",
+                login: "{{ asset('images/user-interface/school/desktop-scholix-login.webp') }}",
+                account: "{{ asset('images/user-interface/school/desktop-scholix-account.webp') }}",
+                contact: "{{ asset('images/user-interface/school/desktop-scholix-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/school/desktop-scholix-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/school/desktop-scholix-admin.webp') }}"
             },
-            greenora: {
-                hero: "{{ asset('images/user-interface/ecommerce/desktop-greenora-hero.webp') }}",
-                menu: "{{ asset('images/user-interface/ecommerce/desktop-greenora-menu.webp') }}",
-                home: "{{ asset('images/user-interface/ecommerce/desktop-greenora-home.webp') }}",
-                product: "{{ asset('images/user-interface/ecommerce/desktop-greenora-product.webp') }}",
-                footer: "{{ asset('images/user-interface/ecommerce/desktop-greenora-footer.webp') }}",
-                signup: "{{ asset('images/user-interface/ecommerce/desktop-greenora-signup.webp') }}",
-                login: "{{ asset('images/user-interface/ecommerce/desktop-greenora-login.webp') }}",
-                account: "{{ asset('images/user-interface/ecommerce/desktop-greenora-account.webp') }}",
-                contact: "{{ asset('images/user-interface/ecommerce/desktop-greenora-contact.webp') }}",
-                checkout: "{{ asset('images/user-interface/ecommerce/desktop-greenora-checkout.webp') }}",
-                admin: "{{ asset('images/user-interface/ecommerce/desktop-greenora-admin.webp') }}"
+            scholora: {
+                hero: "{{ asset('images/user-interface/school/desktop-scholora-hero.webp') }}",
+                menu: "{{ asset('images/user-interface/school/desktop-scholora-menu.webp') }}",
+                home: "{{ asset('images/user-interface/school/desktop-scholora-home.webp') }}",
+                product: "{{ asset('images/user-interface/school/desktop-scholora-product.webp') }}",
+                footer: "{{ asset('images/user-interface/school/desktop-scholora-footer.webp') }}",
+                signup: "{{ asset('images/user-interface/school/desktop-scholora-signup.webp') }}",
+                login: "{{ asset('images/user-interface/school/desktop-scholora-login.webp') }}",
+                account: "{{ asset('images/user-interface/school/desktop-scholora-account.webp') }}",
+                contact: "{{ asset('images/user-interface/school/desktop-scholora-contact.webp') }}",
+                checkout: "{{ asset('images/user-interface/school/desktop-scholora-checkout.webp') }}",
+                admin: "{{ asset('images/user-interface/school/desktop-scholora-admin.webp') }}"
             }
         }
     };
@@ -319,7 +319,7 @@ span {
     };
 
     let currentCategory = 'mobile';
-    let currentTheme = 'zarabella';
+    let currentTheme = 'edunex';
     let currentPage = 'hero';
 
     const pageSectionsDiv = document.getElementById('pageSections');
