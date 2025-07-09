@@ -48,7 +48,7 @@
         </div>
 
         <div class="theme-right">
-          <img src="{{ asset('images/user-interface/diagnostic/' . $theme['img']) }}" alt="{{ $theme['title'] }}">
+          <img src="{{ asset('images/user-interface/portfolio/' . $theme['img']) }}" alt="{{ $theme['title'] }}">
           <a href="{{ url('/contact') }}" class="btn-contact">Get this theme</a>
 
           <div class="theme-meta">
