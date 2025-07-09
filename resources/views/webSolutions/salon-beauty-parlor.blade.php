@@ -16,9 +16,12 @@
 </section>
 
 {{-- Main Design user-interface/salon --}}
-<div class="container my-5 pt-5">
-    <h1 class="text-center mt-5 mb-3"><span>Salon/Beauty Parlor</span> User Interface</h1>
-    <p class="text-center mb-5">Discover responsive salon/beauty parlor designs with multiple Laravel themes. Switch between mobile and desktop views and select your preferred user interface.</p>
+<div class="container my-5 py-4">
+    <h1 class="text-center fw-bold mb-3 mt-5">
+        <span class="brand-highlight">Salon/Beauty Parlor</span> User Interface
+    </h1>
+    <p class="text-center text-muted mb-2 small">Discover responsive salon/beauty parlor designs with multiple Laravel themes. Switch between mobile and desktop views and select your preferred user interface.</p>
+    <div class="hero-animated-bar mb-5"></div>
     {{-- Responsive Selection --}}
     <div class="d-flex justify-content-center mb-3 gap-3">
         <button class="btn btn-outline category-btn active" data-category="mobile">Mobile Responsive</button>

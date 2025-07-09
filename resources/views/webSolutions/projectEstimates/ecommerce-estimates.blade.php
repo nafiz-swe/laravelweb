@@ -4,11 +4,12 @@
 
 <section class="laravelweb-page-hero text-center">
   <div class="container">
-    <h1>
-      <span class="highlighted">E-commerce</span> Laravel theme
+    <h1 class="text-center fw-bold mb-3">
+      <span class="brand-highlight">E-commerce</span> Laravel theme
     </h1>
-    <p >Ready-to-launch e-commerce website themes with free hosting, fast delivery, and essential branding features like logo, banner, and domain support.</p>
-  </div>
+    <p class="text-center text-muted mb-2 small">Ready-to-launch e-commerce website themes with free hosting, fast delivery, and essential branding features like logo, banner, and domain support.</p>
+    <div class="hero-animated-bar mb-5"></div>
+</div>
 </section>
 
 <section class="py-5">

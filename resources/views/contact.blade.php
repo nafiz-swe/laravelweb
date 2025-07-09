@@ -3,42 +3,19 @@
 @section('content')
 
 <!-- ===== Contact Title Section ===== -->
-<section class="py-5 bg-light text-center">
+<section class="laravelweb-page-hero text-center">
     <div class="container">
-        <h1 class="mt-5 mb-4 fw-bold split-title">
-            <span>Get In</span> <span>Touch</span>
+        <h1 class="text-center fw-bold mb-3">
+            Get In <span class="brand-highlight">Touch</span>
         </h1>
-        <p class="text-center text-muted mb-1 small">
+        <p class="text-center text-muted mb-2 small">
             Looking for reliable software solutions? Send us a message—our team is ready to assist you with your digital needs.
         </p>
+        <div class="hero-animated-bar"></div>
+
     </div>
 </section>
 
-<!-- ===== Contact Address Section Start ===== -->
-<section class="py-0 my-5 bg-white">
-    <div class="container">
-        <div class="card shadow-none border-0">
-            <div class="row g-0">
-                <div class="col-md-6 border-end p-5">
-                    <div class="h-100">
-                        <h4 class="fw-bold mb-3"><i class="fas fa-map-marker-alt me-2 text-danger"></i>Bangladesh Office</h4>
-                        <p><i class="fas fa-location-arrow me-2 text-muted"></i>Level-4, House#34, Lane# 6/2, Road#20/B, DUIP Plot, Block D, Mirpur-12, Dhaka-1216</p>
-                        <p><i class="fas fa-phone-alt me-2 text-muted"></i>+880 1568 879 478</p>
-                        <p><i class="fas fa-envelope me-2 text-muted"></i>nafizul35-480@diu.edu.bd</p>
-                    </div>
-                </div>
-                <div class="col-md-6 p-5">
-                    <div class="h-100">
-                        <h4 class="fw-bold mb-3"><i class="fas fa-map-marker-alt me-2 text-danger"></i>USA Office</h4>
-                        <p><i class="fas fa-location-arrow me-2 text-muted"></i>8120 Jennings Drive, Suite 128 C, Business and Community Service Bldg, Cedar Falls, IA 50613-0130</p>
-                        <p><i class="fas fa-phone-alt me-2 text-muted"></i>+880 1737 226 404</p>
-                        <p><i class="fas fa-envelope me-2 text-muted"></i>nafizulislam.swe@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 @push('scripts')
 <script>
     @if(session('success'))
@@ -63,7 +40,7 @@
 @endpush
 
 <!-- ===== Contact Form Section ===== -->
-<section class="py-5 bg-light">
+<section class="py-5">
     <div class="container pt-4 pb-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -73,7 +50,7 @@
                 @endif -->
 
                 <div class="card shadow-sm border-0">
-                    <h3 class="card-header text-white text-center" style="background-color: oklch(60.9% 0.126 221.723);">Contact Us</h3>
+                    <h3 class="card-header text-white text-center py-4" style="background-color: oklch(60.9% 0.126 221.723);">Contact Us</h3>
                     <div class="card-body p-4 bg-white shadow">
                         <form method="POST" action="{{ route('contact.submit') }}">
                             @csrf
@@ -119,7 +96,7 @@
                                 @error('message')<small class="text-danger">{{ $message }}</small>@enderror
                             </div>
 
-                            <button type="submit" class="btn w-100 text-white" style="background-color: oklch(60.9% 0.126 221.723);">Send Message</button>
+                            <button type="submit" class="btn w-100 text-white py-2 btn-contact">Send Message</button>
                         </form>
                     </div>
                 </div>

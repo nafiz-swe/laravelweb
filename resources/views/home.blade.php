@@ -2,10 +2,10 @@
 @section('title', 'Home | laravelweb')
 @section('content')
 <!-- ===== Hero Section Start ===== -->
-<section class="hero-section">
+<section class="hero-section mb-4">
   <div class="hero-content">
     <div class="hero-text-box">
-      <h1>Empowering Digital Innovation</h1>
+      <h1>Creative Business Websites</h1>
       <p>We provide smart software solutions to help your business grow efficiently in the digital era.</p>
       <a href="#services" class="hero-btn">Explore Services</a>
     </div>
@@ -180,15 +180,18 @@
 <!-- ===== Our Services Section Start===== -->
 <section class="py-5" id="solutions" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
   <div class="container">
-    <h1 class="text-center fw-bold mb-3">Web <span style="color: oklch(60.9% 0.126 221.723);">Solutions</span></h1>
-    <p class="text-center text-muted mb-5 small">
-      Empowering businesses with a complete suite of web services – from design to deployment and beyond.
+    <h1 class="text-center fw-bold mb-3">
+      Web <span class="brand-highlight">Solutions</span>
+    </h1>
+    <p class="text-center text-muted mb-2 small">
+      We develop secure and modern Web Applications using Laravel & PHP. The design is ready, and we will customize everything exactly as per your choice to suit your local business needs.
     </p>
-    <div class="row g-4 justify-content-center">
+    <div class="hero-animated-bar mb-5"></div>
+    <div class="row g-4 justify-content-center mb-3">
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/services/laravel-diagnostic.webp') }}" alt="Diagnostic Center" class="service-img">
+            <img src="{{ asset('images/banner/diagnostic-hero.webp') }}" alt="Diagnostic Center" class="service-img">
           </div>
           <div class="card-body">
             <h5 class="card-title">Diagnostic Center</h5>
@@ -200,7 +203,7 @@
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/services/laravel-ecommerce.webp') }}" alt="E-commerce" class="service-img">
+            <img src="{{ asset('images/banner/ecommerce-hero.webp') }}" alt="E-commerce" class="service-img">
           </div>
           <div class="card-body">
             <h5 class="card-title">E-commerce</h5>
@@ -212,7 +215,7 @@
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/services/laravel-portfolio.webp') }}" alt="Portfolio/Personal Website" class="service-img">
+            <img src="{{ asset('images/banner/portfolio-hero.webp') }}" alt="Portfolio/Personal Website" class="service-img">
           </div>
           <div class="card-body">
             <h5 class="card-title">Portfolio/Personal Website</h5>
@@ -224,10 +227,10 @@
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/services/laravel-hotel.webp') }}" alt="Hotel/Resort" class="service-img">
+            <img src="{{ asset('images/banner/resort-hero.webp') }}" alt="Hotel/Resort" class="service-img">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Resort/Hotel</h5>
+            <h5 class="card-title">Resort/Hotel Booking</h5>
             <p class="card-text small">Room availability check with online booking facility.</p>
             <a href="{{ route('resort.hotel') }}" class="btn btn-learn btn-sm">Get Design</a>
           </div>
@@ -236,7 +239,7 @@
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/services/laravel-restaurant.webp') }}" alt="Restaurant/Cafe Shop" class="service-img">
+            <img src="{{ asset('images/banner/restaurant-hero.webp') }}" alt="Restaurant/Cafe Shop" class="service-img">
           </div>
           <div class="card-body">
             <h5 class="card-title">Restaurant/Cafe Shop</h5>
@@ -248,7 +251,7 @@
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/services/laravel-salon.webp') }}" alt="Salon/Beauty Parlor" class="service-img">
+            <img src="{{ asset('images/banner/salon-hero.webp') }}" alt="Salon/Beauty Parlor" class="service-img">
           </div>
           <div class="card-body">
             <h5 class="card-title">Salon/Beauty Parlor</h5>
@@ -260,7 +263,7 @@
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/services/laravel-school.webp') }}" alt="School Management" class="service-img">
+            <img src="{{ asset('images/banner/school-hero.webp') }}" alt="School Management" class="service-img">
           </div>
           <div class="card-body">
             <h5 class="card-title">School Management</h5>
@@ -272,7 +275,7 @@
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
-            <img src="{{ asset('images/services/laravel-tuition.webp') }}" alt="Tuition Center" class="service-img">
+            <img src="{{ asset('images/banner/tution-hero.webp') }}" alt="Tuition Center" class="service-img">
           </div>
           <div class="card-body">
             <h5 class="card-title">Tuition Center</h5>
@@ -291,12 +294,13 @@
 <!-- ===== Our Clients Section Start ===== -->
 <section class="py-5 bg-white text-center">
     <div class="container">
-        <h1 class="mb-4 fw-bold split-title">
-            Our <span>Clients</span>
+        <h1 class="text-center fw-bold mb-3">
+          Our <span class="brand-highlight">Clients</span>
         </h1>
-        <p class="text-center text-muted mb-5 small">
-        With over 13 years of experience, we have proudly delivered tailored software solutions to a wide range of esteemed clients. Their trust in our expertise has empowered us to streamline operations, enhance digital efficiency, and build lasting partnerships.
+        <p class="text-center text-muted mb-2 small">
+          With over 13 years of experience, we have proudly delivered tailored software solutions to a wide range of esteemed clients. Their trust in our expertise has empowered us to streamline operations, enhance digital efficiency, and build lasting partnerships.
         </p>
+        <div class="hero-animated-bar mb-5"></div>
         <div class="client-slider-wrapper overflow-hidden position-relative">
             <div class="client-slider d-flex align-items-center" id="clientSlider">
                 @php
@@ -340,14 +344,14 @@
   <section class="py-5 text-center" id="services" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
     <div class="container">
     <div class="usa-content-box-full">
-        <h1 class="mb-4 fw-bold split-title">
-        We Provide Everything You <span>Need to Launch</span>
+      <h1 class="text-center fw-bold mb-3">
+        We Provide Everything You <span class="brand-highlight">Need to Launch</span>
       </h1>
-      <p class="usa-subtext">
+      <p class="text-center text-muted mb-2 small">
         From domain to SEO, complete website solutions under one roof.
       </p>
+      <div class="hero-animated-bar mb-5"></div>
       <div class="row">
-        
         <div class="col-md-6 mb-4">
           <div class="usa-feature-box">
             <i class="fas fa-globe text-primary me-2"></i>
@@ -457,21 +461,24 @@
 <!-- ===== Featured Projects Section Start ===== -->
 <section class="py-5 bg-white">
     <div class="container text-center">
-        <h1 class="mb-3 fw-bold split-title">
-            <span>Laravel</span> <span>Theme</span>
+        <h1 class="text-center fw-bold mb-3">
+          Laravel <span class="brand-highlight"> Theme UI</span>
         </h1>
-        <p class="text-muted mb-5">
-            Over the last 13+ years, we have delivered modern software solutions across industries — from eCommerce to government archives.
+        <p class="text-center text-muted mb-2 small">
+          Premium, responsive and ready-to-use Laravel website templates for different business needs.
         </p>
+        <div class="hero-animated-bar mb-5"></div>
         @php
-            $projects = [
-                ['image' => 'project-Task-Management.webp', 'title' => 'Task Management', 'desc' => 'A complete task tracking and assignment tool.'],
-                ['image' => 'project-Online-Pharmacy.webp', 'title' => 'Online Pharmacy', 'desc' => 'Real-time medicine ordering system.'],
-                ['image' => 'project-Grocery-App.webp', 'title' => 'Grocery App', 'desc' => 'App for instant grocery delivery.'],
-                ['image' => 'project-app.webp', 'title' => 'Mobile App', 'desc' => 'Cross-platform scalable mobile app.'],
-                ['image' => 'project-Bazarnao-Ecommerce.webp', 'title' => 'Bazarnao Ecommerce', 'desc' => 'Smart shopping platform.'],
-                ['image' => 'project-DGFP-Archive.webp', 'title' => 'DGFP Archive', 'desc' => 'Government document archiving solution.'],
-            ];
+          $projects = [
+            ['image' => 'project-Task-Management.webp', 'title' => 'Diagnostic Center', 'desc' => 'Book tests and view reports online.'],
+            ['image' => 'project-Online-Pharmacy.webp', 'title' => 'E-commerce', 'desc' => 'Sell products with modern cart system.'],
+            ['image' => 'project-Grocery-App.webp', 'title' => 'Portfolio Personal', 'desc' => 'Showcase profile and get client reach.'],
+            ['image' => 'project-app.webp', 'title' => 'Resort/Hotel', 'desc' => 'Display rooms and manage online bookings.'],
+            ['image' => 'project-Bazarnao-Ecommerce.webp', 'title' => 'Restaurant/Cafe Shop', 'desc' => 'Menu display with order and booking.'],
+            ['image' => 'project-DGFP-Archive.webp', 'title' => 'Salon/Beauty Parlor', 'desc' => 'Highlight services and take appointments.'],
+            ['image' => 'project-Bazarnao-Ecommerce.webp', 'title' => 'School Management', 'desc' => 'Notices, admissions, and student tools.'],
+            ['image' => 'project-DGFP-Archive.webp', 'title' => 'Tuition Center', 'desc' => 'Course listing with online enrollment.'],
+          ];
         @endphp
         <div class="swiper mySwiper px-3 py-3">
             <div class="swiper-wrapper">
@@ -531,12 +538,13 @@
 <!-- ===== Client Testimonials Section Start ===== -->
 <section class="py-5 text-center" id="testimonials" style="background: linear-gradient(to right, #f5f7fa, #e2e6ec);">
   <div class="container">
-    <h1 class="mb-3 fw-bold split-title">
-      <span>Client</span> <span>Testimonials</span>
+    <h1 class="text-center fw-bold mb-3">
+      Client<span class="brand-highlight"> Testimonials</span>
     </h1>
-    <p class="text-muted mb-5">
+      <p class="text-center text-muted mb-2 small">
       Hear from those who trusted us — real stories from clients across industries who've experienced our dedication, quality, and results.
     </p>
+    <div class="hero-animated-bar mb-5"></div>
     @php
       $testimonials = [
           ['name' => 'Evan L.', 'title' => 'Marketing Head, BrightIdeas', 'image' => 'laravelweb-client-2.webp', 'text' => 'The support and response time is top-notch!', 'stars' => 4],
@@ -668,3 +676,10 @@
 </section>
 
 @endsection
+
+<!-- 
+<h1 class="text-center fw-bold mb-3">
+<span class="brand-highlight"> 
+<p class="text-center text-muted mb-2 small">
+<div class="hero-animated-bar mb-5"></div>
+-->

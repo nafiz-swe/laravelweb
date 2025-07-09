@@ -10,6 +10,20 @@ section.position-relative {
   height: 100vh;
   overflow: hidden;
 }
+.hero-animated-bar {
+  width: 100px;
+  height: 4px;
+  margin: 25px auto 0;
+  border-radius: 30px;
+  background: linear-gradient(270deg, #0092b8, rgb(10, 239, 186), #3ac4b5, #ffc107, #00b8db);
+  background-size: 800% 800%;
+  animation: moveGradient 6s ease infinite;
+}
+@keyframes moveGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 .hero-section {
   background-color: #ffffff;
   padding: 0px 0px 5% 60px;
@@ -22,7 +36,7 @@ section.position-relative {
   gap: 30px;
   flex-wrap: wrap;
   position: relative;
-  top: 60px;
+  top: 74px;
 }
 
 .hero-text-box {
@@ -85,6 +99,7 @@ section.position-relative {
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
+    top: 59px;
   }
   .hero-text-box {
     max-width: 100%;
@@ -93,6 +108,7 @@ section.position-relative {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-top: -70px;
     padding: 30px;
+    margin-bottom: 25px;
   }
 .hero-img {
   border-radius: 0;;
@@ -103,9 +119,6 @@ section.position-relative {
   .hero-section{
     padding: 0;
   }
-  .hero-text-box h1 {
-  font-size: 2rem !important;
-}
 .mobile-sidebar {
   margin-bottom: 3rem;
 }
@@ -266,6 +279,9 @@ nav.navbar {
 = Status Start =
 ===============*/
 @media (max-width: 991.98px) {
+  .hero-text-box h1 {
+    font-size: 1.75rem !important;
+  }
   .row-cols-md-5 > * {
     flex: 0 0 100%;
     max-width: 100%;
@@ -410,11 +426,11 @@ nav.navbar {
 .image-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 25px;
 }
 .service-img {
-  max-width: 80px;
+  max-width: 100%;
   height: auto;
+  border-radius: 10px 10px 0 0;
 }
 .card-body {
   padding-bottom: 2rem;
@@ -440,13 +456,6 @@ nav.navbar {
   color: oklch(60.9% 0.126 221.723);
 }
 
-.usa-subtext {
-  font-size: 15px;
-  color: #555;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
 .usa-feature-box {
   font-size: 15px;
   color: #333;
@@ -468,7 +477,7 @@ nav.navbar {
     font-size: 1.5rem;
   }
   .logo-img {
-  height: 55px;
+  height: 50px;
 }
 }
 
@@ -555,6 +564,7 @@ nav.navbar {
 .card-title {
   font-size: 1.1rem;
   font-weight: bold;
+  margin-top: 8px;
 }
 .card-text {
   font-size: 0.95rem;
@@ -760,7 +770,7 @@ nav.navbar {
   background-color: #f5faff;
   margin-top: 74px;
   padding-top: 4rem !important;
-  padding-bottom: 4rem !important;
+  padding-bottom: 1rem !important;
 }
 
 .laravelweb-page-hero h1 {

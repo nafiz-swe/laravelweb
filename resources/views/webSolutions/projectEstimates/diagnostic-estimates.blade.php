@@ -4,10 +4,11 @@
 
 <section class="laravelweb-page-hero text-center">
   <div class="container">
-    <h1>
-      <span class="highlighted">Diagnostic Center</span> Laravel theme
+    <h1 class="text-center fw-bold mb-3">
+      <span class="brand-highlight">Diagnostic Center</span> Laravel theme
     </h1>
-    <p >Ready-to-launch diagnostic website themes with free hosting, fast delivery, and essential branding features like logo, banner, and domain support.</p>
+    <p class="text-center text-muted mb-2 small">Ready-to-launch diagnostic website themes with free hosting, fast delivery, and essential branding features like logo, banner, and domain support.</p>
+    <div class="hero-animated-bar mb-5"></div>
   </div>
 </section>
 
