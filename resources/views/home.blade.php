@@ -188,6 +188,8 @@
     </p>
     <div class="hero-animated-bar mb-5"></div>
     <div class="row g-4 justify-content-center mb-3">
+
+      <!-- Diagnostic Center -->
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
@@ -196,10 +198,28 @@
           <div class="card-body">
             <h5 class="card-title">Diagnostic Center</h5>
             <p class="card-text small">Online appointment and test report delivery system.</p>
-            <a href="{{ route('diagnostic.center') }}" class="btn btn-learn btn-sm">Get Design</a>
+            <!-- Button + Purchased + Rating row -->
+            <div class="d-flex justify-content-between align-items-start">
+              <a href="{{ route('diagnostic.center') }}" class="btn btn-learn btn-sm">Get Design</a>
+              <div class="text-end ms-2 purchase-info">
+                <div class="mb-1">
+                  <i class="fas fa-users"></i> 57+ Purchased
+                </div>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="rating-point">(4.5)</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- E-commerce -->
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
@@ -208,10 +228,28 @@
           <div class="card-body">
             <h5 class="card-title">E-commerce</h5>
             <p class="card-text small">Custom online store with product showcase and order system.</p>
-            <a href="{{ route('ecommerce') }}" class="btn btn-learn btn-sm">Get Design</a>
+            <!-- Button + Purchased + Rating row -->
+            <div class="d-flex justify-content-between align-items-start">
+              <a href="{{ route('ecommerce') }}" class="btn btn-learn btn-sm">Get Design</a>
+              <div class="text-end ms-2 purchase-info">
+                <div class="mb-1">
+                  <i class="fas fa-users"></i> 63+ Purchased
+                </div>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="rating-point">(5)</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Portfolio/Personal Website -->
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
@@ -220,10 +258,28 @@
           <div class="card-body">
             <h5 class="card-title">Portfolio/Personal Website</h5>
             <p class="card-text small">Personal profile with service showcase and contact form.</p>
+            <!-- Button + Purchased + Rating row -->
+            <div class="d-flex justify-content-between align-items-start">
             <a href="{{ route('portfolio') }}" class="btn btn-learn btn-sm">Get Design</a>
+              <div class="text-end ms-2 purchase-info">
+                <div class="mb-1">
+                  <i class="fas fa-users"></i> 86+ Purchased
+                </div>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="rating-point">(4.5)</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Resort/Hotel Booking -->
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
@@ -232,10 +288,28 @@
           <div class="card-body">
             <h5 class="card-title">Resort/Hotel Booking</h5>
             <p class="card-text small">Room availability check with online booking facility.</p>
-            <a href="{{ route('resort.hotel') }}" class="btn btn-learn btn-sm">Get Design</a>
+            <!-- Button + Purchased + Rating row -->
+            <div class="d-flex justify-content-between align-items-start">
+              <a href="{{ route('resort.hotel') }}" class="btn btn-learn btn-sm">Get Design</a>
+              <div class="text-end ms-2 purchase-info">
+                <div class="mb-1">
+                  <i class="fas fa-users"></i> 47+ Purchased
+                </div>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="rating-point">(4.5)</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Restaurant/Cafe Shop -->
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
@@ -244,10 +318,28 @@
           <div class="card-body">
             <h5 class="card-title">Restaurant/Cafe Shop</h5>
             <p class="card-text small">Digital menu, food ordering, and table reservation system.</p>
-            <a href="{{ route('restaurant.cafe') }}" class="btn btn-learn btn-sm">Get Design</a>
+            <!-- Button + Purchased + Rating row -->
+            <div class="d-flex justify-content-between align-items-start">
+              <a href="{{ route('restaurant.cafe') }}" class="btn btn-learn btn-sm">Get Design</a>
+              <div class="text-end ms-2 purchase-info">
+                <div class="mb-1">
+                  <i class="fas fa-users"></i> 34+ Purchased
+                </div>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="rating-point">(4.5)</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Salon/Beauty Parlor -->
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
@@ -256,10 +348,27 @@
           <div class="card-body">
             <h5 class="card-title">Salon/Beauty Parlor</h5>
             <p class="card-text small">Service list, appointment booking, and customer feedback system.</p>
-            <a href="{{ route('salon.beauty') }}" class="btn btn-learn btn-sm">Get Design</a>
+            <!-- Button + Purchased + Rating row -->
+            <div class="d-flex justify-content-between align-items-start">
+              <a href="{{ route('salon.beauty') }}" class="btn btn-learn btn-sm">Get Design</a>
+              <div class="text-end ms-2 purchase-info">
+                <div class="mb-1">
+                  <i class="fas fa-users"></i> 18+ Purchased
+                </div>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="rating-point">(4)</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- School Management -->
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
@@ -268,10 +377,28 @@
           <div class="card-body">
             <h5 class="card-title">School Management</h5>
             <p class="card-text small">Notice board, admission info, and academic management.</p>
-            <a href="{{ route('school.management') }}" class="btn btn-learn btn-sm">Get Design</a>
+            <!-- Button + Purchased + Rating row -->
+            <div class="d-flex justify-content-between align-items-start">
+              <a href="{{ route('school.management') }}" class="btn btn-learn btn-sm">Get Design</a>
+              <div class="text-end ms-2 purchase-info">
+                <div class="mb-1">
+                  <i class="fas fa-users"></i> 94+ Purchased
+                </div>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="rating-point">(5)</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Tuition Center -->
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-0 deep-shadow hover-shadow" style="border-radius: 10px;">
           <div class="image-wrapper">
@@ -280,7 +407,23 @@
           <div class="card-body">
             <h5 class="card-title">Tuition Center</h5>
             <p class="card-text small">Course list, batch timing, and online registration system.</p>
-            <a href="{{ route('tuition.center') }}" class="btn btn-learn btn-sm">Get Design</a>
+            <!-- Button + Purchased + Rating row -->
+            <div class="d-flex justify-content-between align-items-start">
+              <a href="{{ route('tuition.center') }}" class="btn btn-learn btn-sm">Get Design</a>
+              <div class="text-end ms-2 purchase-info">
+                <div class="mb-1">
+                  <i class="fas fa-users"></i> 61+ Purchased
+                </div>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="rating-point">(4.5)</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

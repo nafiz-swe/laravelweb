@@ -432,9 +432,28 @@ nav.navbar {
   height: auto;
   border-radius: 10px 10px 0 0;
 }
+/* .card-body {
+  position: relative;
+  padding-bottom: 4rem;
+} */
 .card-body {
-  padding-bottom: 2rem;
+  position: relative;
+  margin-bottom: 8px;
 }
+
+.purchase-info {
+  font-size: 0.75rem;
+  color: #6c757d;
+  line-height: 1.2;
+}
+.purchase-info .rating-point {
+  font-size: 0.7rem;
+  color: #999;
+}
+.text-warning i {
+  font-size: 10px;
+}
+
 /* =====================
 = Services Section End =
 =======================*/
